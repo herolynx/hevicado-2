@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<title>Hevicado 2.0</title>
+
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,700,900,300,100' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="elements.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+	
+</head>
+<body>
+
+<div id="page" class="blue">
+	
+	<input type="checkbox" id="trigger" class="trigger">
+	<label for="trigger">
+		<i class="fa fa-bars"></i>
+	</label>
+	
+	<section id="navigation">	
+		<div id="wrapper" class="content">
+			<div class="user">
+				<span>Jesteś zalogowany jako</span>
+				<div class="images">
+					<img src="images/sample-men.jpg" alt="Mateusz Kowalski">
+				</div>
+				<span class="name">
+					Mateusz<br/>
+					Kowalski
+				</span>
+				<span>Lekarz</span>
+			</div>
+			<nav>
+				<ul>
+					<li class="active"><a href="#"><i class="fa fa-area-chart"></i>Pulpit</a></li>
+					<li><a href="#"><i class="fa fa-calendar"></i>Kalnedarz</a></li>
+					<li><a href="#"><i class="fa fa-folder-open-o"></i>Karta Pacjenta</a></li>
+					<li><a href="#"><i class="fa fa-folder-open-o"></i>Moje wizyty</a></li>
+					<li><a href="#"><i class="fa fa-hospital-o"></i>Gabinet</a></li>
+					<li><a href="#"><i class="fa fa-inbox"></i>Wiadomości</a></li>
+					<li><a href="#"><i class="fa fa-cogs"></i>Moje konto</a></li>
+					<li><a href="#"></a></li>
+				</ul>
+			</nav>
+			
+		</div>
+		<div class="footer">
+			Power by <a href="http://www.herolynx.com" target="_blank">HeroLynx.com</a>
+		</div>
+	</section>
+	
+	<section id="main-content">		
+		<div id="title">
+			<div class="content">
+				<h2><i class="fa fa-calendar"></i> Kalendarz</h2>
+				<nav>
+					<ul>
+						<li class="active"><a href="#"><i class="fa fa-calendar"></i>Dzienny</a></li>
+						<li><a href="#"><i class="fa fa-calendar"></i>Tygodnowy</a></li>
+						<li><a href="#"><i class="fa fa-calendar"></i>Miesięczny</a></li>
+						<li><a href="#"><i class="fa fa-file-o"></i>Notatki</a></li>
+					</ul>
+				</nav>	
+			</div>
+		</div>		
+		
+		<section id="calendar">			
+			<div class="row">
+				<div class="month">
+					<div class="col col-7">						
+						<div class="window">						
+							<div class="wrapper">
+								<div class="date">
+									<a href="#"><i class="fa fa-angle-left"></i></a>
+									<span>
+										5 maja 2015
+									</span>
+									<a href="#"><i class="fa fa-angle-right"></i></a>
+									<a href="#" class="calendar"><i class="fa fa-calendar"></i></a>
+								</div>
+								<div class="visit">
+									Zaplanowane wizyty na dziś
+								</div>
+							</div>
+									
+							<div class="days">
+								<div class="box">PN</div>
+								<div class="box">WT</div>
+								<div class="box">ŚR</div>
+								<div class="box">CZW</div>
+								<div class="box">PT</div>
+								<div class="box">SOB</div>
+								<div class="box">ND</div>
+							</div>							
+							<ul class="table">
+								<li>
+									<div class="day">
+										<div class="box">
+											<a href="#" class="add"></a>
+											<div class="mark"></div>
+											<div class="content">										
+												<div class="number">
+													1
+												</div>
+												<div class="info">													
+													<div class="count">													
+														<i class="fa fa-list"></i>
+														<span>6 wizyt</span>
+													</div>
+													<ul>
+														<li>
+															<span>
+																<i class="fa fa-clock-o"></i> 13:30
+															</span>
+															<span class="name">P.</span>
+															<span class="lastname">Kowalski</span>
+														</li>
+														<li>
+															<span>
+																<i class="fa fa-clock-o"></i> 13:30
+															</span>
+															<span class="name">P.</span>
+															<span class="lastname">Kowalski</span>
+														</li>
+														<li>
+															<span>
+																<i class="fa fa-clock-o"></i> 13:30
+															</span>
+															<span class="name">P.</span>
+															<span class="lastname">Kowalski</span>
+														</li>
+														<li>
+															<span>
+																<i class="fa fa-clock-o"></i> 13:30
+															</span>
+															<span class="name">P.</span>
+															<span class="lastname">Kowalski</span>
+														</li>
+													</ul>													
+													<i class="fa fa-ellipsis-h more"></i>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="day">
+										<div class="box">
+											<a href="#" class="add"></a>
+											<div class="content">										
+												<div class="number">2</div>
+												<div class="add-box">
+													<i class="fa fa-plus-circle"></i>
+													<span>Dodaj wizytę</span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="day">
+										<div class="box">
+											<a href="#" class="add"></a>
+											<div class="content">										
+												<div class="number">3</div>
+												<div class="add-box">
+													<i class="fa fa-plus-circle"></i>
+													<span>Dodaj wizytę</span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="day">
+										<div class="box">
+											<a href="#" class="add"></a>
+											<div class="content">										
+												<div class="number">4</div>
+												<div class="add-box">
+													<i class="fa fa-plus-circle"></i>
+													<span>Dodaj wizytę</span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="day">
+										<div class="box">
+											<a href="#" class="add"></a>
+											<div class="content">										
+												<div class="number">5</div>
+												<div class="add-box">
+													<i class="fa fa-plus-circle"></i>
+													<span>Dodaj wizytę</span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="day">
+										<div class="box">
+											<a href="#" class="add"></a>
+											<div class="content">										
+												<div class="number">6</div>
+												<div class="add-box">
+													<i class="fa fa-plus-circle"></i>
+													<span>Dodaj wizytę</span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="day">
+										<div class="box">
+											<a href="#" class="add"></a>
+											<div class="content">										
+												<div class="number">7</div>
+												<div class="add-box">
+													<i class="fa fa-plus-circle"></i>
+													<span>Dodaj wizytę</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>									
+									<div class="day">
+										<div class="box">
+											<a href="#" class="add"></a>
+											<div class="content">										
+												<div class="number">8</div>
+												<div class="add-box">
+													<i class="fa fa-plus-circle"></i>
+													<span>Dodaj wizytę</span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="day">
+										<div class="box">
+											<a href="#" class="add"></a>
+											<div class="content">										
+												<div class="number">9</div>
+												<div class="add-box">
+													<i class="fa fa-plus-circle"></i>
+													<span>Dodaj wizytę</span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="day">
+										<div class="box">
+											<a href="#" class="add"></a>
+											<div class="content">										
+												<div class="number">10</div>
+												<div class="add-box">
+													<i class="fa fa-plus-circle"></i>
+													<span>Dodaj wizytę</span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="day">
+										<div class="box">
+											<a href="#" class="add"></a>
+											<div class="content">										
+												<div class="number">11</div>
+												<div class="add-box">
+													<i class="fa fa-plus-circle"></i>
+													<span>Dodaj wizytę</span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="day">
+										<div class="box">
+											<a href="#" class="add"></a>
+											<div class="content">										
+												<div class="number">12</div>
+												<div class="add-box">
+													<i class="fa fa-plus-circle"></i>
+													<span>Dodaj wizytę</span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="day">
+										<div class="box">
+											<a href="#" class="add"></a>
+											<div class="content">										
+												<div class="number">13</div>
+												<div class="add-box">
+													<i class="fa fa-plus-circle"></i>
+													<span>Dodaj wizytę</span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="day">
+										<div class="box">
+											<a href="#" class="add"></a>
+											<div class="content">										
+												<div class="number">14</div>
+												<div class="add-box">
+													<i class="fa fa-plus-circle"></i>
+													<span>Dodaj wizytę</span>
+												</div>
+											</div>
+										</div>
+									</div>									
+								</li>
+							</ul>							
+						</div>
+					</div>
+				</div>
+			</div>			
+		</section>
+	</section>
+</div>
+	
+
+
+
+
+<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

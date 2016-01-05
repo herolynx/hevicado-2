@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<title>Hevicado 2.0</title>
+
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,700,900,300,100' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="elements.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+	
+</head>
+<body>
+
+<div id="page" class="blue">
+	
+	<input type="checkbox" id="trigger" class="trigger">
+	<label for="trigger">
+		<i class="fa fa-bars"></i>
+	</label>
+	
+	<section id="navigation">	
+		<div id="wrapper" class="content">
+			<div class="user">
+				<span>Jesteś zalogowany jako</span>
+				<div class="images">
+					<img src="images/sample-men.jpg" alt="Mateusz Kowalski">
+				</div>
+				<span class="name">
+					Mateusz<br/>
+					Kowalski
+				</span>
+				<span>Lekarz</span>
+			</div>
+			<nav>
+				<ul>
+					<li class="active"><a href="#"><i class="fa fa-area-chart"></i>Pulpit</a></li>
+					<li><a href="#"><i class="fa fa-calendar"></i>Kalnedarz</a></li>
+					<li><a href="#"><i class="fa fa-folder-open-o"></i>Karta Pacjenta</a></li>
+					<li><a href="#"><i class="fa fa-folder-open-o"></i>Moje wizyty</a></li>
+					<li><a href="#"><i class="fa fa-hospital-o"></i>Gabinet</a></li>
+					<li><a href="#"><i class="fa fa-inbox"></i>Wiadomości</a></li>
+					<li><a href="#"><i class="fa fa-cogs"></i>Moje konto</a></li>
+					<li><a href="#"></a></li>
+				</ul>
+			</nav>			
+		</div>		
+		<div class="footer">
+			Power by <a href="http://www.herolynx.com" target="_blank">HeroLynx.com</a>
+		</div>
+	</section>
+	
+	<section id="main-content">		
+		<div id="title">
+			<div class="content">
+				<h2><i class="fa fa-calendar"></i> Kalendarz</h2>
+				<nav>
+					<ul>
+						<li class="active"><a href="#"><i class="fa fa-calendar"></i>Dzienny</a></li>
+						<li><a href="#"><i class="fa fa-calendar"></i>Tygodnowy</a></li>
+						<li><a href="#"><i class="fa fa-calendar"></i>Miesięczny</a></li>
+						<li><a href="#"><i class="fa fa-file-o"></i>Notatki</a></li>
+					</ul>
+				</nav>	
+			</div>
+		</div>		
+		
+		<section id="calendar">			
+			<div class="row">
+				<div class="oneday">	
+					<div class="col col-7">		
+						<div class="window">						
+							<div class="wrapper">
+								<div class="date">
+									<a href="#"><i class="fa fa-angle-left"></i></a>
+									<span>
+										5 maja 2015
+									</span>
+									<a href="#"><i class="fa fa-angle-right"></i></a>
+									<a href="#" class="calendar"><i class="fa fa-calendar"></i></a>
+								</div>
+								<div class="visit">
+									Zaplanowane wizyty na dziś <span>91</span>
+								</div>
+							</div>
+						
+							<div class="row">
+								<div class="col col-3">
+									<div class="days">					
+										<div class="box">Poniedziałek 29.05.2015</div>
+									</div>			
+									<ul class="table">
+										<li class="hour">
+											<div class="day">
+												<div class="box">
+													<span>9:00</span>
+												</div>
+											</div>
+											<div class="day">
+												<div class="box">
+													<span>10:00</span>
+												</div>
+											</div>
+											<div class="day">
+												<div class="box">
+													<span>11:00</span>
+												</div>
+											</div>
+											<div class="day">
+												<div class="box">
+													<span>12:00</span>
+												</div>
+											</div>
+											<div class="day">
+												<div class="box">
+													<span>13:00</span>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="day">
+												<div class="box">
+													
+												</div>
+											</div>
+											<div class="day">
+												<div class="box">
+													
+												</div>
+											</div>
+											<div class="day">
+												<div class="box">
+													
+												</div>
+											</div>
+											<div class="day">
+												<div class="box">
+													
+												</div>
+											</div>
+											<div class="day">
+												<div class="box">
+													
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="col col-3">
+									<div class="days">					
+										<div class="box">Aktualny pacjent (godz. 9:30)</div>
+									</div>
+									<div class="window">
+										<div class="images">
+											<img src="images/sample-men.jpg" alt="Mateusz Kowalski">
+										</div>
+										<ul>
+											<li>
+												<span class="title">Prowadzący:</span>
+											</li>
+											<li>
+												<span class="name">dr. Gregory House</span>
+												<span class="address">
+													ul.Woronicza 18<br/>
+													55-334 Warszawa
+												</span>
+											</li>
+											<li>
+												<i class="fa fa-phone"></i>+ 48 444 223 443
+											</li>
+											<li class="line">
+												<i class="fa fa-envelope-o"></i><a href="mailto:">gregory.house@drhouse.pl</a>
+											</li>											
+											<li class="line">
+												<i class="fa fa-question"></i><span class="title">Powód wizyty</span>
+												<p>
+													Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed risus magna, luctus et vehicula at, eleifend sed turpis. Curabitur sit amet neque neque. Aenean tincidunt in risus quis eleifend.
+												</p>
+											</li>	
+											<li>
+												<button type="submit" class="btn blue md">
+													<i class="fa fa-times-circle-o"></i>Odwołaj wizytę
+												</button>
+												<button type="submit" class="btn blue md">
+													<i class="fa fa-eye"></i>Notatki
+												</button>
+												<button type="submit" class="btn blue md">
+													<i class="fa fa-plus-circle"></i>Dodaj notatkę
+												</button>
+											</li>
+										</ul>										
+									</div>
+									
+									<div class="pagination">
+										<a href="#" class="prev">
+											<i class="fa fa-angle-left"></i> Poprzedni pacjent
+										</a>
+										<a href="#" class="next">
+											Następny pacjent <i class="fa fa-angle-right"></i>
+										</a>
+									</div>
+								</div>
+								
+							</div>												
+						</div>
+					</div>
+				</div>
+			</div>			
+		</section>
+	</section>
+</div>
+
+
+<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
