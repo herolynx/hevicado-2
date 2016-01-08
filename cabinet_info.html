@@ -8,6 +8,8 @@
 	<link href='https://fonts.googleapis.com/css?family=Lato:400,700,900,300,100' rel='stylesheet' type='text/css'>
 
 	<link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/jguery.Select.css" type="text/css" media="screen" />
+
 	<link rel="stylesheet" href="elements.css" type="text/css" media="screen" />
 	<link rel="stylesheet" href="style.css" type="text/css" media="screen" />
 	
@@ -34,14 +36,15 @@
 		</div>
 		<nav>
 			<ul>
-				<li class="active"><a href="#"><i class="fa fa-area-chart"></i>Pulpit</a></li>
-				<li><a href="#"><i class="fa fa-calendar"></i>Kalnedarz</a></li>
+				<li class="active"><a href="search.html"><i class="fa fa-search"></i> Szukaj</a></li>
+				<li><a href="#"><i class="fa fa-area-chart"></i>Pulpit</a></li>
+				<li><a href="calendar_30days.html"><i class="fa fa-calendar"></i>Kalnedarz</a></li>
 				<li><a href="#"><i class="fa fa-folder-open-o"></i>Karta Pacjenta</a></li>
-				<li><a href="#"><i class="fa fa-folder-open-o"></i>Moje wizyty</a></li>
-				<li><a href="#"><i class="fa fa-hospital-o"></i>Gabinet</a></li>
+				<li><a href="visit.html"><i class="fa fa-folder-open-o"></i>Moje wizyty</a></li>
+				<li><a href="cabinet_list.html"><i class="fa fa-hospital-o"></i>Gabinet</a></li>
 				<li><a href="#"><i class="fa fa-inbox"></i>Wiadomości</a></li>
 				<li><a href="#"><i class="fa fa-cogs"></i>Moje konto</a></li>
-				<li><a href="#"></a></li>
+				<li><a href="#"><i class="fa fa-sign-out"></i>Wyloguj</a></li>
 			</ul>
 		</nav>
 		<div class="footer">
@@ -78,7 +81,21 @@
 								<li class="tab-link" data-tab="tab-2">Wykonywane zabiegi</li>
 							</ul>
 							<div id="tab-1" class="tab-content current">
-								<ul class="list">							
+								<ul class="list">	
+									<li>
+<div class="onoffswitch">
+    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+    <label class="onoffswitch-label" for="myonoffswitch"></label>
+</div>
+
+<select>
+  <option data-display="Select">Nothing</option>
+  <option value="1">Some option</option>
+  <option value="2">Another option</option>
+  <option value="3">Potato</option>
+</select>
+
+									</li>
 									<li>
 										<div class="info">
 											<span class="title">Nazwa gabinetu:</span>
@@ -161,6 +178,9 @@
 											<a href="#" class="disabled"><i class="fa fa-chevron-right"></i></a>
 										</div>
 									</li>
+									
+									
+									
 								</ul>	
 							</div>
 						</div>
@@ -175,6 +195,9 @@
 
 
 <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="js/jquery.nice-select.min.js"></script>
+
+
 <script type="text/javascript" src="js/jquery.mCustomScrollbar.concat.min.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
 </body>

@@ -53,13 +53,18 @@
 		var height_box = $('#calendar .week ul li+li .day .box, #calendar .oneday ul li+li .day .box').outerHeight();
 		
 		$('#calendar .week ul li.hour .day, #calendar .oneday ul li.hour .day').css('height', height_box);
-		
-		console.log(height_box);
+
 	});
 		
 	$(window).resize();
 	
-	
+// SELECT
+
+$(document).ready(function() {
+	$('select').niceSelect();
+});	
+
+// SELECT
 
 // TABS 
 
@@ -74,9 +79,9 @@ $(document).ready(function(){
 
 		$(this).addClass('current');
 		$("#"+tab_id).addClass('current');
-	})
+	});
 
-})
+});
 
 
 
@@ -94,10 +99,13 @@ $(window).load(function(){
 $(document).ready(function() {
 	
 				
-	// DISABLE LINK
+	// HIDE FILTER FIELD
+	// ZROBIĆ ŁADNĄ ANIMACJE, ZMIENIC KOMUNIKAT i IKONĘ ORAZ TITLE
 	
-	$('a.disabled').unbind('click');
+	$('.hide').click(function(){
+		$(this).parent().toggleClass('hidden');
 	
+	});
 	
 	//  TEXTAREA COUNT SIGN (ADD ID!)
 	
@@ -105,18 +113,6 @@ $(document).ready(function() {
 	  $(".count span").text((500 - $(this).val().length));
 	});
 	
-	// SHOW WINDOW ACTION
-	// DELETE
-	
-	$('#delete').click(function() {
-		$('.layer.delete').show();
-	});
-	
-	// CLOSE WINDOW ACTION
-	
-	$('#cw, button#cw').click(function() {
-		$('.layer').hide();
-	});
 	
 
 	
