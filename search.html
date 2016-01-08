@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<title>Hevicado 2.0</title>
+
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,700,900,300,100' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="elements.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+	
+</head>
+<body>
+
+<div id="page" class="blue">
+	
+	<input type="checkbox" id="trigger" class="trigger">
+	<label for="trigger">
+		<i class="fa fa-bars"></i>
+	</label>
+	
+	<section id="navigation">	
+		<div id="wrapper" class="content">
+			<div class="user">
+				<span>Jesteś zalogowany jako</span>
+				<div class="images">
+					<img src="images/sample-men.jpg" alt="Mateusz Kowalski">
+				</div>
+				<span class="name">
+					Mateusz<br/>
+					Kowalski
+				</span>
+				<span>Lekarz</span>
+			</div>
+			<nav>
+				<ul>
+					<li class="active"><a href="search.html"><i class="fa fa-search"></i> Szukaj</a></li>
+					<li><a href="#"><i class="fa fa-area-chart"></i>Pulpit</a></li>
+					<li><a href="calendar_30days.html"><i class="fa fa-calendar"></i>Kalnedarz</a></li>
+					<li><a href="#"><i class="fa fa-folder-open-o"></i>Karta Pacjenta</a></li>
+					<li><a href="visit.html"><i class="fa fa-folder-open-o"></i>Moje wizyty</a></li>
+					<li><a href="cabinet_list.html"><i class="fa fa-hospital-o"></i>Gabinet</a></li>
+					<li><a href="#"><i class="fa fa-inbox"></i>Wiadomości</a></li>
+					<li><a href="#"><i class="fa fa-cogs"></i>Moje konto</a></li>
+					<li><a href="#"><i class="fa fa-sign-out"></i>Wyloguj</a></li>
+				</ul>
+			</nav>			
+		</div>		
+		<div class="footer">
+			Power by <a href="http://www.herolynx.com" target="_blank">HeroLynx.com</a>
+		</div>
+	</section>
+	
+	<section id="main-content">		
+		<div id="title">
+			<div class="content">
+				<h2><i class="fa fa-search"></i> Wyszukiwarka</h2>
+				<nav>
+						
+				</nav>	
+			</div>
+		</div>		
+		
+		<section id="search">			
+			<div class="row">
+				
+				<div class="col col-7">						
+					<div class="window">	
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d320513.1439457554!2d16.711685830748372!3d51.12674318241336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470fe9c2d4b58abf%3A0xb70956aec205e0f5!2zV3JvY8WCYXc!5e0!3m2!1spl!2spl!4v1452080125315" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+						<div class="layer">
+							<div class="filter">
+								<span class="title">Znajdź lekarza i umów wizytę</span>
+								<a href="#" class="btn blue md hide">
+									<i class="fa fa-eye-slash"></i> Ukryj okno
+								</a>
+								
+								<ul class="field">						
+									<li>
+										<label>Imię i nazwisko</label>
+										<fieldset>
+											<input type="text">
+										</fieldset>
+									</li>
+									<li>
+										<label>Specjalizacja</label>
+										<fieldset>
+											<input type="text">
+										</fieldset>
+									</li>
+									<li>
+										<ul class="field">
+											<li>
+												<label>Miasto</label>
+												<fieldset>
+													<input type="text">
+												</fieldset>
+											</li>
+											<li>
+												<label>Województwo</label>
+												<fieldset>
+													<input type="text">
+												</fieldset>
+											</li>
+										</ul>								
+									</li>
+									<li>
+										<ul class="field">
+											<li class="time">
+												<label>Termin od</label>
+												<fieldset>
+													<input type="text"><i class="fa fa-calendar"></i>
+												</fieldset>
+											</li>
+											<li class="time">
+												<label>Termin do</label>
+												<fieldset>
+													<input type="text"><i class="fa fa-calendar"></i>
+												</fieldset>
+											</li>
+										</ul>								
+									</li>
+								</ul>						
+								<ul class="action">
+									<li>	
+										<button type="submit" class="btn blue md">
+											<i class="fa fa-search"></i> Wyszukaj
+										</button>
+									</li>
+									
+									<li>	
+										<button type="submit" class="btn cw md">
+											<i class="fa fa-eraser"></i> Wyczyść
+										</button>
+									</li>							
+								</ul>		
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="row result">	
+				<div class="col col-7">						
+					<div class="window">		
+						<div class="col col-8">							
+							<ul class="result">
+								<li>
+									<div class="box">								
+										<div class="pic">
+											<div class="images">
+												<img src="images/sample-men.jpg" alt="Mateusz Kowalski">
+												<a href="#" class="more">
+													<i class="fa fa-eye"></i>
+												</a>
+											</div>
+											<span class="rating">
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star-o"></i>
+												<i class="fa fa-star-o"></i>
+											</span>	
+										</div>
+										<div class="name">
+											<span class="title">
+												<i class="fa fa-user-md"></i> Tomasz Terlikowski
+												<span class="specialization">prof. dr. hab</span>
+											</span>												
+											specjalizacja: blalblalbla
+										</div>
+										<div class="opinion">
+											Sympatyczny, cierpliwy, dokładny i otwarty. Wyczerpująco odpowiada na wszystkie pytania, również te ...
+										
+											<a href="#">
+												Czytaj więcej
+											</a>
+										</div>
+									</div>
+									<div class="box">
+										<span class="title">
+											<i class="fa fa-hospital-o"></i> Narodowy Ruch Wypierdolenia Terlikowskiego w kosmos
+										</span>
+										<span>
+											<i class="fa fa-map-marker"></i> ul. Woronicza 17, 55-44 Wrocław  <a href="#" class="pin">A</a>
+										</span>
+										<span>	
+											<i class="fa fa-phone"></i>+ 48 444 223 443
+										</span>	
+										<span>	
+											<i class="fa fa-envelope-o"></i><a href="mailto:">gregory.house@drhouse.pl</a>
+										</span>
+									</div>
+									<div class="box">
+										<span class="title">
+											<i class="fa fa-calendar"></i> Najbliższa wizyta 
+											<span class="date">29.10.2013 godz. 12:00</span>
+										</span>
+									</div>
+								</li>
+								
+								<li>
+									<div class="box">								
+										<div class="pic">
+											<div class="images">
+												<img src="images/sample-men.jpg" alt="Mateusz Kowalski">
+												<a href="#" class="more">
+													<i class="fa fa-eye"></i>
+												</a>
+											</div>
+											<span class="rating">
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star-o"></i>
+												<i class="fa fa-star-o"></i>
+											</span>	
+										</div>
+										<div class="name">
+											<span class="title">
+												<i class="fa fa-user-md"></i> Tomasz Terlikowski
+												<span class="specialization">prof. dr. hab</span>
+											</span>												
+											specjalizacja: blalblalbla
+										</div>
+										<div class="opinion">
+											Sympatyczny, cierpliwy, dokładny i otwarty. Wyczerpująco odpowiada na wszystkie pytania, również te ...
+										
+											<a href="#">
+												Czytaj więcej
+											</a>
+										</div>
+									</div>
+									<div class="box">
+										<span class="title">
+											<i class="fa fa-hospital-o"></i> Narodowy Ruch Wypierdolenia Terlikowskiego w kosmos
+										</span>
+										<span>
+											<i class="fa fa-map-marker"></i> ul. Woronicza 17, 55-44 Wrocław <a href="#" class="pin">B</a>
+										</span>
+										<span>	
+											<i class="fa fa-phone"></i>+ 48 444 223 443
+										</span>	
+										<span>	
+											<i class="fa fa-envelope-o"></i><a href="mailto:">gregory.house@drhouse.pl</a>
+										</span>
+									</div>
+									<div class="box">
+										<span class="title">
+											<i class="fa fa-calendar"></i> Najbliższa wizyta 
+											<span class="date">29.10.2013 godz. 12:00</span>
+										</span>
+										<div class="calendar">
+											<ul class="calendar">
+												<li>
+												 wolne
+												</li>
+												<li>
+												wolne
+												</li>
+												<li>
+												wolne
+												</li>
+											</ul>
+										<div>
+										
+									</div>
+								</li>
+								
+								
+							</ul>								
+				
+							
+							
+						</div>
+						
+					</div>
+				</div>				
+			</div>			
+		</section>
+	</section>
+</div>
+	
+
+
+
+
+
+<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
