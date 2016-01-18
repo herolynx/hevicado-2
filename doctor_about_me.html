@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<title>Hevicado 2.0</title>
+
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,700,900,300,100' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/jquery.minicolors.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="elements.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/jquery.bxslider.css" type="text/css" media="screen" />	
+	<link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/jguery.Select.css" type="text/css" media="screen" />
+	
+</head>
+<body>
+
+<div id="page" class="blue">
+	<input type="checkbox" id="trigger" class="trigger">
+	<label for="trigger">
+		<i class="fa fa-bars"></i>
+	</label>
+	
+	<section id="navigation">	
+		<div class="user">
+			<span>Jesteś zalogowany jako</span>
+			<div class="images">
+				<img src="images/sample-men.jpg" alt="Mateusz Kowalski">
+			</div>
+			<span class="name">
+				Mateusz<br/>
+				Kowalski
+			</span>
+			<span>Lekarz</span>
+		</div>
+		<nav>
+			<ul>
+				<li class="active"><a href="search.html"><i class="fa fa-search"></i> Szukaj</a></li>
+				<li><a href="#"><i class="fa fa-area-chart"></i>Pulpit</a></li>
+				<li><a href="calendar_30days.html"><i class="fa fa-calendar"></i>Kalnedarz</a></li>
+				<li><a href="#"><i class="fa fa-folder-open-o"></i>Karta Pacjenta</a></li>
+				<li><a href="visit.html"><i class="fa fa-folder-open-o"></i>Moje wizyty</a></li>
+				<li><a href="cabinet_list.html"><i class="fa fa-hospital-o"></i>Gabinet</a></li>
+				<li><a href="#"><i class="fa fa-inbox"></i>Wiadomości</a></li>
+				<li><a href="#"><i class="fa fa-cogs"></i>Moje konto</a></li>
+				<li><a href="#"><i class="fa fa-sign-out"></i>Wyloguj</a></li>
+			</ul>
+		</nav>
+		<div class="footer">
+			Power by <a href="http://www.herolynx.com" target="_blank">HeroLynx.com</a>
+		</div>
+	</section>
+	<section id="main-content">		
+		<div id="title">
+			<div class="content">
+				<h2>Gabinet</h2>
+				<nav>
+					<ul>						
+						<li><a href="cabinet_list.html"><i class="fa fa-hospital-o"></i><span>Gabinety</span></a></li>
+						<li class="active"><a href="doctor_about_me.html"><i class="fa fa-user-md"></i><span>Strona o mnie</span></a></li>
+					</ul>
+				</nav>
+				<div class="action">
+					<a href="#"><i class="fa fa-bell-o"></i><span>20</span></a>
+					<a href="#"><i class="fa fa-power-off"></i></a>
+				</div>				
+			</div>
+		</div>		
+		
+		<section id="cabinet">			
+			<div class="row">
+				<div class="col col-5">							
+					<div class="window">
+						<div class="title-window">							
+							<div class="box">								
+								<span>
+									Strona o mnie
+								</span>								
+							</div>							
+						</div>
+						<ul class="data">
+							<li>
+								<div class="info">
+									<span class="title">Zdjęcie profilowe:</span>	
+									<div class="field">
+										<div class="images">
+											<img src="images/sample-men.jpg" alt="Mateusz Kowalski">
+											<a href="#" class="delete"><i class="fa fa-trash-o"></i></a>
+										</div>									
+									</div>
+								</div>										
+								<div class="action block">
+									<input type="file" name="file" id="file" class="input-file" />
+									<label class="upload"  for="file"><i class="fa fa-upload"></i></label>	
+									
+								</div>
+							</li>							
+							<li>
+								<div class="info">
+									<span class="title">Tytuł:</span>	
+									<div class="field one">
+										<fieldset>	
+											<select>
+												<option value="1">lekarz </option>
+												<option value="1">dr.n. med. </option>
+												<option value="1">dr.hab.n. med.</option>
+												<option value="1">prof. dr. hab. n. med</option>															
+											</select>	
+										</fieldset>											
+									</div>									
+								</div>										
+								<div class="action block">
+									<a href="#"><i class="fa fa-plus-circle"></i></a>
+									<a href="#" id="edit"><i class="fa fa-pencil"></i></a>
+								</div>
+							</li>						
+							<li>
+								<div class="info">
+									<span class="title">O mnie:</span>
+									<textarea class="elastic">Niepubliczny Zakład Medycyny Stosowanej</textarea>
+								</div>										
+								<div class="action block">
+									<a href="#" id="edit"><i class="fa fa-pencil"></i></a>
+								</div>
+							</li>							
+							<li>
+								<div class="info">
+									<span class="title">Ukończone szkoły:</span>	
+									<div class="field one">
+										<fieldset>	
+											<input type="text" value="4-letnie Studium Psychoterapii Analitycznej w Warszawie" placeholder="Uczelnia" disabled>						
+										</fieldset>	
+										<fieldset>						
+											<a href="#" class="delete"><i class="fa fa-trash-o"></i></a>	
+										</fieldset>	
+									</div>
+									<div class="field one">
+										<fieldset>	
+											<input type="text" value="4-letnie Studium Psychoterapii Analitycznej w Warszawie" placeholder="Uczelnia">						
+										</fieldset>	
+										<fieldset>						
+											<a href="#" class="delete"><i class="fa fa-trash-o"></i></a>	
+										</fieldset>	
+									</div>
+								</div>										
+								<div class="action block">
+									<a href="#"><i class="fa fa-plus-circle"></i></a>
+									<a href="#" id="edit"><i class="fa fa-pencil"></i></a>
+								</div>
+							</li>
+							<li>
+								<div class="info">
+									<span class="title">Specjalizacje:</span>	
+									<div class="field one">
+										<fieldset>	
+											<input type="text" value="Chirurgia ogólna" placeholder="Specjalizacha" disabled>						
+										</fieldset>	
+										<fieldset>						
+											<a href="#" class="delete"><i class="fa fa-trash-o"></i></a>	
+										</fieldset>	
+									</div>
+									<div class="field one">
+										<fieldset>	
+											<input type="text" value="" placeholder="Specjalizacja">						
+										</fieldset>	
+										<fieldset>						
+											<a href="#" class="delete"><i class="fa fa-trash-o"></i></a>	
+										</fieldset>	
+									</div>
+								</div>										
+								<div class="action block">
+									<a href="#"><i class="fa fa-plus-circle"></i></a>
+									<a href="#" id="edit"><i class="fa fa-pencil"></i></a>
+								</div>
+							</li>
+							<li>
+								<div class="info">
+									<span class="title">Języki:</span>	
+									<div class="field one">
+										<fieldset>	
+											<input type="text" value="Angielski" placeholder="Język">						
+										</fieldset>	
+										<fieldset>						
+											<a href="#" class="delete"><i class="fa fa-trash-o"></i></a>	
+										</fieldset>	
+									</div>
+									<div class="field one">
+										<fieldset>	
+											<input type="text" value="Rosyjski" placeholder="Język">						
+										</fieldset>	
+										<fieldset>						
+											<a href="#" class="delete"><i class="fa fa-trash-o"></i></a>	
+										</fieldset>	
+									</div>
+									<div class="field one">
+										<fieldset>	
+											<input type="text" value="" placeholder="Język">						
+										</fieldset>	
+										<fieldset>						
+											<a href="#" class="delete"><i class="fa fa-trash-o"></i></a>	
+										</fieldset>	
+									</div>
+								</div>										
+								<div class="action block">
+									<a href="#"><i class="fa fa-plus-circle"></i></a>
+									<a href="#" id="edit"><i class="fa fa-pencil"></i></a>
+								</div>
+							</li>
+							<li>
+								<div class="info">
+									<span class="title">Certyfikaty:</span>	
+									<div class="field">
+										
+										<div class="images">
+											<img src="images/sample-men.jpg" alt="Mateusz Kowalski">
+											<a href="#" class="delete"><i class="fa fa-trash-o"></i></a>
+										</div>
+										<div class="images">
+											<img src="images/sample-men.jpg" alt="Mateusz Kowalski">
+											<a href="#" class="delete"><i class="fa fa-trash-o"></i></a>
+										</div>
+										<div class="images">
+											<img src="images/sample-men.jpg" alt="Mateusz Kowalski">
+											<a href="#" class="delete"><i class="fa fa-trash-o"></i></a>
+										</div>
+										<div class="images">
+											<img src="images/sample-men.jpg" alt="Mateusz Kowalski">
+											<a href="#" class="delete"><i class="fa fa-trash-o"></i></a>
+										</div>
+										<div class="images">
+											<img src="images/sample-men.jpg" alt="Mateusz Kowalski">
+											<a href="#" class="delete"><i class="fa fa-trash-o"></i></a>
+										</div>
+										<div class="images">
+											<img src="images/sample-men.jpg" alt="Mateusz Kowalski">
+											<a href="#" class="delete"><i class="fa fa-trash-o"></i></a>
+										</div>
+										<div class="images">
+											<img src="images/sample-men.jpg" alt="Mateusz Kowalski">
+											<a href="#" class="delete"><i class="fa fa-trash-o"></i></a>
+										</div>
+																				
+									</div>
+								</div>										
+								<div class="action block">
+									<input type="file" name="file" id="file" class="input-file" />
+									<label class="upload"  for="file"><i class="fa fa-upload"></i></label>	
+									
+								</div>
+							</li>	
+							
+							
+						</ul>		
+					</div>
+				</div>
+			</div>			
+		</section>
+	</section>
+</div>
+
+
+<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="js/jquery.nice-select.min.js"></script>
+<script type="text/javascript" src="js/jquery.elastic.js"></script>
+<script type="text/javascript" src="js/jquery.minicolors.min.js"></script>
+<script type="text/javascript" src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
