@@ -10,8 +10,10 @@
 	<link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" media="screen" />
 	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" type="text/css" media="screen" />
 	<link rel="stylesheet" href="elements.css" type="text/css" media="screen" />
-	<link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/jquery.bxslider.css" type="text/css" media="screen" />
 	
+	<link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/jguery.Select.css" type="text/css" media="screen" />
 </head>
 <body>
 
@@ -45,7 +47,7 @@
 					<li><a href="cabinet_list.html"><i class="fa fa-hospital-o"></i>Gabinet</a></li>
 					<li><a href="#"><i class="fa fa-inbox"></i>Wiadomości</a></li>
 					<li><a href="#"><i class="fa fa-cogs"></i>Moje konto</a></li>
-					<li><a href="#"><i class="fa fa-sign-out"></i>Wyloguj</a></li>
+					<li><a href="#"><i class="fa fa-power-off"></i>Wyloguj</a></li>
 				</ul>
 			</nav>			
 		</div>		
@@ -57,238 +59,180 @@
 	<section id="main-content">		
 		<div id="title">
 			<div class="content">
-				<h2><i class="fa fa-search"></i> Wyszukiwarka</h2>
+				<h2>Wyszukiwarka</h2>
 				<nav>
-						
-				</nav>	
+					<ul id="bx-pager">
+						<li class="active"> <a data-slide-index="0" href=""><i class="fa fa-list"></i> <span>Lista wynikow</span></a></li>
+						<li><a href="#"> <a data-slide-index="1" href=""><i class="fa fa-map-marker"></i> <span>Pokaż na mapie</span></a></li>
+					</ul>	
+				</nav>					
+			</div>
+			<div class="action">
+				<a href="#"><i class="fa fa-bell-o"></i><span>20</span></a>
+				<a href="#"><i class="fa fa-power-off"></i></a>
 			</div>
 		</div>		
 		
 		<section id="search">			
 			<div class="row">
 				
-				<div class="col col-7">						
-					<div class="window">	
-						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d320513.1439457554!2d16.711685830748372!3d51.12674318241336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470fe9c2d4b58abf%3A0xb70956aec205e0f5!2zV3JvY8WCYXc!5e0!3m2!1spl!2spl!4v1452080125315" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-						<div class="layer">
-							<div class="filter">
-								<span class="title">Znajdź lekarza i umów wizytę</span>
-								<a href="#" class="btn blue md hide">
-									<i class="fa fa-eye-slash"></i> Ukryj okno
-								</a>
+				<div class="col col-7">
+					<div class="row">
+						<div class="window filter">
+							<span class="title hidden">Znajdź lekarza i umów wizytę</span>
+							<a href="#" class="btn blue md hidden ">
+								<i class="fa fa-eye-slash"></i> Zmniejsz okno
+							</a>
+							
+							<ul class="field">						
+								<li>
+									<label>Imię i nazwisko</label>
+									<fieldset>
+										<input type="text">
+									</fieldset>
+								</li>
+								<li>
+									<label>Specjalizacja</label>
+									<fieldset>
+										<select>
+											<option value="1">Some option</option>
+											<option value="2">Another option</option>
+											<option value="3" disabled>A disabled option</option>
+											<option value="4">Potato</option>
+										</select>
+									</fieldset>
+								</li>
+								<li class="hidden">
+									<ul class="field">
+										<li>
+											<label>Miasto</label>
+											<fieldset>
+												<input type="text">
+											</fieldset>
+										</li>
+										<li>
+											<label>Województwo</label>
+											<fieldset>
+												<input type="text">
+											</fieldset>
+										</li>
+									</ul>								
+								</li>
+								<li class="hidden">
+									<ul class="field">
+										<li class="time">
+											<label>Termin od</label>
+											<fieldset>
+												<input type="text"><i class="fa fa-calendar"></i>
+											</fieldset>
+										</li>
+										<li class="time">
+											<label>Termin do</label>
+											<fieldset>
+												<input type="text"><i class="fa fa-calendar"></i>
+											</fieldset>
+										</li>
+									</ul>								
+								</li>
+							</ul>						
+							<ul class="action">
+								<li>	
+									<button type="submit" class="btn blue md">
+										<i class="fa fa-search"></i> Wyszukaj
+									</button>
+								</li>
 								
-								<ul class="field">						
+								<li>	
+									<button type="submit" class="btn cw md">
+										<i class="fa fa-eraser"></i> Wyczyść
+									</button>
+								</li>							
+							</ul>		
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col col-7">					
+					<div class="row">
+						<div class="col col-8">						
+							<div class="window">						
+								<ul class="bxslider">
 									<li>
-										<label>Imię i nazwisko</label>
-										<fieldset>
-											<input type="text">
-										</fieldset>
+										<div class="col col-8">							
+										<ul  class="list">
+											<li>												
+												<div class="box first">		
+													<span class="name">
+														<span class="title">prof. dr. hab</span> Tomasz Terlikowski											
+														<span class="specialization">specjalizacja: chirurgia ogólna</span>
+													</span>		
+													<div class="pic">
+														<div class="images">
+															<img src="images/sample-men.jpg" alt="Mateusz Kowalski">
+															<a href="#" class="more">
+																<i class="fa fa-eye"></i>
+															</a>
+														</div>											
+													</div>											
+												</div>									
+												<div class="box">
+													<span>
+														<a href="">
+															NIEPUBLICZNY ZAKŁAD OPIEKI ZDROWOTNEJ "MULTI-MEDYK" SP. Z O.O.
+														</a>
+													</span>
+													<span class="address">
+														ul. Woronicza 17, 55-44 Wrocław 
+													</span>
+													
+													
+												</div>	
+												<div class="box calendar">
+													<span>
+														<a href="">
+															Najbliższe terminy
+														</a>
+													</span>
+													<ul class="days">
+														<li><span>29.03.15</span></li>
+														<li><span>29.03.15</span></li>
+														<li><span>29.03.15</span></li>
+														<li><span>29.03.15</span></li>
+														<li><span>29.03.15</span></li>
+													</ul>		
+													<ul class="day">
+														<li>9:00</li>
+														<li>12:20</li>
+														<li>14:30</li>
+														<li>16:00</li>
+														<li>12:20</li>
+													</ul>
+												</div>	
+												<div class="box action">												
+													<a href="#">A</a>
+												</div>
+											</li>	
+											
+										</ul>
 									</li>
-									<li>
-										<label>Specjalizacja</label>
-										<fieldset>
-											<input type="text">
-										</fieldset>
+									<li>									
+										<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d320513.1439457554!2d16.711685830748372!3d51.12674318241336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470fe9c2d4b58abf%3A0xb70956aec205e0f5!2zV3JvY8WCYXc!5e0!3m2!1spl!2spl!4v1452080125315" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 									</li>
-									<li>
-										<ul class="field">
-											<li>
-												<label>Miasto</label>
-												<fieldset>
-													<input type="text">
-												</fieldset>
-											</li>
-											<li>
-												<label>Województwo</label>
-												<fieldset>
-													<input type="text">
-												</fieldset>
-											</li>
-										</ul>								
-									</li>
-									<li>
-										<ul class="field">
-											<li class="time">
-												<label>Termin od</label>
-												<fieldset>
-													<input type="text"><i class="fa fa-calendar"></i>
-												</fieldset>
-											</li>
-											<li class="time">
-												<label>Termin do</label>
-												<fieldset>
-													<input type="text"><i class="fa fa-calendar"></i>
-												</fieldset>
-											</li>
-										</ul>								
-									</li>
-								</ul>						
-								<ul class="action">
-									<li>	
-										<button type="submit" class="btn blue md">
-											<i class="fa fa-search"></i> Wyszukaj
-										</button>
-									</li>
-									
-									<li>	
-										<button type="submit" class="btn cw md">
-											<i class="fa fa-eraser"></i> Wyczyść
-										</button>
-									</li>							
-								</ul>		
+								</ul>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			
-			<div class="row result">	
-				<div class="col col-7">						
-					<div class="window">		
-						<div class="col col-8">							
-							<ul class="result">
-								<li>
-									<div class="box">								
-										<div class="pic">
-											<div class="images">
-												<img src="images/sample-men.jpg" alt="Mateusz Kowalski">
-												<a href="#" class="more">
-													<i class="fa fa-eye"></i>
-												</a>
-											</div>
-											<span class="rating">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star-o"></i>
-												<i class="fa fa-star-o"></i>
-											</span>	
-										</div>
-										<div class="name">
-											<span class="title">
-												<i class="fa fa-user-md"></i> Tomasz Terlikowski
-												<span class="specialization">prof. dr. hab</span>
-											</span>												
-											specjalizacja: blalblalbla
-										</div>
-										<div class="opinion">
-											Sympatyczny, cierpliwy, dokładny i otwarty. Wyczerpująco odpowiada na wszystkie pytania, również te ...
-										
-											<a href="#">
-												Czytaj więcej
-											</a>
-										</div>
-									</div>
-									<div class="box">
-										<span class="title">
-											<i class="fa fa-hospital-o"></i> Narodowy Ruch Wypierdolenia Terlikowskiego w kosmos
-										</span>
-										<span>
-											<i class="fa fa-map-marker"></i> ul. Woronicza 17, 55-44 Wrocław  <a href="#" class="pin">A</a>
-										</span>
-										<span>	
-											<i class="fa fa-phone"></i>+ 48 444 223 443
-										</span>	
-										<span>	
-											<i class="fa fa-envelope-o"></i><a href="mailto:">gregory.house@drhouse.pl</a>
-										</span>
-									</div>
-									<div class="box">
-										<span class="title">
-											<i class="fa fa-calendar"></i> Najbliższa wizyta 
-											<span class="date">29.10.2013 godz. 12:00</span>
-										</span>
-									</div>
-								</li>
-								
-								<li>
-									<div class="box">								
-										<div class="pic">
-											<div class="images">
-												<img src="images/sample-men.jpg" alt="Mateusz Kowalski">
-												<a href="#" class="more">
-													<i class="fa fa-eye"></i>
-												</a>
-											</div>
-											<span class="rating">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star-o"></i>
-												<i class="fa fa-star-o"></i>
-											</span>	
-										</div>
-										<div class="name">
-											<span class="title">
-												<i class="fa fa-user-md"></i> Tomasz Terlikowski
-												<span class="specialization">prof. dr. hab</span>
-											</span>												
-											specjalizacja: blalblalbla
-										</div>
-										<div class="opinion">
-											Sympatyczny, cierpliwy, dokładny i otwarty. Wyczerpująco odpowiada na wszystkie pytania, również te ...
-										
-											<a href="#">
-												Czytaj więcej
-											</a>
-										</div>
-									</div>
-									<div class="box">
-										<span class="title">
-											<i class="fa fa-hospital-o"></i> Narodowy Ruch Wypierdolenia Terlikowskiego w kosmos
-										</span>
-										<span>
-											<i class="fa fa-map-marker"></i> ul. Woronicza 17, 55-44 Wrocław <a href="#" class="pin">B</a>
-										</span>
-										<span>	
-											<i class="fa fa-phone"></i>+ 48 444 223 443
-										</span>	
-										<span>	
-											<i class="fa fa-envelope-o"></i><a href="mailto:">gregory.house@drhouse.pl</a>
-										</span>
-									</div>
-									<div class="box">
-										<span class="title">
-											<i class="fa fa-calendar"></i> Najbliższa wizyta 
-											<span class="date">29.10.2013 godz. 12:00</span>
-										</span>
-										<div class="calendar">
-											<ul class="calendar">
-												<li>
-												 wolne
-												</li>
-												<li>
-												wolne
-												</li>
-												<li>
-												wolne
-												</li>
-											</ul>
-										<div>
-										
-									</div>
-								</li>
-								
-								
-							</ul>								
-				
-							
-							
-						</div>
-						
-					</div>
-				</div>				
-			</div>			
 		</section>
 	</section>
 </div>
 	
 
-
-
-
-
 <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="js/jquery.nice-select.min.js"></script>
+<script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
 <script type="text/javascript" src="js/jquery.mCustomScrollbar.concat.min.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
 </body>

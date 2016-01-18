@@ -10,7 +10,9 @@
 	<link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" media="screen" />
 	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" type="text/css" media="screen" />
 	<link rel="stylesheet" href="elements.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/jquery.bxslider.css" type="text/css" media="screen" />	
 	<link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/jguery.Select.css" type="text/css" media="screen" />
 	
 </head>
 <body>
@@ -45,7 +47,7 @@
 					<li><a href="cabinet_list.html"><i class="fa fa-hospital-o"></i>Gabinet</a></li>
 					<li><a href="#"><i class="fa fa-inbox"></i>Wiadomości</a></li>
 					<li><a href="#"><i class="fa fa-cogs"></i>Moje konto</a></li>
-					<li><a href="#"><i class="fa fa-sign-out"></i>Wyloguj</a></li>
+					<li><a href="#"><i class="fa fa-power-off"></i>Wyloguj</a></li>
 				</ul>
 			</nav>			
 		</div>		
@@ -57,43 +59,66 @@
 	<section id="main-content">		
 		<div id="title">
 			<div class="content">
-				<h2><i class="fa fa-calendar"></i> Kalendarz</h2>
+				<h2>Kalendarz</h2>
 				<nav>
 					<ul>
-						<li class="active"><a href="calendar_1day.html"><i class="fa fa-calendar"></i>Dzienny</a></li>
-						<li><a href="calendar_7days.html"><i class="fa fa-calendar"></i>Tygodnowy</a></li>
-						<li><a href="calendar_30days.html"><i class="fa fa-calendar"></i>Miesięczny</a></li>
-						<li><a href="#"><i class="fa fa-file-o"></i>Notatki</a></li>
+						<li class="active"><a href="calendar_1day.html"><i class="fa fa-calendar"></i><span>Dzienny</span></a></li>
+						<li><a href="calendar_7days.html"><i class="fa fa-calendar"></i><span>Tygodnowy</span></a></li>
+						<li><a href="calendar_30days.html"><i class="fa fa-calendar"></i><span>Miesięczny</span></a></li>
+						<li><a href="#"><i class="fa fa-file-o"></i><span>Notatki</span></a></li>
 					</ul>
 				</nav>	
 			</div>
-		</div>		
+			<div class="action">
+				<a href="#"><i class="fa fa-bell-o"></i><span>20</span></a>
+				<a href="#"><i class="fa fa-power-off"></i></a>
+			</div>				
+		</div>	
 		
 		<section id="calendar">			
 			<div class="row">
 				<div class="oneday">	
 					<div class="col col-7">		
 						<div class="window">						
-							<div class="wrapper">
-								<div class="date">
-									<a href="#"><i class="fa fa-angle-left"></i></a>
+							<div class="title-window">
+								<div class="choose">
+									<fieldset>
+										<select>
+											<option value="1">Wybierz gabinet</option>
+											<option value="2">NFZ Róża</option>
+											<option value="3">Remedis</option>
+										</select>
+									</fieldset>
+								</div>
+								<div class="box">
+									<a href="#" class="left"><i class="fa fa-angle-left"></i></a>
 									<span>
 										5 maja 2015
 									</span>
-									<a href="#"><i class="fa fa-angle-right"></i></a>
+									<a href="#" class="right"><i class="fa fa-angle-right"></i></a>
 									<a href="#" class="calendar"><i class="fa fa-calendar"></i></a>
 								</div>
 								<div class="visit">
-									Zaplanowane wizyty na dziś <span>91</span>
+									Zaplanowane wizyty na dziś <span>39</span>
+								</div>
+								<div class="legend">
+									<a href="#"><i class="fa fa-list-ul"></i> Legenda</a>									
+									<ul class="position">
+										<li><span style="background:green"></span>Badanie kontrolne (10 min)</li>
+										<li><span style="background:red"></span>Ekstrakcja zęba (20 min)</li>
+										<li><span style="background:orange"></span>Wybielanie zębów (10 min)</li>
+									</ul>									
 								</div>
 							</div>
 						
 							<div class="row">
+								
 								<div class="col col-3">
-									<div class="days">					
-										<div class="box">Poniedziałek 29.05.2015</div>
-									</div>			
+									<ul class="days">					
+										<li>Poniedziałek 29.05.2015</li>
+									</ul>			
 									<ul class="table">
+										<div class="timeline" style="top:35%">9:45</div>
 										<li class="hour">
 											<div class="day">
 												<div class="box">
@@ -122,30 +147,24 @@
 											</div>
 										</li>
 										<li>
-											<div class="day">
-												<div class="box">
-													
-												</div>
+											<div class="event" style="top:30%; height:230px; background:green;">
+												<a href="#"></a>
+												<span>K. Kowalski</span>								
 											</div>
 											<div class="day">
-												<div class="box">
-													
-												</div>
+												<div class="box"></div>
 											</div>
 											<div class="day">
-												<div class="box">
-													
-												</div>
+												<div class="box"></div>
 											</div>
 											<div class="day">
-												<div class="box">
-													
-												</div>
+												<div class="box"></div>
 											</div>
 											<div class="day">
-												<div class="box">
-													
-												</div>
+											<div class="box"></div>
+											</div>
+											<div class="day">
+												<div class="box"></div>
 											</div>
 										</li>
 									</ul>
@@ -158,7 +177,7 @@
 										<div class="images">
 											<img src="images/sample-men.jpg" alt="Mateusz Kowalski">
 										</div>
-										<ul>
+										<ul class="data">
 											<li>
 												<span class="title">Prowadzący:</span>
 											</li>
@@ -193,8 +212,7 @@
 												</button>
 											</li>
 										</ul>										
-									</div>
-									
+									</div>									
 									<div class="pagination">
 										<a href="#" class="prev">
 											<i class="fa fa-angle-left"></i> Poprzedni pacjent
@@ -213,8 +231,9 @@
 	</section>
 </div>
 
-
 <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="js/jquery.nice-select.min.js"></script>
+<script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
 <script type="text/javascript" src="js/jquery.mCustomScrollbar.concat.min.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
 </body>

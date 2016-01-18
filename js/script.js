@@ -57,24 +57,33 @@
 	});
 		
 	$(window).resize();
-	
-// SELECT
 
-$(document).ready(function() {
-	$('select').niceSelect();
-});	
 
-// SELECT
+// RESIZE FILTER IF SCROLL
+
+$(function(){
+	$(window).scroll(function() {
+		if ($(this).scrollTop() > 20) {
+			$('.filter').addClass('small');
+		} else {
+			$('.filter').removeClass('small');
+		}
+	});			
+});
+
+
+
+
+// DELETE COMPONENT	
 
 // TABS 
 
-
 $(document).ready(function(){
 	
-	$('ul.tabs li').click(function(){
+	$('nav li').click(function(){
 		var tab_id = $(this).attr('data-tab');
 
-		$('ul.tabs li').removeClass('current');
+		$('nav li').removeClass('current');
 		$('.tab-content').removeClass('current');
 
 		$(this).addClass('current');
@@ -84,10 +93,31 @@ $(document).ready(function(){
 });
 
 
+// SLIDER SEARCH 
+if ($('.bxslider').length > 0) { 
+   $('.bxslider').bxSlider({
+		pagerCustom: '#bx-pager',
+		mode: 'horizontal',
+	});
+}
+
+
+//  TEXTAREA COUNT SIGN (ADD ID!)
+	
+	
+	// $("section#visit textarea").keyup(function(){
+	  // $(".count span").text((500 - $(this).val().length));
+	// });
+
+// DELETE COMPONENT	
+
+
+
+
 
 // SOME ACION
 
-// SCROOL NAVIGATON
+// SCROLL NAVIGATON
 
 $(window).load(function(){
 	$("#navigation #wrapper").mCustomScrollbar({	
@@ -100,20 +130,58 @@ $(document).ready(function() {
 	
 				
 	// HIDE FILTER FIELD
-	// ZROBIĆ ŁADNĄ ANIMACJE, ZMIENIC KOMUNIKAT i IKONĘ ORAZ TITLE
+	// CREATE BEAUTIFU HIDDEN ANIMATION :)
 	
 	$('.hide').click(function(){
 		$(this).parent().toggleClass('hidden');
 	
 	});
 	
-	//  TEXTAREA COUNT SIGN (ADD ID!)
+	// LEGEND SHOW / HIDE
 	
-	$("section#visit textarea").keyup(function(){
-	  $(".count span").text((500 - $(this).val().length));
+	$('.legend a').click(function(e){
+		e.preventDefault();
+		$('ul.position').slideToggle('fast');
+	
 	});
 	
-	
+	// TEXTAREA CABINET HEIGHT
+	if ($('.elastic').length > 0) { 
+		$('.elastic').elastic();
+	}
+		
+	// SELECT
 
+	$('select').niceSelect();
+
+	// SELECT
+	
+	
+	// COLOR PICKER
+	if ($('.colorpicker').length > 0) { 
+		$('.colorpicker').each( function() {
+				$(this).minicolors({
+				control: $(this).attr('data-control') || 'hue',
+				defaultValue: $(this).attr('data-defaultValue') || '',
+				format: $(this).attr('data-format') || 'hex',
+				keywords: $(this).attr('data-keywords') || '',
+				inline: $(this).attr('data-inline') === 'true',
+				letterCase: $(this).attr('data-letterCase') || 'lowercase',
+				opacity: $(this).attr('data-opacity'),
+				position: $(this).attr('data-position') || 'bottom left',
+				change: function(value, opacity) {
+					if( !value ) return;
+					if( opacity ) value += ', ' + opacity;
+					if( typeof console === 'object' ) {
+						console.log(value);
+					}
+				},
+				theme: 'default'
+			});
+
+		});
+	}
+
+	// COLOR PICKER
 	
 });

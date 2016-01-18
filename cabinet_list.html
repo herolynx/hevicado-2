@@ -52,45 +52,54 @@
 	<section id="main-content">		
 		<div id="title">
 			<div class="content">
-				<h2><i class="fa fa-calendar"></i> Tutuł</h2>
+				<h2>Gabinet</h2>
 				<nav>
 					<ul>
-						<li class="active"><a href="#"><i class="fa fa-calendar"></i>Menu 1</a></li>
-						<li><a href="#"><i class="fa fa-calendar"></i>Menu 1</a></li>
-						<li><a href="#"><i class="fa fa-calendar"></i>Menu 1</a></li>
+						<li class="active"><a href="#"><i class="fa fa-plus-square-o"></i><span>Dodaj nowy</span></a></li>
+						<li class="active"><a href="doctor_about_me.html"><i class="fa fa-user-md"></i><span>Strona o mnie</span></a></li>
 					</ul>
-				</nav>	
+				</nav>
+				<div class="action">
+					<a href="#"><i class="fa fa-bell-o"></i><span>20</span></a>
+					<a href="#"><i class="fa fa-power-off"></i></a>
+				</div>				
 			</div>
 		</div>		
 		
 		<section id="cabinet">			
 			<div class="row">
-				<div class="col col-4">							
+				<div class="col col-5">							
 					<div class="window">
-						<div class="add">
-							<button type="submit" class="btn blue md">
-								<i class="fa fa-plus-circle"></i> Dodaj nowy
-							</button>
+						<div class="title-window">							
+							<div class="box">								
+								<span>
+									Lista Gabinetów
+								</span>								
+							</div>							
 						</div>
-						<ul class="list">							
+						<ul class="data">							
 							<li class="deactive">
 								<div class="info">									
-									<a href="#">Niepubliczny Zakład Medycyny Stosowanej</a>
+									<a href="#"><i class="fa fa-eye-slash"></i> Niepubliczny Zakład Medycyny Stosowanej</a>
 								</div>
-								<div class="action">
-									<a href="#"><i class="fa fa-eye-slash"></i></a>
+								<div class="action line">
+									<div class="switch">
+										<input type="checkbox" name="switch" class="switch-checkbox" id="id1">
+										<label class="switch-label" for="id1"></label>
+									</div>
 									<a href="#"><i class="fa fa-trash-o"></i></a>
-									<a href="#" class="disabled"><i class="fa fa-chevron-right"></i></a>
 								</div>
 							</li>
 							<li>
 								<div class="info">									
 									<a href="cabinet_info.html">Niepubliczny Zakład Medycyny Stosowanej</a>
 								</div>
-								<div class="action">
-									<a href="#"><i class="fa fa-eye-slash"></i></a>
+								<div class="action line">
+									<div class="switch">
+										<input type="checkbox" name="switch" class="switch-checkbox" id="id2" checked>
+										<label class="switch-label" for="id2"></label>
+									</div>					
 									<a href="#"><i class="fa fa-trash-o"></i></a>
-									<a href="#" class="disabled"><i class="fa fa-chevron-right"></i></a>
 								</div>
 							</li>
 						</ul>		
@@ -102,9 +111,9 @@
 </div>
 
 
-
-
 <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="js/jquery.nice-select.min.js"></script>
+<script type="text/javascript" src="js/jquery.mCustomScrollbar.concat.min.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

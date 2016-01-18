@@ -212,6 +212,7 @@
 }
 .col-5 {
 	width: 66%;
+	.maxw(890px);
 }
 .col-4 {
 	width: 55%;
@@ -286,37 +287,45 @@
 
 /* CHECKBOX ON / OFF */
 
-.onoffswitch {
+.switch {
     position: relative; width: 50px;
     -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
 }
-.onoffswitch-checkbox {
+
+.switch-checkbox {
     display: none;
 }
-.onoffswitch-label {
-    display: block; overflow: hidden; cursor: pointer;
-    height: 20px; padding: 0; line-height: 20px;
-    border: 1px solid #e6e6e6; border-radius: 20px;
+
+.switch-label {
+    display: block; 
+	overflow: hidden; 
+	cursor: pointer;
+    height: 24px; 
+	padding: 0;
+	line-height: 20px;
+    border: 1px solid #e6e6e6;
+	border-radius: 20px;
     background-color: #F4F4F4;
     transition: background-color 0.3s ease-in;
 }
-.onoffswitch-label:before {
+
+.switch-label:before {
     content: "";
-    display: block; width: 20px; margin: 0px;
-    background: @blue-light;
-    position: absolute; top: 0; bottom: 0;
-    right: 28px;
+    display: block; 
+	width: 20px; 
+	.h(20px);
+	margin: 0px;
+    position: absolute; 
+	top: 2px; 
+	bottom: 0;
+    right: 26px;
     border: 1px solid #e6e6e6; border-radius: 20px;
     transition: all 0.3s ease-in 0s; 
+	background-color: @grey-2;
 }
-.onoffswitch-checkbox:checked + .onoffswitch-label {
-    background-color: #F4F4F4;
-}
-.onoffswitch-checkbox:checked + .onoffswitch-label, .onoffswitch-checkbox:checked + .onoffswitch-label:before {
-   border-color: #F4F4F4;
-}
-.onoffswitch-checkbox:checked + .onoffswitch-label:before {
-    right: 0px; 
+
+.switch-checkbox:checked + .switch-label:before {
+    right: 2px; 
 }
 
 /* CHECKBOX ON / OFF */
@@ -334,6 +343,192 @@
 	.w;
 }	
 
+
+.title-window {
+	.fl;
+	.dib;
+	.bb(1px solid @border-1);
+	.w;
+	.center;
+	.mb(15px);
+	.relative;
+	
+	.choose {
+		.absolute;
+		top:0;
+		left:0;
+		.w(200px);
+	}
+	
+	.box {
+		.size(32px);
+		.relative;
+		.dib;
+		.w(auto)!important;
+		.mb(15px);
+		.b(0)!important;
+		.pp(0)!important;
+		.minh(auto)!important;
+		
+		.left, .right {
+			i {
+				.size(38px)!important;
+			}
+		}
+		
+		.left {
+			.mr(20px);
+		}
+		
+		.right {
+			.ml(20px);
+		}
+		
+		i {
+			.size(39px);
+		}
+		
+		span {
+			.dib!important;
+			.w(auto)!important;
+		}
+		
+		.calendar {
+			.absolute;
+			top:-3px;
+			right:-50px;
+			
+			i {
+				.size(25px)!important;
+				.relative;			
+			}
+		}
+	}
+	
+	.visit {
+		.m(auto);
+		.m(0 0 15px);
+		.size(14px);
+		.c(@grey-1);
+		
+		span {
+			.box-sizing;			
+			.radius(100%);
+			.c(#FFF);
+			.h(23px);
+			.w(23px);
+			.dib;
+			.lh(23px);
+			.relative;
+			.ml(1px);				
+		}
+	}
+	
+	.legend {
+		.fl;
+		.w;		
+		.left;
+		.fw(300);
+		.mt(-36px);
+		
+		a {			
+			.tdn;
+			.c(@blue-1)!important;
+			.size(14px)!important;
+			&:hover {
+				.c(@blue-2);
+			}
+		}
+		
+		ul.position {
+			.fl;
+			.w;
+			.bg(#f4f4f4);
+			.pp(8px 10px);
+			.box-sizing;
+			.m(7px 0 5px);
+			box-shadow:inset 1px 1px 1px rgba(0,0,0,0.05);
+			.radius(3px);
+			.b(0);
+			.dn;
+			
+			li {
+				.di;
+				.m(5px 10px);
+				.b(0);
+				
+				&:first-child {
+					.ml(0);
+				}
+			}
+		}
+		
+		span {
+			.dib;
+			.mr(5px);
+			.w(10px);
+			.h(10px);
+			.b(1px solid #FFF);
+		}
+		
+	}
+}
+
+@media only screen and (max-width : 768px){
+	.title-window {
+		.choose {
+			.relative;
+			.mb(10px);
+			.w;
+		}
+	}
+}
+
+@media only screen and (max-width : 480px){
+	.title-window {
+		.box {
+			.size(26px);
+						
+			.left, .right {
+				i {
+					.size(32px)!important;
+				}
+			}
+			
+			.left {
+				.mr(10px);
+			}
+			
+			.right {
+				.ml(10px);
+			}			
+			
+			.calendar {
+				.relative;
+				top:0px;
+				right:-10px;
+				.dib;
+			}				
+		}
+		
+		.legend {
+			.mt(-10px);
+			.center;
+			.mb(5px);
+			
+			ul.position {
+				.pp(0px 10px);
+				
+				li {
+					.db;
+					.w;
+					.m(5px 0);
+					.left;
+				}
+			}		
+		}
+	}	
+}
 /* OPEN WINDOW */
 
 #layer {
@@ -489,7 +684,9 @@
 					.pp(8px 10px);
 					.radius(3px);
 					.c(#FFF);
-					.size(12px);
+					.box-sizing;
+					.dib;
+					.w;
 					
 					i {
 						.m(5px);
@@ -523,14 +720,14 @@
 			.c(#FFF);
 			
 			&:before {
-				.bg(@blue-light);
+				.bg(@blue-1);
 			}
 		}
 		
 		.date {
 			.fl;
 			.w;
-			.bg(@blue-light);
+			.bg(@blue-1);
 			.pp(15px 20px);
 			.radius(4px 4px 0 0);
 			.box-sizing;
@@ -573,7 +770,7 @@
 			
 			a {
 				.tdn;
-				.c(@blue-light);
+				.c(@blue-1);
 			}
 			
 			i {
@@ -603,7 +800,7 @@
 				}
 							
 				.day {
-					.c(@blue-light);
+					.c(@blue-1);
 				}
 				
 				a {
@@ -628,7 +825,7 @@
 						
 						&:before {
 							content:'';
-							.bg(@blue-light);
+							.bg(@blue-1);
 							.w(25px);
 							.h(25px);
 							.absolute;
@@ -645,7 +842,7 @@
 					
 					&:before {
 						content:'';
-						.bg(@blue-light);
+						.bg(@blue-1);
 						.w(25px);
 						.h(25px);
 						.absolute;
@@ -667,34 +864,62 @@
 
 
 /* COLOR */
-@blue-dark: #004579;
-@blue-light: #0167B9;
-@grey-4: #DEDEDE;
-@grey-3: #B7B7B7;
-@grey-2: #717171;
+
+
+@blue-3: #0099FF;
+@blue-2: #005494;
+@blue-1: #0090ff;
+
+@border-1: #e6e6e4;
+
+@grey-3: #DEDEDE;
+@grey-2: #B9B9B9;
 @grey-1: #2F2F2F;
+
+
+
 .blue {
 
 	.btn {
-		.bg(@blue-light);
-		.bb(2px solid @blue-dark);
+		.bg(@blue-1);
+		.bb(2px solid rgba(0,0,0,0.2));
+		cursor:pointer;
 		
 		&:hover {
-			.bg(@blue-dark);
-			.bb(2px solid #000);
+			.bg(@blue-2);
+			.bb(2px solid rgba(0,0,0,0.6));
 		}
 	}
+	
+	label.btn {
+		top:10px;
+		.relative;
+	}
+	
+	.switch-checkbox:checked + .switch-label {
+		.bg(@blue-1);
+	}
+	
+	.switch-checkbox:checked + .switch-label:before {
+		.bg(#f4f4f4);
+	}
+	
 }
 
 
 
 /* OTHER CLASS */
 
+/* UPLOAD FILE INPUT */
 
-a.disabled {
-	cursor: default;
+.input-file {
+	width: 0;
+	height: 0;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
 }
-
 
 
 /* PAGINATION */
@@ -712,10 +937,11 @@ a.disabled {
 		.pp(10px);
 		.box-sizing;
 		.radius(5px);
+		.bb(2px solid transparent);
 		
-		&:hover {
-			.bg(red);
+		&:hover {			
 			.c(#FFF)!important;
+			.bb(2px solid rgba(0, 0, 0, 0.6));
 			
 			i {
 				.c(#FFF)!important;
@@ -772,7 +998,7 @@ a.disabled {
 	}	
 	
 	ul.tabs li.current{
-		.bg(@blue-light);	
+		.bg(@blue-1);	
 		.c(#FFF);
 	}
 
