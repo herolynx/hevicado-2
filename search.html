@@ -4,16 +4,12 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 	<title>Hevicado 2.0</title>
-
 	<link href='https://fonts.googleapis.com/css?family=Lato:400,700,900,300,100' rel='stylesheet' type='text/css'>
-
 	<link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" media="screen" />
 	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" type="text/css" media="screen" />
 	<link rel="stylesheet" href="elements.css" type="text/css" media="screen" />
-	<link rel="stylesheet" href="css/jquery.bxslider.css" type="text/css" media="screen" />
-	
 	<link rel="stylesheet" href="style.css" type="text/css" media="screen" />
-	<link rel="stylesheet" href="css/jguery.Select.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/jguery.Select.css" type="text/css" media="screen" />	
 </head>
 <body>
 
@@ -32,22 +28,24 @@
 					<img src="images/sample-men.jpg" alt="Mateusz Kowalski">
 				</div>
 				<span class="name">
-					Mateusz<br/>
-					Kowalski
+					<a href="my_account.html">
+					Mateusz<br/>Kowalski
+					</a>
 				</span>
 				<span>Lekarz</span>
 			</div>
 			<nav>
 				<ul>
 					<li class="active"><a href="search.html"><i class="fa fa-search"></i> Szukaj</a></li>
-					<li><a href="#"><i class="fa fa-area-chart"></i>Pulpit</a></li>
+					<li><a href="dashboard.html"><i class="fa fa-area-chart"></i>Pulpit</a></li>
 					<li><a href="calendar_30days.html"><i class="fa fa-calendar"></i>Kalnedarz</a></li>
-					<li><a href="#"><i class="fa fa-folder-open-o"></i>Karta Pacjenta</a></li>
+					<li><a href="card_patient.html"><i class="fa fa-folder-open-o"></i>Karta Pacjenta</a></li>
 					<li><a href="visit.html"><i class="fa fa-folder-open-o"></i>Moje wizyty</a></li>
 					<li><a href="cabinet_list.html"><i class="fa fa-hospital-o"></i>Gabinet</a></li>
-					<li><a href="#"><i class="fa fa-inbox"></i>Wiadomości</a></li>
-					<li><a href="#"><i class="fa fa-cogs"></i>Moje konto</a></li>
-					<li><a href="#"><i class="fa fa-power-off"></i>Wyloguj</a></li>
+					<li><a href="message.html"><i class="fa fa-inbox"></i>Wiadomości</a></li>
+					<li><a href="my_account.html"><i class="fa fa-cogs"></i>Moje konto</a></li>
+					<li><a href="statistic.html"><i class="fa fa-bar-chart"></i>Statystyki</a></li>
+					<li><a href="#"><i class="fa fa-sign-out"></i>Wyloguj</a></li>
 				</ul>
 			</nav>			
 		</div>		
@@ -233,7 +231,9 @@
 <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="js/jquery.nice-select.min.js"></script>
 <script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+<script type="text/javascript" src="js/chart.min.js"></script> 
 <script type="text/javascript" src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script type="text/javascript" src="js/masonry.pkgd.min.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
