@@ -4,17 +4,12 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 	<title>Hevicado 2.0</title>
-
 	<link href='https://fonts.googleapis.com/css?family=Lato:400,700,900,300,100' rel='stylesheet' type='text/css'>
-
 	<link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" media="screen" />
 	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" type="text/css" media="screen" />
-	<link rel="stylesheet" href="css/jquery.minicolors.css" type="text/css" media="screen" />
 	<link rel="stylesheet" href="elements.css" type="text/css" media="screen" />
-	<link rel="stylesheet" href="css/jquery.bxslider.css" type="text/css" media="screen" />	
 	<link rel="stylesheet" href="style.css" type="text/css" media="screen" />
-	<link rel="stylesheet" href="css/jguery.Select.css" type="text/css" media="screen" />
-	
+	<link rel="stylesheet" href="css/jguery.Select.css" type="text/css" media="screen" />	
 </head>
 <body>
 
@@ -31,21 +26,23 @@
 				<img src="images/sample-men.jpg" alt="Mateusz Kowalski">
 			</div>
 			<span class="name">
-				Mateusz<br/>
-				Kowalski
+				<a href="my_account.html">
+				Mateusz<br/>Kowalski
+				</a>
 			</span>
 			<span>Lekarz</span>
 		</div>
 		<nav>
 			<ul>
 				<li class="active"><a href="search.html"><i class="fa fa-search"></i> Szukaj</a></li>
-				<li><a href="#"><i class="fa fa-area-chart"></i>Pulpit</a></li>
+				<li><a href="dashboard.html"><i class="fa fa-area-chart"></i>Pulpit</a></li>
 				<li><a href="calendar_30days.html"><i class="fa fa-calendar"></i>Kalnedarz</a></li>
 				<li><a href="#"><i class="fa fa-folder-open-o"></i>Karta Pacjenta</a></li>
 				<li><a href="visit.html"><i class="fa fa-folder-open-o"></i>Moje wizyty</a></li>
 				<li><a href="cabinet_list.html"><i class="fa fa-hospital-o"></i>Gabinet</a></li>
 				<li><a href="#"><i class="fa fa-inbox"></i>Wiadomości</a></li>
-				<li><a href="#"><i class="fa fa-cogs"></i>Moje konto</a></li>
+				<li><a href="my_accout.html"><i class="fa fa-cogs"></i>Moje konto</a></li>
+				<li><a href="statistic.html"><i class="fa fa-bar-chart"></i>Statystyki</a></li>
 				<li><a href="#"><i class="fa fa-sign-out"></i>Wyloguj</a></li>
 			</ul>
 		</nav>
@@ -83,25 +80,24 @@
 						</div>
 						<ul class="data">
 							<li>
-								<div class="info">
+								<div class="info one">
 									<span class="title">Zdjęcie profilowe:</span>	
 									<div class="field">
 										<div class="images">
 											<img src="images/sample-men.jpg" alt="Mateusz Kowalski">
-											<a href="#" class="delete"><i class="fa fa-trash-o"></i></a>
+											<a href="#"><i class="fa fa-trash-o"></i></a>
 										</div>									
 									</div>
 								</div>										
 								<div class="action block">
 									<input type="file" name="file" id="file" class="input-file" />
 									<label class="upload"  for="file"><i class="fa fa-upload"></i></label>	
-									
 								</div>
 							</li>							
 							<li>
-								<div class="info">
+								<div class="info two">
 									<span class="title">Tytuł:</span>	
-									<div class="field one">
+									<div class="field">
 										<fieldset>	
 											<select>
 												<option value="1">lekarz </option>
@@ -118,7 +114,7 @@
 								</div>
 							</li>						
 							<li>
-								<div class="info">
+								<div class="info one">
 									<span class="title">O mnie:</span>
 									<textarea class="elastic">Niepubliczny Zakład Medycyny Stosowanej</textarea>
 								</div>										
@@ -127,23 +123,19 @@
 								</div>
 							</li>							
 							<li>
-								<div class="info">
+								<div class="info one">
 									<span class="title">Ukończone szkoły:</span>	
-									<div class="field one">
+									<div class="field">
 										<fieldset>	
 											<input type="text" value="4-letnie Studium Psychoterapii Analitycznej w Warszawie" placeholder="Uczelnia" disabled>						
-										</fieldset>	
-										<fieldset>						
 											<a href="#" class="delete"><i class="fa fa-trash-o"></i></a>	
 										</fieldset>	
 									</div>
-									<div class="field one">
+									<div class="field">
 										<fieldset>	
 											<input type="text" value="4-letnie Studium Psychoterapii Analitycznej w Warszawie" placeholder="Uczelnia">						
-										</fieldset>	
-										<fieldset>						
 											<a href="#" class="delete"><i class="fa fa-trash-o"></i></a>	
-										</fieldset>	
+										</fieldset>											
 									</div>
 								</div>										
 								<div class="action block">
@@ -152,21 +144,17 @@
 								</div>
 							</li>
 							<li>
-								<div class="info">
+								<div class="info one">
 									<span class="title">Specjalizacje:</span>	
-									<div class="field one">
+									<div class="field">
 										<fieldset>	
 											<input type="text" value="Chirurgia ogólna" placeholder="Specjalizacha" disabled>						
-										</fieldset>	
-										<fieldset>						
 											<a href="#" class="delete"><i class="fa fa-trash-o"></i></a>	
 										</fieldset>	
 									</div>
-									<div class="field one">
+									<div class="field">
 										<fieldset>	
-											<input type="text" value="" placeholder="Specjalizacja">						
-										</fieldset>	
-										<fieldset>						
+											<input type="text" value="" placeholder="Specjalizacja">														
 											<a href="#" class="delete"><i class="fa fa-trash-o"></i></a>	
 										</fieldset>	
 									</div>
@@ -177,29 +165,23 @@
 								</div>
 							</li>
 							<li>
-								<div class="info">
+								<div class="info one">
 									<span class="title">Języki:</span>	
-									<div class="field one">
+									<div class="field">
 										<fieldset>	
-											<input type="text" value="Angielski" placeholder="Język">						
-										</fieldset>	
-										<fieldset>						
+											<input type="text" value="Angielski" placeholder="Język">													
 											<a href="#" class="delete"><i class="fa fa-trash-o"></i></a>	
 										</fieldset>	
 									</div>
-									<div class="field one">
+									<div class="field">
 										<fieldset>	
-											<input type="text" value="Rosyjski" placeholder="Język">						
-										</fieldset>	
-										<fieldset>						
+											<input type="text" value="Rosyjski" placeholder="Język">														
 											<a href="#" class="delete"><i class="fa fa-trash-o"></i></a>	
 										</fieldset>	
 									</div>
-									<div class="field one">
+									<div class="field">
 										<fieldset>	
-											<input type="text" value="" placeholder="Język">						
-										</fieldset>	
-										<fieldset>						
+											<input type="text" value="" placeholder="Język">														
 											<a href="#" class="delete"><i class="fa fa-trash-o"></i></a>	
 										</fieldset>	
 									</div>
@@ -210,37 +192,37 @@
 								</div>
 							</li>
 							<li>
-								<div class="info">
+								<div class="info one">
 									<span class="title">Certyfikaty:</span>	
 									<div class="field">
 										
 										<div class="images">
 											<img src="images/sample-men.jpg" alt="Mateusz Kowalski">
-											<a href="#" class="delete"><i class="fa fa-trash-o"></i></a>
+											<a href="#"><i class="fa fa-trash-o"></i></a>
 										</div>
 										<div class="images">
 											<img src="images/sample-men.jpg" alt="Mateusz Kowalski">
-											<a href="#" class="delete"><i class="fa fa-trash-o"></i></a>
+											<a href="#"><i class="fa fa-trash-o"></i></a>
 										</div>
 										<div class="images">
 											<img src="images/sample-men.jpg" alt="Mateusz Kowalski">
-											<a href="#" class="delete"><i class="fa fa-trash-o"></i></a>
+											<a href="#"><i class="fa fa-trash-o"></i></a>
 										</div>
 										<div class="images">
 											<img src="images/sample-men.jpg" alt="Mateusz Kowalski">
-											<a href="#" class="delete"><i class="fa fa-trash-o"></i></a>
+											<a href="#"><i class="fa fa-trash-o"></i></a>
 										</div>
 										<div class="images">
 											<img src="images/sample-men.jpg" alt="Mateusz Kowalski">
-											<a href="#" class="delete"><i class="fa fa-trash-o"></i></a>
+											<a href="#"><i class="fa fa-trash-o"></i></a>
 										</div>
 										<div class="images">
 											<img src="images/sample-men.jpg" alt="Mateusz Kowalski">
-											<a href="#" class="delete"><i class="fa fa-trash-o"></i></a>
+											<a href="#"><i class="fa fa-trash-o"></i></a>
 										</div>
 										<div class="images">
 											<img src="images/sample-men.jpg" alt="Mateusz Kowalski">
-											<a href="#" class="delete"><i class="fa fa-trash-o"></i></a>
+											<a href="#"><i class="fa fa-trash-o"></i></a>
 										</div>
 																				
 									</div>
@@ -261,12 +243,12 @@
 	</section>
 </div>
 
-
 <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="js/jquery.nice-select.min.js"></script>
-<script type="text/javascript" src="js/jquery.elastic.js"></script>
-<script type="text/javascript" src="js/jquery.minicolors.min.js"></script>
+<script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+<script type="text/javascript" src="js/chart.min.js"></script> 
 <script type="text/javascript" src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script type="text/javascript" src="js/masonry.pkgd.min.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

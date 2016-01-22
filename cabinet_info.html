@@ -4,21 +4,12 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 	<title>Hevicado 2.0</title>
-
 	<link href='https://fonts.googleapis.com/css?family=Lato:400,700,900,300,100' rel='stylesheet' type='text/css'>
-	
-	
-	
 	<link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" media="screen" />
 	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" type="text/css" media="screen" />
-	<link rel="stylesheet" href="css/jquery.minicolors.css" type="text/css" media="screen" />
 	<link rel="stylesheet" href="elements.css" type="text/css" media="screen" />
-	<link rel="stylesheet" href="css/jquery.bxslider.css" type="text/css" media="screen" />	
 	<link rel="stylesheet" href="style.css" type="text/css" media="screen" />
-	<link rel="stylesheet" href="css/jguery.Select.css" type="text/css" media="screen" />
-
-
-	
+	<link rel="stylesheet" href="css/jguery.Select.css" type="text/css" media="screen" />	
 </head>
 <body>
 
@@ -35,22 +26,24 @@
 				<img src="images/sample-men.jpg" alt="Mateusz Kowalski">
 			</div>
 			<span class="name">
-				Mateusz<br/>
-				Kowalski
+				<a href="my_account.html">
+				Mateusz<br/>Kowalski
+				</a>
 			</span>
 			<span>Lekarz</span>
 		</div>
 		<nav>
 			<ul>
 				<li class="active"><a href="search.html"><i class="fa fa-search"></i> Szukaj</a></li>
-				<li><a href="#"><i class="fa fa-area-chart"></i>Pulpit</a></li>
+				<li><a href="dashboard.html"><i class="fa fa-area-chart"></i>Pulpit</a></li>
 				<li><a href="calendar_30days.html"><i class="fa fa-calendar"></i>Kalnedarz</a></li>
-				<li><a href="#"><i class="fa fa-folder-open-o"></i>Karta Pacjenta</a></li>
+				<li><a href="card_patient.html"><i class="fa fa-folder-open-o"></i>Karta Pacjenta</a></li>
 				<li><a href="visit.html"><i class="fa fa-folder-open-o"></i>Moje wizyty</a></li>
 				<li><a href="cabinet_list.html"><i class="fa fa-hospital-o"></i>Gabinet</a></li>
-				<li><a href="#"><i class="fa fa-inbox"></i>Wiadomości</a></li>
-				<li><a href="#"><i class="fa fa-cogs"></i>Moje konto</a></li>
-				<li><a href="#"><i class="fa fa-power-off"></i>Wyloguj</a></li>
+				<li><a href="message.html"><i class="fa fa-inbox"></i>Wiadomości</a></li>
+				<li><a href="my_account.html"><i class="fa fa-cogs"></i>Moje konto</a></li>
+				<li><a href="statistic.html"><i class="fa fa-bar-chart"></i>Statystyki</a></li>	
+				<li><a href="#"><i class="fa fa-sign-out"></i>Wyloguj</a></li>
 			</ul>
 		</nav>
 		<div class="footer">
@@ -80,8 +73,7 @@
 		<section id="cabinet">			
 			<div class="row">
 				<div class="col col-5">							
-					<div class="window">
-						
+					<div class="window">						
 						<div class="title-window">
 							<div class="choose">
 								<fieldset>
@@ -101,19 +93,33 @@
 						
 						<div class="tabs-wrapper">							
 							<div id="tab-1" class="tab-content current">
-								<ul class="data">	
-									
+								<ul class="list">
 									<li>
-										<div class="info">
+										<div class="info one">
+											<span class="title">Kolor gabinetu:</span>
+											<fieldset>
+												<div class="color">
+													<input type="hidden" id="hidden-input" class="colorpicker" value="#B12200">	
+												</div>
+											</fieldset>
+										</div>										
+										<div class="action block">
+											
+										</div>
+									</li>
+									<li>
+										<div class="info one">
 											<span class="title">Nazwa gabinetu:</span>
-											<textarea class="elastic">Niepubliczny Zakład Medycyny Stosowanej</textarea>
+											<fieldset>
+												<textarea class="elastic">Niepubliczny Zakład Medycyny Stosowanej</textarea>
+											</fieldset>
 										</div>										
 										<div class="action block">
 											<a href="#" id="edit"><i class="fa fa-pencil"></i></a>
 										</div>
 									</li>
 									<li>
-										<div class="info">
+										<div class="info one">
 											<span class="title">Skrócona nazwa gabinetu:</span>
 											<fieldset>											
 												<input type="text" value="NZMS Róża">
@@ -124,7 +130,7 @@
 										</div>
 									</li>
 									<li>
-										<div class="info">
+										<div class="info one">
 											<span class="title">Adres gabinetu:</span>
 											<fieldset>	
 												<input type="text" value="ul. Woronicza 17" placeholder="Ulica" disabled>
@@ -136,7 +142,7 @@
 										</div>
 									</li>
 									<li>
-										<div class="info">
+										<div class="info two">
 											<span class="title">Dane kontaktowe:</span>
 										
 											<div class="field">
@@ -159,7 +165,7 @@
 										</div>
 									</li>
 									<li>
-										<div class="info">
+										<div class="info three">
 											<span class="title">Godziny otwarcia:</span>
 											
 											<div class="field">
@@ -175,28 +181,11 @@
 													</select>													
 												</fieldset>
 												<fieldset>
-													<input type="text" value="8:30" class="hour" placeholder="Od">													
+													<input type="text" value="8:30" class="hour" placeholder="Od">																										
+												</fieldset>
+												<fieldset>
 													<input type="text" value="8:30" class="hour" placeholder="Do">
-													<a href="#" class="delete"><i class="fa fa-trash-o"></i></a>													
-												</fieldset>
-											</div>
-											
-											<div class="field">
-												<fieldset>
-													<select>
-														<option value="1">Poniedziałek</option>
-														<option value="2">Wtorek</option>
-														<option value="3">Środa</option>
-														<option value="4">Czwartek</option>
-														<option value="5">Piątek</option>
-														<option value="6">Sobota</option>
-														<option value="7">Niedziela</option>
-													</select>													
-												</fieldset>
-												<fieldset>
-													<input type="text" value="8:30" class="hour" placeholder="Od" disabled>													
-													<input type="text" value="8:30" class="hour" placeholder="Do" disabled>	
-													<a href="#" class="delete"><i class="fa fa-trash-o"></i></a>
+													<a href="#" class="delete"><i class="fa fa-trash-o"></i></a>												
 												</fieldset>
 											</div>
 											<div class="field">
@@ -204,7 +193,7 @@
 													<select>
 														<option value="1">Poniedziałek</option>
 														<option value="2">Wtorek</option>
-														<option value="3">Środa</option>
+														<option value="3" selected>Środa</option>
 														<option value="4">Czwartek</option>
 														<option value="5">Piątek</option>
 														<option value="6">Sobota</option>
@@ -212,9 +201,11 @@
 													</select>													
 												</fieldset>
 												<fieldset>
-													<input type="text" value="" class="hour" placeholder="Od">													
-													<input type="text" value="" class="hour" placeholder="Do">	
-													<a href="#" class="delete"><i class="fa fa-trash-o"></i></a>
+													<input type="text" value="8:30" class="hour" placeholder="Od">																										
+												</fieldset>
+												<fieldset>
+													<input type="text" value="8:30" class="hour" placeholder="Do">
+													<a href="#" class="delete"><i class="fa fa-trash-o"></i></a>												
 												</fieldset>
 											</div>
 											<div class="field">
@@ -222,7 +213,7 @@
 													<select>
 														<option value="1">Poniedziałek</option>
 														<option value="2">Wtorek</option>
-														<option value="3">Środa</option>
+														<option value="3" selected>Środa</option>
 														<option value="4">Czwartek</option>
 														<option value="5">Piątek</option>
 														<option value="6">Sobota</option>
@@ -230,9 +221,31 @@
 													</select>													
 												</fieldset>
 												<fieldset>
-													<input type="text" value="" placeholder="Od">													
-													<input type="text" value="" placeholder="Do">	
-													<a href="#" class="delete"><i class="fa fa-trash-o"></i></a>
+													<input type="text" value="8:30" class="hour" placeholder="Od">																										
+												</fieldset>
+												<fieldset>
+													<input type="text" value="8:30" class="hour" placeholder="Do">
+													<a href="#" class="delete"><i class="fa fa-trash-o"></i></a>												
+												</fieldset>
+											</div>
+											<div class="field">
+												<fieldset>
+													<select>
+														<option value="1">Poniedziałek</option>
+														<option value="2">Wtorek</option>
+														<option value="3" selected>Środa</option>
+														<option value="4">Czwartek</option>
+														<option value="5">Piątek</option>
+														<option value="6">Sobota</option>
+														<option value="7">Niedziela</option>
+													</select>													
+												</fieldset>
+												<fieldset>
+													<input type="text" value="8:30" class="hour" placeholder="Od">																										
+												</fieldset>
+												<fieldset>
+													<input type="text" value="8:30" class="hour" placeholder="Do">
+													<a href="#" class="delete"><i class="fa fa-trash-o"></i></a>												
 												</fieldset>
 											</div>
 										</div>										
@@ -243,14 +256,13 @@
 									</li>
 									
 									<li>
-										<div class="info">
+										<div class="info two">
 											<span class="title">Cennik:</span>	
 											<div class="field">
 												<fieldset>	
 													<input type="text" value="Wizyta kontrolna" placeholder="Nazwa zabiegu">						
 												</fieldset>	
-												<fieldset>	
-							
+												<fieldset>								
 													<input type="text" value="150 zł" placeholder="Kod pocztowy">
 													<a href="#" class="delete"><i class="fa fa-trash-o"></i></a>	
 												</fieldset>	
@@ -269,31 +281,27 @@
 											<a href="#"><i class="fa fa-plus-circle"></i></a>
 											<a href="#" id="edit"><i class="fa fa-pencil"></i></a>
 										</div>
-									</li>
-									
+									</li>									
 									<li>
-										<div class="info">
+										<div class="info two">
 											<span class="title">Płatność:</span>
 										
-											<div class="field one">
+											<div class="field">
 												<fieldset>
 													<select>
 														<option value="1">Karta płatnicza</option>
 														<option value="2">Gotówka</option>
 														<option value="3">Przelew</option>
 														<option value="3">Czek</option>																
-													</select>													
-												</fieldset>
-												<fieldset>													
-													<a href="#" class="delete"><i class="fa fa-trash-o"></i></a>	
-												</fieldset>
+													</select>
+													<a href="#" class="delete"><i class="fa fa-trash-o"></i></a>														
+												</fieldset>												
 											</div>
 										</div>										
 										<div class="action block">
 											<a href="#"><i class="fa fa-plus-circle"></i></a>									
 										</div>
-									</li>
-									
+									</li>									
 								</ul>		
 							</div>
 							
@@ -301,7 +309,7 @@
 								<div class="add">
 									<a href="#"><i class="fa fa-plus-circle"></i></a>									
 								</div>
-								<ul class="data">							
+								<ul class="list">							
 									<li class="deactive">
 										<div class="info current">		
 											<div class="color">
@@ -396,18 +404,16 @@
 											</span>		
 											<div class="pic">
 												<div class="images">
-													<img src="images/sample-men.jpg" alt="Mateusz Kowalski">
 													<a href="#" class="more">
-														<i class="fa fa-eye"></i>
+														<img src="images/sample-men.jpg" alt="Mateusz Kowalski">													
 													</a>
 												</div>											
-											</div>											
-											<span>
+											</div>					
+											
+											<span class="address">												
 												<a href="">
 													NIEPUBLICZNY ZAKŁAD OPIEKI ZDROWOTNEJ "MULTI-MEDYK" SP. Z O.O.
-												</a>
-											</span>
-											<span class="address">
+												</a>											
 												ul. Woronicza 17, 55-44 Wrocław 
 											</span>
 											<div class="action line">
@@ -428,21 +434,17 @@
 											</span>		
 											<div class="pic">
 												<div class="images">
-													<img src="images/sample-men.jpg" alt="Mateusz Kowalski">
 													<a href="#" class="more">
-														<i class="fa fa-eye"></i>
-													</a>
-												</div>											
-											</div>
-											<span>
+														<img src="images/sample-men.jpg" alt="Mateusz Kowalski">													
+													</a>	
+												</div>
+											</div>											
+											<span class="address">												
 												<a href="">
 													NIEPUBLICZNY ZAKŁAD OPIEKI ZDROWOTNEJ "MULTI-MEDYK" SP. Z O.O.
-												</a>
-											</span>
-											<span class="address">
+												</a>											
 												ul. Woronicza 17, 55-44 Wrocław 
 											</span>
-										
 											<div class="action line">
 												<div class="switch">
 													<input type="checkbox" name="switch" class="switch-checkbox" id="id3b" checked>
@@ -453,8 +455,7 @@
 										</div>
 									</li>
 									
-									<li>
-										
+									<li>										
 										<div class="box">		
 											<span class="name">
 												<span class="title">prof. dr. hab</span> Tomasz Terlikowski											
@@ -462,18 +463,15 @@
 											</span>		
 											<div class="pic">
 												<div class="images">
-													<img src="images/sample-men.jpg" alt="Mateusz Kowalski">
 													<a href="#" class="more">
-														<i class="fa fa-eye"></i>
-													</a>
-												</div>											
-											</div>	
-											<span>
+														<img src="images/sample-men.jpg" alt="Mateusz Kowalski">													
+													</a>	
+												</div>								
+											</div>												
+											<span class="address">												
 												<a href="">
 													NIEPUBLICZNY ZAKŁAD OPIEKI ZDROWOTNEJ "MULTI-MEDYK" SP. Z O.O.
-												</a>
-											</span>
-											<span class="address">
+												</a>											
 												ul. Woronicza 17, 55-44 Wrocław 
 											</span>
 											<div class="action line">
@@ -498,9 +496,10 @@
 
 <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="js/jquery.nice-select.min.js"></script>
-<script type="text/javascript" src="js/jquery.elastic.js"></script>
-<script type="text/javascript" src="js/jquery.minicolors.min.js"></script>
+<script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+<script type="text/javascript" src="js/chart.min.js"></script> 
 <script type="text/javascript" src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script type="text/javascript" src="js/masonry.pkgd.min.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

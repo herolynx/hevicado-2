@@ -54,13 +54,13 @@
 	<section id="main-content">		
 		<div id="title">
 			<div class="content">
-				<h2>Moje wizyty</h2>
+				<h2>Wiadomości</h2>
 				<nav>
 					<ul>
-						<li class="active"><a href="#"><i class="fa fa-list"></i><span>Wszystkie</span></a></li>
-						<li><a href="#"><i class="fa fa-file-text-o"></i><span>Zaplanowane</span></a></li>
-						<li><a href="#"><i class="fa fa-check-square-o"></i><span>Odbyte</span></a></li>
-						<li><a href="#"><i class="fa fa-ban"></i><span>Nieodbyte</span></a></li>
+						<li class="active"><a href="#"><i class="fa fa-envelope-o"></i><span>Odebrane</span></a></li>
+						<li><a href="#"><i class="fa fa-paper-plane-o"></i><span>Wysłane</span></a></li>
+						<li><a href="#"><i class="fa fa-trash-o"></i><span>Ważne</span></a></li>
+						<li><a href="#"><i class="fa fa-trash-o"></i><span>Skasowane</span></a></li>
 					</ul>
 				</nav>
 				<div class="action">
@@ -70,72 +70,92 @@
 			</div>
 		</div>		
 		
-		<section id="visit">
+		<section id="message">
 			<div class="content">
 				<div class="row">
 					<div class="col col-7">							
 						<div class="window">
-							<div class="title-window">
-								<div class="choose">
-									<fieldset>
-										<select>
-											<option value="1">Wybierz gabinet</option>
-											<option value="2">NFZ Róża</option>
-											<option value="3">Remedis</option>
-										</select>
-									</fieldset>
-								</div>
-								<div class="box">
-									<a href="#" class="left"><i class="fa fa-angle-left"></i></a>
+							<div class="title-window">								
+								<div class="box">									
 									<span>
-										Dzisiejsze wizyty
-									</span>
-									<a href="#" class="right"><i class="fa fa-angle-right"></i></a>
-									<a href="#" class="calendar"><i class="fa fa-calendar"></i></a>
-								</div>
-								<div class="visit">
-									Zaplanowane wizyty na dziś <span>39</span>
-								</div>
-								<div class="legend">
-									<a href="#"><i class="fa fa-list-ul"></i> Legenda</a>									
-									<ul class="position">
-										<li><span style="background:green"></span>Badanie kontrolne (10 min)</li>
-										<li><span style="background:red"></span>Ekstrakcja zęba (20 min)</li>
-										<li><span style="background:orange"></span>Wybielanie zębów (10 min)</li>
-									</ul>									
-								</div>
+										Odebrane
+									</span>									
+								</div>								
+							</div>
+							<div class="action">
+								<fieldset>
+									<select>
+										<option value="1">Wybierz</option>
+										<option value="2">Usuń</option>
+										<option value="3">Ważne</option>
+									</select>
+								</fieldset>
 							</div>
 							<ul class="list">
 								<li>
-									<div class="date-visit plane">
-										21 listopad 2015 r. godz. 12:00<span></span>
+									<div class="check">									
+										<div class="checkbox">
+											<input type="checkbox" id="id1" name="check">
+											<label class="check" for="id1"></label>
+										</div>
 									</div>
-									<div class="box first">		
-										<span class="name">
-											 Tomasz Terlikowski									
-										</span>		
-										<div class="pic">
-											<div class="images">
-												<img src="images/sample-men.jpg" alt="Mateusz Kowalski">
-												<a href="#" class="more">
-													<i class="fa fa-eye"></i>
-												</a>
-											</div>											
-										</div>											
-									</div>									
-									<div class="box">
-										<span>
-											Powód wizyty
-										</span>
-										<span class="address">
-											Wizyta kontrolna
-										</span>
-									</div>	
-									<div class="box action">
-										<a href="#"><i class="fa fa-commenting-o"></i></a>
-										<a href="#"><i class="fa fa-star-o"></i></a>
+									<div class="status">
+										<i class="fa fa-star-o"></i>
 									</div>
-								</li>								
+									<div class="describe">
+										<a href="message_mail.html"></a>
+										<div class="author">
+											<span>
+											Karol Kochanowski
+											</span>
+										</div>
+										<div class="subject">
+											<span>
+												Maecenas id erat sem. Etiam fermentum metus ex, quis efficitur ipsum interdum quis. Phasellus blandit lobortis
+											</span>
+										</div>
+									</div>
+									<div class="date">
+										22.01.2016
+									</div>
+									<div class="action">
+										<a href="#">
+											<i class="fa fa-trash-o"></i>
+										</a>
+									</div>
+								</li>
+								<li>
+									<div class="check">									
+										<div class="checkbox">
+											<input type="checkbox" id="id2" name="check">
+											<label class="check" for="id2"></label>
+										</div>
+									</div>
+									<div class="status">
+										<i class="fa fa-star-o"></i>
+									</div>
+									<div class="describe">
+										<a href="message_mail.html"></a>
+										<div class="author">										
+											<span>
+											Michał Buraczek
+											</span>
+										</div>
+										<div class="subject">
+											<span>
+												Maecenas id erat sem. Etiam fermentum metus ex, quis efficitur ipsum interdum quis. Phasellus blandit lobortis
+											</span>
+										</div>
+									</div>
+									<div class="date">
+										22.01.2016
+									</div>
+									<div class="action">
+										<a href="#">
+											<i class="fa fa-trash-o"></i>
+										</a>
+									</div>
+								</li>
 							</ul>
 						</div>
 					</div>
