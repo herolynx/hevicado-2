@@ -270,7 +270,7 @@ section#cabinet {
 				&:hover {
 					.c(@blue-2)!important;
 				}
-			}				
+			}
 		}			
 	}	
 	
@@ -288,7 +288,19 @@ section#cabinet {
 		span.title {
 			.w;
 			.mb(10px);
-		}
+			
+			i {
+				.fl;
+				.relative;
+				top:2px;
+			}
+			
+			span {
+				.fl;
+				.w(80%);
+				.ml(10px);
+			}
+		}	
 		
 		.field {
 			.w;
@@ -314,18 +326,45 @@ section#cabinet {
 				.h(40px);
 				.pp(0 10px);
 				.box-sizing;
-				.bg(#FFF);
 				.size(26px);
 				.c(@blue-1);
 				.absolute;
 				right:-45px;
 				top:0;
-			}		
-			
+			}	
+
 			fieldset {
 				.fl;
 				.relative;
 				.box-sizing;
+				.lh(40px);
+			}
+		}
+		
+		.field.check {
+			.checkbox {
+				.fl;
+				.relative;
+				top:5px;
+				.w(27px);
+				.h(27px);
+				.mr(10px);
+				.lh(normal);
+				
+				label.check {
+					.w(25px)!important;
+					.h(25px)!important;
+					
+					&:after {
+						.size(18px);
+						top:4px;
+						left:4px;
+					}
+				}
+			}
+			
+			input[type=text] {
+				.w(84%);
 			}
 		}
 	}
@@ -661,7 +700,7 @@ section#cabinet {
 			.w(95%);
 			
 			span.title {
-				.mt(15px);
+				.m(5px 0);
 			}
 		}
 		

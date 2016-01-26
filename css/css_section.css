@@ -109,7 +109,7 @@
 /* CONTENT */
 section#visit,
 section#cabinet,
-section#my_account,
+section#account,
 section#message,
 section#profile {
   padding-top: 60px;
@@ -122,7 +122,7 @@ section#profile {
   section#visit .col,
   section#cabinet .col,
   section#search .col,
-  section#my_account .col,
+  section#account .col,
   section#message .col {
     width: 99% !important;
   }
@@ -131,15 +131,15 @@ section#profile {
   section#visit,
   section#cabinet,
   section#calendar,
-  section#my_account,
+  section#account,
   section#message {
     padding-top: 20px;
   }
   section#visit .window,
   section#cabinet .window,
   section#calendar .window,
-  section#my_account .window,
+  section#account .window,
   section#message .window {
-    padding: 10px 5px;
+    padding: 10px 5px !important;
   }
 }

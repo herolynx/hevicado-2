@@ -262,15 +262,14 @@ section#search ul.list li:first-child:before {
 }
 section#search .box {
   display: inline-block;
-  width: 36%;
   border-left: 1px dotted #e6e6e4;
-  padding: 10px 10px 10px 15px;
+  padding: 0;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  vertical-align: middle;
+  vertical-align: top;
   position: relative;
-  min-height: 83px;
+  min-height: 60px;
 }
 section#search .box:first-child {
   border-left: 0;
@@ -287,8 +286,8 @@ section#search .box span.name {
   float: left;
 }
 section#search .box .pic {
-  float: right;
-  width: 23%;
+  float: left;
+  width: 50%;
   min-width: 60px;
 }
 section#search .box .images {
@@ -335,41 +334,27 @@ section#search .box .images img {
   -webkit-border-radius: 100%;
   -o-border-radius: 100%;
 }
-section#search .box span {
-  display: block;
-  width: 100%;
-}
-section#search .box span.title {
-  font-style: italic;
-  font-size: 12px;
-  font-weight: 300;
-  color: #b9b9b9;
-  padding: 0;
+section#search .box .name {
+  display: inline-block;
+  width: 50%;
+  float: left;
 }
 section#search .box span.specialization {
   font-size: 12px;
-}
-section#search .box span.address {
-  margin-top: 10px;
+  float: left;
   width: 100%;
 }
-section#search .box.first {
-  padding-left: 0;
-  width: 25%;
+section#search .box .address {
+  float: left;
+  width: 50%;
 }
-section#search .box.action {
-  min-width: 45px;
-  width: 3%;
-  vertical-align: middle;
-  float: right;
-  padding-right: 5px;
-  text-align: right;
-  text-align: center;
+section#search .box .address a {
+  float: left;
+  font-size: 13px;
 }
-section#search .box.action a {
-  display: block;
+section#search .box .address span.number {
+  float: left;
   font-size: 24px;
-  margin: 5px 0;
   font-size: 20px;
   border-radius: 100%;
   -moz-border-radius: 100%;
@@ -382,94 +367,86 @@ section#search .box.action a {
   color: #005494;
   font-weight: 600;
   text-align: center;
-  top: 15px;
+  margin-right: 10px;
   position: relative;
   display: inline-block;
   text-transform: uppercase;
 }
-section#search .date-visit {
-  display: table-cell;
-  vertical-align: middle;
-  padding: 5px 15px 5px 0;
+section#search .box .address span.street {
+  margin-top: 5px;
+  width: 100%;
+  float: left;
+  font-size: 13px;
+}
+section#search .box.pic {
+  padding-left: 0;
+  width: 6%;
+}
+section#search .box.data {
+  padding-left: 20px;
+  width: 43%;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  font-weight: 600;
-  font-size: 17px;
-  text-align: left;
-  color: #0090ff;
-  border-right: 1px solid #0090ff;
-  position: relative;
-}
-section#search .date-visit span {
-  position: absolute;
-  top: 39%;
-  right: -13px;
-  background: #0090ff;
-  border-radius: 100%;
-  -moz-border-radius: 100%;
-  -webkit-border-radius: 100%;
-  -o-border-radius: 100%;
-  width: 22px;
-  height: 22px;
-  z-index: 1;
-  text-align: center;
-}
-section#search .date-visit span:before {
-  content: '';
-  font-family: FontAwesome;
-  float: left;
-  color: #ffffff;
-  font-size: 13px;
-  border-radius: 100%;
-  -moz-border-radius: 100%;
-  -webkit-border-radius: 100%;
-  -o-border-radius: 100%;
-  text-align: center;
-  z-index: 2;
-  display: inline-block;
-  width: 22px;
-  height: 22px;
-  line-height: 23px;
-}
-section#search .date-visit.plane span:before {
-  content: '\f0f6';
-}
-section#search .date-visit.check span:before {
-  content: '\f00c';
-}
-section#search .date-visit.ban span:before {
-  content: '\f05e';
+  border-left: 0;
 }
 section#search .box.calendar {
-  width: 35%;
+  width: 50%;
+  display: inline-block;
+  text-align: center;
 }
-section#search .box.calendar ul.day,
-section#search .box.calendar ul.days {
+section#search .box.calendar a {
+  font-size: 18px;
+  font-weight: 600;
+}
+section#search .box.calendar .terms {
   display: table;
   width: 100%;
-  margin-bottom: 0;
 }
-section#search .box.calendar ul.day li,
-section#search .box.calendar ul.days li {
-  display: table-cell;
-  width: 19.5%;
-  padding: 5px 0;
-  text-align: center;
-  font-size: 13px;
+section#search .box.calendar .terms li {
+  width: 33%;
+  display: inline-block;
+  border: 0;
+  padding: 0 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
-section#search .box.calendar ul.day li:before,
-section#search .box.calendar ul.days li:before {
+section#search .box.calendar .terms li:before {
   content: none;
 }
-section#search .box.calendar ul.day li {
-  background: #0090ff;
-  border-left: 1px solid #e6e6e4;
+section#search .box.calendar .day {
+  float: left;
+  width: 100%;
   text-align: center;
-  color: #ffffff;
 }
-section#search .box.calendar ul.day li:first-child {
-  border: 0;
+section#search .box.calendar .day .date {
+  float: left;
+  width: 100%;
+  display: inline-block;
+  line-height: 24px;
+}
+section#search .box.calendar .percent {
+  background: #e6e6e4;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -o-border-radius: 10px;
+  width: 100%;
+  float: left;
+  height: 24px;
+}
+section#search .box.calendar .percent span {
+  color: #ffffff;
+  line-height: 24px;
+  background: #0090ff;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -o-border-radius: 10px;
+  text-align: center;
+  font-size: 12px;
+  float: left;
 }
 @media only screen and (max-width: 480px) {
   section#search ul.list li {

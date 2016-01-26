@@ -181,6 +181,16 @@ section#cabinet .info span.title {
   width: 100%;
   margin-bottom: 10px;
 }
+section#cabinet .info span.title i {
+  float: left;
+  position: relative;
+  top: 2px;
+}
+section#cabinet .info span.title span {
+  float: left;
+  width: 80%;
+  margin-left: 10px;
+}
 section#cabinet .info .field {
   width: 100%;
   float: left;
@@ -203,7 +213,6 @@ section#cabinet .info .field .delete {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  background: #ffffff;
   font-size: 26px;
   color: #0090ff;
   position: absolute;
@@ -216,6 +225,28 @@ section#cabinet .info .field fieldset {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  line-height: 40px;
+}
+section#cabinet .info .field.check .checkbox {
+  float: left;
+  position: relative;
+  top: 5px;
+  width: 27px;
+  height: 27px;
+  margin-right: 10px;
+  line-height: normal;
+}
+section#cabinet .info .field.check .checkbox label.check {
+  width: 25px !important;
+  height: 25px !important;
+}
+section#cabinet .info .field.check .checkbox label.check:after {
+  font-size: 18px;
+  top: 4px;
+  left: 4px;
+}
+section#cabinet .info .field.check input[type=text] {
+  width: 84%;
 }
 section#cabinet input[type=text],
 section#cabinet textarea {
@@ -504,7 +535,7 @@ section#cabinet ul.doctor .action.line {
     width: 95%;
   }
   section#cabinet .info span.title {
-    margin-top: 15px;
+    margin: 5px 0;
   }
   section#cabinet .action.block {
     position: absolute;

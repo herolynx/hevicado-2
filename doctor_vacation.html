@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" type="text/css" media="screen" />
 	<link rel="stylesheet" href="elements.css" type="text/css" media="screen" />
 	<link rel="stylesheet" href="style.css" type="text/css" media="screen" />
-	<link rel="stylesheet" href="css/jguery.Select.css" type="text/css" media="screen" />	
+	<link rel="stylesheet" href="css/jguery.Select.css" type="text/css" media="screen" />
 </head>
 <body>
 
@@ -18,16 +18,17 @@
 	<label for="trigger">
 		<i class="fa fa-bars"></i>
 	</label>
-	
-	<section id="navigation">	
+
+	<section id="navigation">
 		<div class="user">
 			<span>Jesteś zalogowany jako</span>
 			<div class="images">
 				<img src="images/sample-men.jpg" alt="Mateusz Kowalski">
 			</div>
 			<span class="name">
-				Mateusz<br/>
-				Kowalski
+				<a href="my_account.html">
+				Mateusz<br/>Kowalski
+				</a>
 			</span>
 			<span>Lekarz</span>
 		</div>
@@ -36,12 +37,12 @@
 				<li class="active"><a href="search.html"><i class="fa fa-search"></i> Szukaj</a></li>
 				<li><a href="dashboard.html"><i class="fa fa-area-chart"></i>Pulpit</a></li>
 				<li><a href="calendar_30days.html"><i class="fa fa-calendar"></i>Kalnedarz</a></li>
-				<li><a href="card_patient.html"><i class="fa fa-folder-open-o"></i>Karta Pacjenta</a></li>
+				<li><a href="#"><i class="fa fa-folder-open-o"></i>Karta Pacjenta</a></li>
 				<li><a href="visit.html"><i class="fa fa-folder-open-o"></i>Moje wizyty</a></li>
 				<li><a href="cabinet_list.html"><i class="fa fa-hospital-o"></i>Gabinet</a></li>
 				<li><a href="message.html"><i class="fa fa-inbox"></i>Wiadomości</a></li>
-				<li><a href="my_account.html"><i class="fa fa-cogs"></i>Moje konto</a></li>
-				<li><a href="statistic.html"><i class="fa fa-bar-chart"></i>Statystyki</a></li>			
+				<li><a href="my_accout.html"><i class="fa fa-cogs"></i>Moje konto</a></li>
+				<li><a href="statistic.html"><i class="fa fa-bar-chart"></i>Statystyki</a></li>
 				<li><a href="#"><i class="fa fa-sign-out"></i>Wyloguj</a></li>
 			</ul>
 		</nav>
@@ -49,13 +50,13 @@
 			Power by <a href="http://www.herolynx.com" target="_blank">HeroLynx.com</a>
 		</div>
 	</section>
-	<section id="main-content">		
+	<section id="main-content">
 		<div id="title">
 			<div class="content">
 				<h2>Gabinet</h2>
 				<nav>
 					<ul>
-						<li class="active"><a href="#"><i class="fa fa-plus-square-o"></i><span>Dodaj nowy</span></a></li>
+						<li><a href="cabinet_list.html"><i class="fa fa-hospital-o"></i><span>Gabinety</span></a></li>
 						<li class="active"><a href="doctor_about_me.html"><i class="fa fa-user-md"></i><span>Strona o mnie</span></a></li>
 						<li class="active"><a href="doctor_vacation.html"><i class="fa fa-calendar-times-o"></i><span>Urlop</span></a></li>
 					</ul>
@@ -63,96 +64,86 @@
 				<div class="action">
 					<a href="#"><i class="fa fa-bell-o"></i><span>20</span></a>
 					<a href="#"><i class="fa fa-power-off"></i></a>
-				</div>				
-			</div>
-		</div>		
-		
-		<section id="cabinet">			
-			<div class="row">
-				<div class="col col-5">							
-					<div class="window">
-						<div class="title-window">							
-							<div class="box">								
-								<span>
-									Lista Gabinetów
-								</span>								
-							</div>							
-						</div>
-						<ul class="list">							
-							<li class="deactive">
-								<div class="info list">								
-									<a href="cabinet_info.html">
-										<span class="title">
-											<i class="fa fa-eye-slash"></i><span>Niepubliczny Zakład Medycyny Stosowanej</span>
-										</span>
-									</a>
-								</div>
-								<div class="action line">
-									<div class="switch">
-										<input type="checkbox" name="switch" class="switch-checkbox" id="id1">
-										<label class="switch-label" for="id1"></label>
-									</div>
-									<a href="#" class="delete"><i class="fa fa-trash-o"></i></a>
-								</div>
-							</li>
-							<li>
-								<div class="info list">		
-									<a href="cabinet_info.html">
-										<span class="title">
-											<span>Niepubliczny Zakład Medycyny Stosowanej</span>
-										</span>
-									</a>
-								</div>
-								<div class="action line">
-									<div class="switch">
-										<input type="checkbox" name="switch" class="switch-checkbox" id="id2" checked>
-										<label class="switch-label" for="id2"></label>
-									</div>					
-									<a href="#" class="delete"><i class="fa fa-trash-o"></i></a>
-								</div>
-							</li>
-						</ul>		
-					</div>
-				</div>
-			</div>			
-		</section>
-	</section>
-
-	<div id="layer" class="delete_cabinet" style="display:">
-		<div class="content">
-			<div class="row">
-				<div class="col">
-					<div id="form" class="window">
-						<a href="#" id="cw" class="close">
-							<i class="fa fa-times-circle-o"></i>
-						</a>
-						<ul class="field">
-							<li>	
-								<span>Czy napewno chcesz usunać gabinet</span>
-							</li>
-							<li class="horizontal center line">	
-								<label>
-									<div class="checkbox">
-										<input type="checkbox" id="id1a" name="check">
-										<label class="check" for="id1a"></label>
-									</div>		
-								</label>
-								<fieldset>Tak</fieldset>								
-							</li>						
-						</ul>
-						<ul class="action">
-							<li>	
-								<button type="submit" class="btn blue md">
-									<i class="fa fa-check"></i> Zatwierdź
-								</button>
-							</li>
-						</ul>						
-					</div>	
 				</div>
 			</div>
 		</div>
-	</div>
-	
+
+		<section id="cabinet">
+			<div class="row">
+				<div class="col col-5">
+					<div class="window">
+						<div class="title-window">
+							<div class="box">
+								<span>
+									Urlop
+								</span>
+							</div>
+						</div>
+						<ul class="list">
+							<li>
+								<div class="info two">
+									<span class="title">Ustaw datę urlopu:</span>
+									<div class="field">
+										<fieldset>
+											<input type="text" value="" placeholder="Od">
+											<a href="#" class="delete"><i class="fa fa-calendar"></i></a>
+										</fieldset>
+
+									</div>
+									<div class="field">
+										<fieldset>
+											<input type="text" value="" placeholder="Do">
+											<a href="#" class="delete"><i class="fa fa-calendar"></i></a>
+										</fieldset>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="info one">
+									<span class="title">Zastosuj urlop dla gabnetu:</span>
+									<div class="field check">
+										<fieldset>
+											<div class="checkbox">
+												<input type="checkbox" id="id1a" name="check">
+												<label class="check" for="id1a"></label>
+											</div>
+											<input type="text" value="Niepubliczny Zakład Medycyny Stosowanej" placeholder="Od" disabled>
+										</fieldset>
+									</div>
+									<div class="field check">
+										<fieldset>
+											<div class="checkbox">
+												<input type="checkbox" id="id1b" name="check">
+												<label class="check" for="id1b"></label>
+											</div>
+											<input type="text" value="Niepubliczny Zakład Medycyny Stosowanej" placeholder="Od" disabled>
+										</fieldset>
+									</div>
+								</div>
+							</li>
+							<li>
+								<button class="btn md blue cn">
+									Zapisz
+								</button>
+							</li>
+							<li>
+								<div class="info two">
+									<span class="title">Aktywne urlopy</span>
+									<div class="field">
+										<fieldset>
+											20 listopa 2015	r. - 15 grudzien 2015 r.
+											<a href="#" class="delete"><i class="fa fa-trash-o"></i></a>
+										</fieldset>
+
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+	</section>
 </div>
 
 
@@ -161,7 +152,7 @@
 <script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
 <script type="text/javascript" src="js/jquery.minicolors.min.js"></script>
 <script type="text/javascript" src="js/jquery.elastic.js"></script>
-<script type="text/javascript" src="js/chart.min.js"></script> 
+<script type="text/javascript" src="js/chart.min.js"></script>
 <script type="text/javascript" src="js/jquery.mCustomScrollbar.concat.min.js"></script>
 <script type="text/javascript" src="js/masonry.pkgd.min.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
