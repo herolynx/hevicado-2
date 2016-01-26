@@ -666,6 +666,11 @@ section#main-content .row {
   color: #ffffff !important;
 }
 /* BUTTON */
+/* POSITION */
+.cn {
+  margin: auto !important;
+  display: block;
+}
 /* WINDOW */
 .window {
   background: #ffffff;
@@ -786,12 +791,6 @@ section#main-content .row {
   border: 0;
   display: block;
   position: relative;
-}
-.title-window .legend .position .info {
-  position: absolute;
-  right: 5px;
-  top: -22px;
-  color: #0090ff;
 }
 .title-window .legend .position ul {
   float: left;
@@ -1163,6 +1162,9 @@ section#main-content .row {
   -webkit-border-radius: 100%;
   -o-border-radius: 100%;
 }
+#layer.login {
+  display: inline-block;
+}
 @media only screen and (max-width: 480px) {
   #layer .col {
     width: 90%;
@@ -1178,6 +1180,7 @@ section#main-content .row {
 .switch {
   position: relative;
   width: 50px;
+  display: inline-block;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;

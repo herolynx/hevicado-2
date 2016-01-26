@@ -244,6 +244,18 @@ section#calendar .month .day .box:before {
   display: inline-block;
   margin-top: 100%;
 }
+section#calendar .month .day .box-close:after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(236, 0, 0, 0.3);
+}
+section#calendar .month .day .box-close:hover {
+  background: none;
+}
 section#calendar .month .day .hidden {
   background: #ffffff;
 }
@@ -366,6 +378,20 @@ section#calendar .week .day .box:before,
 section#calendar .oneday .day .box:before {
   content: '';
   display: inline-block;
+}
+section#calendar .week .day .box-close,
+section#calendar .oneday .day .box-close {
+  display: inline-block;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(236, 0, 0, 0.3);
+  z-index: 1;
+}
+section#calendar .week .day .box-close:hover,
+section#calendar .oneday .day .box-close:hover {
+  background: transarent !important;
 }
 section#calendar .week ul.table,
 section#calendar .oneday ul.table {

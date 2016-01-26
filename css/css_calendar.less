@@ -191,10 +191,6 @@
 
 /* COLOR BASE */
 
-@blue-3: #0099FF;
-@blue-2: #005494;
-@blue-1: #0090ff;
-
 @border-1: #e6e6e4;
 
 @grey-3: #DEDEDE;
@@ -341,6 +337,24 @@ section#calendar {
 					.dib;
 					.mt(100%);
 				}
+				
+				
+			}
+			
+			.box-close {
+				&:after {
+					content:'';
+					.w;
+					.h;
+					.absolute;
+					top:0;
+					left:0;
+					.bg(rgba(236,0,0,0.3));
+				}
+				
+				&:hover {
+					.bg(none);
+				}
 			}
 			
 			.hidden {
@@ -471,6 +485,20 @@ section#calendar {
 				&:before {
 					content:'';
 					.dib;					
+				}
+			}
+			
+			.box-close {
+				.dib;
+				.w;
+				.absolute;
+				top:0;
+				left:0;
+				.bg(rgba(236,0,0,0.3));
+				z-index:1;
+				
+				&:hover {
+					.bg(transarent)!important;
 				}
 			}
 		}	

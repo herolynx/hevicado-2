@@ -12,7 +12,7 @@ select {
 	display: block;
 	float: left;
 	outline: none;
-	padding:10px 10px 9px;	
+	padding:10px 10px 9px;
 	position: relative;
 	text-align: left !important;
 	transition: all 0.2s ease-in-out;
@@ -21,6 +21,7 @@ select {
 	-ms-user-select: none;
 	  user-select: none;
 	white-space: nowrap;
+  line-height: normal;
 }
 
 .nice-select span {
@@ -30,7 +31,7 @@ select {
 }
 
 .nice-select:hover {
-  
+
 }
 .nice-select:active, .nice-select.open, .nice-select:focus {
 
@@ -107,7 +108,7 @@ select {
 	-webkit-transform: scale(0.75) translateY(-21px);
 		  transform: scale(0.75) translateY(-21px);
 	transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
-	z-index: 9; 
+	z-index: 9;
 	font-weight:300;
 }
 .nice-select .list:hover .option:not(:hover) {
@@ -123,7 +124,7 @@ select {
 	border-top:0!important;
 	display:block;
 	text-align: left!important;
-	transition: all 0.2s; 
+	transition: all 0.2s;
 	min-height:auto!important;
 }
 .nice-select .option:before {
