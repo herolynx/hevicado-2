@@ -12,7 +12,7 @@ select {
 	display: block;
 	float: left;
 	outline: none;
-	padding:10px 10px 9px;
+	padding:8px 10px 8px;
 	position: relative;
 	text-align: left !important;
 	transition: all 0.2s ease-in-out;
@@ -26,8 +26,9 @@ select {
 
 .nice-select span {
 	font-weight:300;
-	color:#000!important;
+	color:#2f2f2f!important;
 	font-size:16px;
+	margin:0!important;
 }
 
 .nice-select:hover {
@@ -126,6 +127,7 @@ select {
 	text-align: left!important;
 	transition: all 0.2s;
 	min-height:auto!important;
+  margin:0!important;
 }
 .nice-select .option:before {
 	content:none!important;

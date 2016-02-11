@@ -4,356 +4,353 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 	<title>Hevicado 2.0</title>
-	<link href='https://fonts.googleapis.com/css?family=Lato:400,700,900,300,100' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" media="screen" />
-	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" type="text/css" media="screen" />
-	<link rel="stylesheet" href="elements.css" type="text/css" media="screen" />
+	<link href='https://fonts.googleapis.com/css?family=Hind+Siliguri:400,300,500,600,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="style.css" type="text/css" media="screen" />
-	<link rel="stylesheet" href="css/jguery.Select.css" type="text/css" media="screen" />	
 </head>
 <body>
 
 <div id="page" class="blue">
-	
 	<input type="checkbox" id="trigger" class="trigger">
 	<label for="trigger">
 		<i class="fa fa-bars"></i>
 	</label>
-	
-	<section id="navigation">	
-		<div id="wrapper" class="content">
-			<div class="user">
-				<span>Jesteś zalogowany jako</span>
-				<div class="images">
-					<img src="images/sample-men.jpg" alt="Mateusz Kowalski">
-				</div>
-				<span class="name">
-					<a href="my_account.html">
-					Mateusz<br/>Kowalski
-					</a>
-				</span>
-				<span>Lekarz</span>
+
+	<section id="navigation">
+		<div class="user">
+			<span>Jesteś zalogowany jako</span>
+			<div class="images">
+				<img src="images/sample-men.jpg" alt="Mateusz Kowalski">
 			</div>
-			<nav>
-				<ul>
-					<li class="active"><a href="search.html"><i class="fa fa-search"></i> Szukaj</a></li>
-					<li><a href="dashboard.html"><i class="fa fa-area-chart"></i>Pulpit</a></li>
-					<li><a href="calendar_30days.html"><i class="fa fa-calendar"></i>Kalnedarz</a></li>
-					<li><a href="card_patient.html"><i class="fa fa-folder-open-o"></i>Karta Pacjenta</a></li>
-					<li><a href="visit.html"><i class="fa fa-folder-open-o"></i>Moje wizyty</a></li>
-					<li><a href="cabinet_list.html"><i class="fa fa-hospital-o"></i>Gabinet</a></li>
-					<li><a href="message.html"><i class="fa fa-inbox"></i>Wiadomości</a></li>
-					<li><a href="my_account.html"><i class="fa fa-cogs"></i>Moje konto</a></li>
-					<li><a href="statistic.html"><i class="fa fa-bar-chart"></i>Statystyki</a></li>	
-					<li><a href="#"><i class="fa fa-sign-out"></i>Wyloguj</a></li>
-				</ul>
-			</nav>			
+			<span class="name">
+				<a href="my_account.html">
+				Mateusz<br/>Kowalski
+				</a>
+			</span>
+			<span>Lekarz</span>
+			<div class="switch">
+				<input type="checkbox" name="switch" class="switch-checkbox" id="id5a">
+				<label class="switch-label" for="id5a"></label>
+			</div>
 		</div>
+		<nav>
+			<ul>
+				<li class="active"><a href="search.html"><i class="fa fa-search"></i> Szukaj</a></li>
+				<li><a href="dashboard.html"><i class="fa fa-area-chart"></i>Pulpit</a></li>
+				<li><a href="calendar_30days.html"><i class="fa fa-calendar"></i>Kalnedarz</a></li>
+				<li><a href="#"><i class="fa fa-folder-open-o"></i>Karta Pacjenta</a></li>
+				<li><a href="visit.html"><i class="fa fa-folder-open-o"></i>Moje wizyty</a></li>
+				<li><a href="cabinet_list.html"><i class="fa fa-hospital-o"></i>Gabinet</a></li>
+				<li><a href="message.html"><i class="fa fa-inbox"></i>Wiadomości</a></li>
+				<li><a href="my_account.html"><i class="fa fa-cogs"></i>Moje konto</a></li>
+				<li><a href="statistic.html"><i class="fa fa-bar-chart"></i>Statystyki</a></li>
+				<li><a href="#"><i class="fa fa-sign-out"></i>Wyloguj</a></li>
+			</ul>
+		</nav>
 		<div class="footer">
 			Power by <a href="http://www.herolynx.com" target="_blank">HeroLynx.com</a>
 		</div>
 	</section>
-	
-	<section id="main-content">		
+
+	<section id="main-content">
 		<div id="title">
 			<div class="content">
 				<h2>Kalendarz</h2>
 				<nav>
 					<ul>
 						<li class="active"><a href="calendar_1day.html"><i class="fa fa-calendar"></i><span>Dzienny</span></a></li>
-						<li><a href="calendar_7days.html"><i class="fa fa-calendar"></i><span>Tygodnowy</span></a></li>
+						<li><a href="calendar_7days.html"><i class="fa fa-calendar"></i><span>Tygodniowy</span></a></li>
 						<li><a href="calendar_30days.html"><i class="fa fa-calendar"></i><span>Miesięczny</span></a></li>
 						<li><a href="#"><i class="fa fa-file-o"></i><span>Notatki</span></a></li>
 					</ul>
-				</nav>	
+				</nav>
 			</div>
 			<div class="action">
-				<a href="#"><i class="fa fa-bell-o"></i><span>20</span></a>
+				<a href="message.html"><i class="fa fa-bell-o"></i><span>20</span></a>
 				<a href="#"><i class="fa fa-power-off"></i></a>
-			</div>				
-		</div>		
-		
-		<section id="calendar">			
+			</div>
+		</div>
+
+		<section id="calendar">
 			<div class="row">
 				<div class="month">
-					<div class="col col-7">						
-						<div class="window">						
+					<div class="col col-7">
+						<div class="window">
 							<div class="title-window">
-								<!-- <div class="choose">									
-									<fieldset>
-										<select>
-											<option value="1">Wybierz gabinet</option>
-											<option value="2">NFZ Róża</option>
-											<option value="3">Remedis</option>
-										</select>
-									</fieldset>
-								</div> -->
-								<div class="box">
-									<a href="#" class="left"><i class="fa fa-angle-left"></i></a>
-									<span>
-										5 maja 2015
-									</span>
-									<a href="#" class="right"><i class="fa fa-angle-right"></i></a>
-									<a href="#" class="calendar"><i class="fa fa-calendar"></i></a>
+								<div class="row">
+									<div class="title date">
+										<span>Styczeń 2016</span>
+										<div class="action">
+											<a href="#" class="btn-arrow"><i class="fa fa-angle-left"></i></a>
+											<a href="#" class="btn-arrow"><i class="fa fa-angle-right"></i></a>
+											<a href="#" class="btn-calendar"><i class="fa fa-calendar"></i></a>
+											<a href="#" class="btn-legend">	<i class="fa fa-file-text-o"></i></a>
+										</div>
+									</div>
+
+									<div class="profile">
+											<div class="image-profile">
+												<img src="images/sample-men.jpg" alt="Mateusz Kowalski">
+												<a href="profile_doctor.html" class="more">
+													<i class="fa fa-eye"></i>
+												</a>
+											</div>
+									</div>
 								</div>
-								<div class="visit">
-									Zaplanowane wizyty na dziś <span>39</span>
-								</div>
+
 								<div class="legend">
-									<a href="#" class="open"><i class="fa fa-list-ul"></i> Legenda</a>
-									<div class="position">										
+									<div class="position">
 										<ul>
 											<li><span class="title">Gabinety:</span></li>
 											<li><span style="background:pink"></span><a href="#">NFZ Róża</a></li>
 											<li><span style="background:yellow"></span><a href="#">Remedis</a></li>
-										</ul>	
+										</ul>
 										<ul>
 											<li><span class="title">Badania:</span></li>
 											<li><span style="background:green"></span><a href="#">Badanie kontrolne (10 min)</a></li>
 											<li><span style="background:red"></span><a href="#">Ekstrakcja zęba (20 min)</a></li>
 											<li><span style="background:orange"></span><a href="#">Wybielanie zębów (10 min)</a></li>
-										</ul>	
+										</ul>
 									</div>
 								</div>
 							</div>
-									
+
 							<ul class="days">
-								<li>PN</li>
-								<li>WT</li>
-								<li>ŚR</li>
-								<li>CZW</li>
-								<li>PT</li>
-								<li>SOB</li>
-								<li>ND</li>
-							</ul>							
+								<li>Poniedziałek</li>
+								<li>Wtorek</li>
+								<li>Środa</li>
+								<li>Czwartek</li>
+								<li>Piątek</li>
+								<li>Sobota</li>
+								<li>Niedziela</li>
+							</ul>
 							<ul class="table">
 								<li>
 									<div class="day">
 										<div class="box">
-											<a href="#" class="add"></a>	
+											<a href="#" class="add"></a>
 											<div class="content">
 												<div class="number">
 													1
-												</div>	
+												</div>
 												<div class="events">
 													<div class="event" style="background:green; border-top:2px solid blue">
 														<a href="#"></a>
-														<span>K. Kowalski</span>								
+														<span>K. Kowalski</span>
 													</div>
 													<div class="event" style="background:red; border-top:2px solid pink">
 														<a href="#"></a>
-														<span>M. Kowalczyk</span>								
+														<span>M. Kowalczyk</span>
 													</div>
 												</div>
 											</div>
 										</div>
 									</div>
 									<div class="day">
-										<div class="box box-close">											
+										<div class="box box-close">
 											<div class="content">
 												<div class="number">
 													2
-												</div>	
-											</div>
-										</div>
-									</div>
-									<div class="day">
-										<div class="box">
-											<a href="#" class="add"></a>	
-											<div class="content">
-												<div class="number">
-													3
-												</div>	
-											</div>
-										</div>
-									</div>
-									<div class="day">
-										<div class="box">
-											<a href="#" class="add"></a>	
-											<div class="content">
-												<div class="number">
-													4
-												</div>	
-											</div>
-										</div>
-									</div>
-									<div class="day">
-										<div class="box">
-											<a href="#" class="add"></a>	
-											<div class="content">
-												<div class="number">
-													5
-												</div>	
-											</div>
-										</div>
-									</div>
-									<div class="day">
-										<div class="box">
-											<a href="#" class="add"></a>	
-											<div class="content">
-												<div class="number">
-													6
-												</div>	
-											</div>
-										</div>
-									</div>
-									<div class="day">
-										<div class="box">
-											<a href="#" class="add"></a>	
-											<div class="content">
-												<div class="number">
-													7
-												</div>	
-											</div>
-										</div>
-									</div>
-								</li>
-								<li>
-									<div class="day">
-										<div class="box">
-											<a href="#" class="add"></a>	
-											<div class="content">
-												<div class="number">
-													8
-												</div>													
-											</div>
-										</div>
-									</div>
-									<div class="day">
-										<div class="box">
-											<a href="#" class="add"></a>	
-											<div class="content">
-												<div class="number">
-													9
-												</div>	
-											</div>
-										</div>
-									</div>
-									<div class="day">
-										<div class="box">
-											<a href="#" class="add"></a>	
-											<div class="content">
-												<div class="number">
-													10
-												</div>	
-											</div>
-										</div>
-									</div>
-									<div class="day">
-										<div class="box">
-											<a href="#" class="add"></a>	
-											<div class="content">
-												<div class="number">
-													11
-												</div>	
-											</div>
-										</div>
-									</div>
-									<div class="day">
-										<div class="box">
-											<a href="#" class="add"></a>	
-											<div class="content">
-												<div class="number">
-													12
-												</div>	
-											</div>
-										</div>
-									</div>
-									<div class="day">
-										<div class="box">
-											<a href="#" class="add"></a>	
-											<div class="content">
-												<div class="number">
-													13
-												</div>	
-											</div>
-										</div>
-									</div>
-									<div class="day">
-										<div class="box">
-											<a href="#" class="add"></a>	
-											<div class="content">
-												<div class="number">
-													14
-												</div>	
-											</div>
-										</div>
-									</div>
-								</li>
-								<li>
-									<div class="day">
-										<div class="box">
-											<a href="#" class="add"></a>	
-											<div class="content">
-												<div class="number">
-													16
-												</div>											
-											</div>
-										</div>
-									</div>
-									<div class="day">
-										<div class="box">
-											<a href="#" class="add"></a>	
-											<div class="content">
-												<div class="number">
-													16
-												</div>	
-											</div>
-										</div>
-									</div>
-									<div class="day">
-										<div class="box">
-											<a href="#" class="add"></a>	
-											<div class="content">
-												<div class="number">
-													17
-												</div>	
-											</div>
-										</div>
-									</div>
-									<div class="day">
-										<div class="box">
-											<a href="#" class="add"></a>	
-											<div class="content">
-												<div class="number">
-													18
-												</div>	
-												<div class="events">
-													<div class="event" style="background:orange; border-top:2px solid blue">
-														<a href="#"></a>
-														<span>R. Bocheński</span>								
-													</div>												
 												</div>
 											</div>
 										</div>
 									</div>
 									<div class="day">
 										<div class="box">
-											<a href="#" class="add"></a>	
+											<a href="reservation.html" class="add"></a>
+											<div class="content">
+												<div class="number">
+													3
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="day">
+										<div class="box">
+											<a href="reservation.html" class="add"></a>
+											<div class="content">
+												<div class="number">
+													4
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="day">
+										<div class="box">
+											<a href="reservation.html" class="add"></a>
+											<div class="content">
+												<div class="number">
+													5
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="day">
+										<div class="box">
+											<a href="reservation.html" class="add"></a>
+											<div class="content">
+												<div class="number">
+													6
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="day">
+										<div class="box">
+											<a href="reservation.html" class="add"></a>
+											<div class="content">
+												<div class="number">
+													7
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="day">
+										<div class="box">
+											<a href="reservation.html" class="add"></a>
+											<div class="content">
+												<div class="number">
+													8
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="day">
+										<div class="box">
+											<a href="reservation.html" class="add"></a>
+											<div class="content">
+												<div class="number">
+													9
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="day">
+										<div class="box">
+											<a href="reservation.html" class="add"></a>
+											<div class="content">
+												<div class="number">
+													10
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="day">
+										<div class="box">
+											<a href="reservation.html" class="add"></a>
+											<div class="content">
+												<div class="number">
+													11
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="day">
+										<div class="box">
+											<a href="reservation.html" class="add"></a>
+											<div class="content">
+												<div class="number">
+													12
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="day">
+										<div class="box">
+											<a href="reservation.html" class="add"></a>
+											<div class="content">
+												<div class="number">
+													13
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="day">
+										<div class="box">
+											<a href="reservation.html" class="add"></a>
+											<div class="content">
+												<div class="number">
+													14
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="day">
+										<div class="box">
+											<a href="reservation.html" class="add"></a>
+											<div class="content">
+												<div class="number">
+													16
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="day">
+										<div class="box">
+											<a href="reservation.html" class="add"></a>
+											<div class="content">
+												<div class="number">
+													16
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="day">
+										<div class="box">
+											<a href="reservation.html" class="add"></a>
+											<div class="content">
+												<div class="number">
+													17
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="day">
+										<div class="box">
+											<a href="reservation.html" class="add"></a>
+											<div class="content">
+												<div class="number">
+													18
+												</div>
+												<div class="events">
+													<div class="event" style="background:orange; border-top:2px solid blue">
+														<a href="#"></a>
+														<span>R. Bocheński</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="day">
+										<div class="box">
+											<a href="reservation.html" class="add"></a>
 											<div class="content">
 												<div class="number">
 													19
-												</div>	
+												</div>
 											</div>
 										</div>
 									</div>
 									<div class="day">
 										<div class="box">
-											<a href="#" class="add"></a>	
+											<a href="reservation.html" class="add"></a>
 											<div class="content">
 												<div class="number">
 													20
-												</div>	
+												</div>
 											</div>
 										</div>
 									</div>
 									<div class="day">
 										<div class="box">
-											<a href="#" class="add"></a>	
+											<a href="reservation.html" class="add"></a>
 											<div class="content">
 												<div class="number">
 													21
-												</div>	
+												</div>
 											</div>
 										</div>
 									</div>
@@ -361,71 +358,71 @@
 								<li>
 									<div class="day">
 										<div class="box">
-											<a href="#" class="add"></a>	
+											<a href="reservation.html" class="add"></a>
 											<div class="content">
 												<div class="number">
 													22
-												</div>													
+												</div>
 											</div>
 										</div>
 									</div>
 									<div class="day">
 										<div class="box">
-											<a href="#" class="add"></a>	
+											<a href="reservation.html" class="add"></a>
 											<div class="content">
 												<div class="number">
 													23
-												</div>	
+												</div>
 											</div>
 										</div>
 									</div>
 									<div class="day">
 										<div class="box">
-											<a href="#" class="add"></a>	
+											<a href="reservation.html" class="add"></a>
 											<div class="content">
 												<div class="number">
 													24
-												</div>	
+												</div>
 											</div>
 										</div>
 									</div>
 									<div class="day">
 										<div class="box">
-											<a href="#" class="add"></a>	
+											<a href="reservation.html" class="add"></a>
 											<div class="content">
 												<div class="number">
 													25
-												</div>	
+												</div>
 											</div>
 										</div>
 									</div>
 									<div class="day">
 										<div class="box">
-											<a href="#" class="add"></a>	
+											<a href="reservation.html" class="add"></a>
 											<div class="content">
 												<div class="number">
 													26
-												</div>	
+												</div>
 											</div>
 										</div>
 									</div>
 									<div class="day">
 										<div class="box">
-											<a href="#" class="add"></a>	
+											<a href="reservation.html" class="add"></a>
 											<div class="content">
 												<div class="number">
 													27
-												</div>	
+												</div>
 											</div>
 										</div>
 									</div>
 									<div class="day">
 										<div class="box">
-											<a href="#" class="add"></a>	
+											<a href="reservation.html" class="add"></a>
 											<div class="content">
 												<div class="number">
 													28
-												</div>	
+												</div>
 											</div>
 										</div>
 									</div>
@@ -433,81 +430,81 @@
 								<li>
 									<div class="day">
 										<div class="box">
-											<a href="#" class="add"></a>	
+											<a href="reservation.html" class="add"></a>
 											<div class="content">
 												<div class="number">
 													29
 												</div>
-												
+
 											</div>
 										</div>
 									</div>
 									<div class="day">
 										<div class="box">
-											<a href="#" class="add"></a>	
+											<a href="reservation.html" class="add"></a>
 											<div class="content">
 												<div class="number">
 													30
-												</div>	
+												</div>
 											</div>
 										</div>
 									</div>
 									<div class="day">
 										<div class="box">
-											<a href="#" class="add"></a>	
+											<a href="reservation.html" class="add"></a>
 											<div class="content">
 												<div class="number">
 													31
-												</div>	
+												</div>
 											</div>
 										</div>
 									</div>
 									<div class="day">
 										<div class="box hidden">
-											<a href="#" class="add"></a>	
+											<a href="reservation.html" class="add"></a>
 											<div class="content">
 												<div class="number">
 													1
-												</div>	
+												</div>
 											</div>
 										</div>
 									</div>
 									<div class="day">
 										<div class="box hidden">
-											<a href="#" class="add"></a>	
+											<a href="reservation.html" class="add"></a>
 											<div class="content">
 												<div class="number">
 													2
-												</div>	
+												</div>
 											</div>
 										</div>
 									</div>
 									<div class="day">
 										<div class="box hidden">
-											<a href="#" class="add"></a>	
+											<a href="reservation.html" class="add"></a>
 											<div class="content">
 												<div class="number">
 													3
-												</div>	
+												</div>
 											</div>
 										</div>
 									</div>
 									<div class="day">
 										<div class="box hidden">
-											<a href="#" class="add"></a>	
+											<a href="reservation.html" class="add"></a>
 											<div class="content">
 												<div class="number">
 													4
-												</div>	
+												</div>
 											</div>
 										</div>
 									</div>
-								</li>								
-							</ul>							
+								</li>
+							</ul>
 						</div>
 					</div>
 				</div>
-			</div>			
+			</div>
 		</section>
 	</section>
 
@@ -517,7 +514,7 @@
 		<div class="content">
 			<div class="row">
 				<div class="col">
-					<div id="calendar" class="window">
+					<div id="calendar-mini" class="window">
 						<a href="#" id="cw" class="close">
 							<i class="fa fa-times-circle"></i>
 						</a>
@@ -531,7 +528,7 @@
 							<span>
 								Październik 2015
 							</span>
-							<a href="#"><i class="fa fa-angle-right"></i></a>					
+							<a href="#"><i class="fa fa-angle-right"></i></a>
 						</div>
 						<div class="days">
 							<ul>
@@ -573,14 +570,14 @@
 								<li><a href="#"><span>29</span></a></li>
 								<li><a href="#"><span>30</span></a></li>
 								<li><a href="#"><span>31</span></a></li>
-							</ul>							
+							</ul>
 						</div>
-					</div>	
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	
+
 </div>
 
 
@@ -589,7 +586,7 @@
 <script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
 <script type="text/javascript" src="js/jquery.minicolors.min.js"></script>
 <script type="text/javascript" src="js/jquery.elastic.js"></script>
-<script type="text/javascript" src="js/chart.min.js"></script> 
+<script type="text/javascript" src="js/chart.min.js"></script>
 <script type="text/javascript" src="js/jquery.mCustomScrollbar.concat.min.js"></script>
 <script type="text/javascript" src="js/masonry.pkgd.min.js"></script>
 <script type="text/javascript" src="js/script.js"></script>

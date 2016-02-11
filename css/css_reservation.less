@@ -206,22 +206,16 @@
 
 
 
-section#account {
+section#reservation {
+
 	.col, .row {
 		.h(100%);
+		vertical-align:top;
 	}
 
 	.window {
 		.pp(15px 10px);
 		.minh(95%);
-	}
-
-	.add {
-		.m(auto);
-		.c(@blue-1);
-		.size(32px);
-		.center;
-		.db;
 		.mb(10px);
 	}
 
@@ -245,38 +239,12 @@ section#account {
 				.bt(0);
 			}
 		}
-
-		li.deactive {
-			&:before {
-				content:'';
-				.w;
-				.h(100%);
-				.bg(rgba(0,0,0,0.05));
-				z-index:0;
-				.absolute;
-				top:0;
-				left:0;
-				.dib;
-			}
-
-			span {
-				.c(rgba(0,0,0,0.5))!important;
-			}
-
-			a {
-				.c(rgba(0,0,0,0.5))!important;
-
-				&:hover {
-					.c(@blue-2)!important;
-				}
-			}
-		}
 	}
 
 	.info {
 		.dib;
 		vertical-align:middle;
-		.w(85%);
+		.w;
 		.relative;
 		.fl;
 
@@ -287,7 +255,18 @@ section#account {
 		span.title {
 			.w;
 			.mb(10px);
-			.fw(400);
+
+			i {
+				.fl;
+				.relative;
+				top:2px;
+			}
+
+			span {
+				.fl;
+				.w(80%);
+				.ml(10px);
+			}
 		}
 
 		.field {
@@ -303,34 +282,50 @@ section#account {
 
 			span {
 				.size(16px);
-				.m(0)!important;
-			}
-
-			.delete {
-				.size(20px);
-				.fl;
-				.w(auto);
-				.lh(40px);
-				.h(40px);
-				.pp(0 10px);
-				.box-sizing;
-				.bg(#FFF);
-				.size(26px);
-				.c(@blue-1);
-				.absolute;
-				right:-45px;
-				top:0;
+				.m(0);
 			}
 
 			fieldset {
 				.fl;
 				.relative;
 				.box-sizing;
+				.mb(5px);
+			}
+		}
+
+		.field.check {
+			.checkbox {
+				.fl;
+				.relative;
+				top:5px;
+				.w(27px);
+				.h(27px);
+				.mr(10px);
+				.lh(normal);
+
+				label.check {
+					.w(25px)!important;
+					.h(25px)!important;
+
+					&:after {
+						.size(18px);
+						top:4px;
+						left:4px;
+					}
+				}
+			}
+
+			input[type=text] {
+				.w(84%);
+			}
+
+			span {
+				.lh(40px);
 			}
 		}
 	}
 
-	input[type=text], 	input[type=password], textarea {
+	input[type=text], textarea {
 		.fl;
 		.w;
 		.pp(8px 10px);
@@ -340,7 +335,6 @@ section#account {
 		.size(16px);
 		.c(#2f2f2f);
 		.fw(300);
-		.mb(5px);
 		.b(1px solid @border-1);
 	}
 
@@ -353,7 +347,6 @@ section#account {
 	textarea {
 		resize:none;
 		.minh(40px)!important;
-		.maxw(764px);
 	}
 
 	.info.one {
@@ -376,12 +369,6 @@ section#account {
 			}
 
 		}
-
-		.btn {
-			top:6px;
-			left:10px;
-			.relative;
-		}
 	}
 
 	.info.three {
@@ -396,149 +383,134 @@ section#account {
 		}
 	}
 
-	.color {
+	.info_doctor {
 		.fl;
-		.w(34px);
-		.h(34px);
-		.b(1px solid @border-1);
-		.radius(1px);
-		.pp(2px);
-		.mr(10px);
-		.relative;
+		.w;
 
-		&:hover {
-			&:before {
-				content:'';
-				.w;
-				.h;
-				.absolute;
-				top:0;
-				left:0;
-				.bg(rgba(0,0,0,0.2));
-			}
-		}
-	}
-
-	.check {
-		&:after {
-			content:'\f058';
-			.absolute;
-			bottom:0;
-			right:1px;
-			.size(20px);
-			.c(#FFF);
-			font-family: FontAwesome;
-			z-index:1;
+		.title {
+			.size(14px);
 		}
 
-	}
+		.col {
+			.left;
+		}
 
-	.blue {
-		.bg(@blue-1);
-	}
-
-	.images {
-		.fl;
-		.w(120px);
-		.m(5px 0);
-		.relative;
-		.center;
-		.left;
-
-		img {
-			.dib;
-			.b(1px solid @border-1);
-			.box-sizing;
-			.pp(5px);
-			.radius(5px);
-			.bg(#FFF);
+		span {
+			.fl;
 			.w;
 		}
 
-		a  {
-			right:-10px;
-			top:-10px;
-			.size(16px);
-			.pp(1px 5px);
-			.box-sizing;
-			.radius(100%);
-			.center;
-			.absolute;
-			.w(27px);
-			.h(27px);
-			.bg(@blue-1);
-
-			i {
-				.c(#FFF);
-			}
-		}
-	}
-
-
-	.action.line, .action.block {
-		.dib;
-		.fr;
-		vertical-align:middle;
-		.size(26px);
-		.relative;
-		z-index:2;
-		.right;
-		.minw(60px);
-		.w(10%);
-
-		a {
-			.m(5px 3px);
-		}
-	}
-
-	.action.line {
-		.minw(120px);
-		.w(10%);
-
-		a {
-			.dib;
+		span.name {
+			.fw(600);
 		}
 
-		.switch {
-			.dib;
-			top:5px;
+		span.address {
+			.m(10px 0);
 		}
-	}
 
-	.action.block {
-		.minw(60px);
-		.w(10%);
-
-		a {
+		span {
+			.w(auto);
 			.db;
+			float:none;
+		}
+
+		.info {
+			.fl;
 			.w;
+			.mb(10px);
+
+			.images {
+				.fl;
+				.mr(20px);
+				.w(150px);
+				.relative;
+
+				img {
+					.fl;
+					.w;
+					.radius(100%);
+				}
+
+				a.more {
+					.c(#FFF);
+					.bg(@blue-1);
+					.w(30px);
+					.h(30px);
+					.lh(30px);
+					.b(3px solid #FFF);
+					.absolute;
+					bottom:0;
+					right:10px;
+					.radius(100%);
+					.center;
+
+					i {
+						.size(16px);
+						.c(#FFF);
+						.mr(0);
+					}
+				}
+			}
+		}
+	}
+
+	.info_cabinet {
+		.mt(10px);
+
+		span.title {
+			.fl;
+			.w;
+			.fw(600);
+		}
+
+		ul {
+
+			li {
+				.b(0);
+				.pp(0);
+				.m(0);
+
+				span {
+					.w(55%);
+					.dib;
+				}
+			}
+		}
+	}
+
+	.calendar {
+		.fl;
+	}
+
+	.maps {
+		.fl;
+		.w;
+		.b(1px solid @border-1);
+		.pp(5px);
+		.box-sizing;
+
+		iframe {
+			.fl;
+		}
+	}
+
+}
+
+@media only screen and (max-width : 1200px){
+
+	section#reservation {
+		.col {
+			.w(90%)!important;
 		}
 	}
 }
 
+
 @media only screen and (max-width : 768px){
 
-	section#account {
-		.info {
-			.w(95%);
-
-			span.title {
-				.mt(15px);
-			}
-		}
-
-
-		.action.block {
-			.absolute;
-			top:5px;
-			right:0;
-			.w;
-
-			a {
-				.dib;
-				.w(auto);
-				.m(0 5spx);
-			}
+	section#reservation {
+		.col {
+			.w(99%)!important;
 		}
 	}
 }
@@ -546,50 +518,45 @@ section#account {
 
 @media only screen and (max-width : 480px){
 
-	section#account {
+	section#reservation {
 
 		.info {
-			.w;
-		}
-
-		.info.one {
-			.w(90%);
-		}
-
-		.info.two {
-			.w(90%);
-
 			fieldset {
-				.w;
-				.pl(0);
-				.mt(5px);
+				.w!important;
+				.pl(0)!important;
 
-				&:first-child {
-					.pl(0);
+				span.text {
+					.mb(10px)!important;
+					.dib;
 				}
-
 			}
-		}
 
-		.info.three {
-			.w(90%);
-
-			fieldset {
-				.pr(5px);
-				.pl(0);
-				.mt(5px);
-
-				&:first-child {
-					.w;
-					.pr(0);
+			.field.check {
+				span {
+					.dib;
+					.w(85%);
+					.lh(normal);
 				}
 			}
 		}
 
-		.action.line {
-			.fl;
-			.w;
+		.info_doctor {
+			.images {
+				a {
+					.w(60px);
+				}
+			}
 
+			span.address {
+				.m(20px 0 0);
+			}
+
+			span.date {
+				.w(85%);
+
+			}
 		}
+
 	}
+
 }

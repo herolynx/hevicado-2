@@ -4,12 +4,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 	<title>Hevicado 2.0</title>
-	<link href='https://fonts.googleapis.com/css?family=Lato:400,700,900,300,100' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" media="screen" />
-	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" type="text/css" media="screen" />
-	<link rel="stylesheet" href="elements.css" type="text/css" media="screen" />
+	<link href='https://fonts.googleapis.com/css?family=Hind+Siliguri:400,300,500,600,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="style.css" type="text/css" media="screen" />
-	<link rel="stylesheet" href="css/jguery.Select.css" type="text/css" media="screen" />	
 </head>
 <body>
 
@@ -18,8 +14,8 @@
 	<label for="trigger">
 		<i class="fa fa-bars"></i>
 	</label>
-	
-	<section id="navigation">	
+
+	<section id="navigation">
 		<div class="user">
 			<span>Jesteś zalogowany jako</span>
 			<div class="images">
@@ -31,13 +27,17 @@
 				</a>
 			</span>
 			<span>Lekarz</span>
+			<div class="switch">
+				<input type="checkbox" name="switch" class="switch-checkbox" id="id5a">
+				<label class="switch-label" for="id5a"></label>
+			</div>
 		</div>
 		<nav>
 			<ul>
 				<li class="active"><a href="search.html"><i class="fa fa-search"></i> Szukaj</a></li>
 				<li><a href="dashboard.html"><i class="fa fa-area-chart"></i>Pulpit</a></li>
 				<li><a href="calendar_30days.html"><i class="fa fa-calendar"></i>Kalnedarz</a></li>
-				<li><a href="card_patient.html"><i class="fa fa-folder-open-o"></i>Karta Pacjenta</a></li>
+				<li><a href="#"><i class="fa fa-folder-open-o"></i>Karta Pacjenta</a></li>
 				<li><a href="visit.html"><i class="fa fa-folder-open-o"></i>Moje wizyty</a></li>
 				<li><a href="cabinet_list.html"><i class="fa fa-hospital-o"></i>Gabinet</a></li>
 				<li><a href="message.html"><i class="fa fa-inbox"></i>Wiadomości</a></li>
@@ -50,8 +50,8 @@
 			Power by <a href="http://www.herolynx.com" target="_blank">HeroLynx.com</a>
 		</div>
 	</section>
-	
-	<section id="main-content">		
+
+	<section id="main-content">
 		<div id="title">
 			<div class="content">
 				<h2>Wiadomości</h2>
@@ -64,23 +64,21 @@
 					</ul>
 				</nav>
 				<div class="action">
-					<a href="#"><i class="fa fa-bell-o"></i><span>20</span></a>
+					<a href="message.html"><i class="fa fa-bell-o"></i><span>20</span></a>
 					<a href="#"><i class="fa fa-power-off"></i></a>
-				</div>				
+				</div>
 			</div>
-		</div>		
-		
+		</div>
+
 		<section id="message">
 			<div class="content">
 				<div class="row">
-					<div class="col col-7">							
+					<div class="col col-7">
 						<div class="window">
-							<div class="title-window">								
-								<div class="box">									
-									<span>
-										Odebrane
-									</span>									
-								</div>								
+							<div class="title-window">
+								<div class="title">
+										Odpowiedz
+								</div>
 							</div>
 							<div class="action">
 								<fieldset>
@@ -116,14 +114,14 @@
 											</span>
 											Maecenas id erat sem. Etiam fermentum metus ex, quis efficitur ipsum interdum quis. Phasellus blandit lobortis
 										</div>
-										<div class="describe">	
+										<div class="describe">
 											<p>
 											Maecenas id erat sem. Etiam fermentum metus ex, quis efficitur ipsum interdum quis. Phasellus blandit lobortis quam in posuere. Curabitur fringilla tristique sodales. Etiam et dictum urna. Cras gravida vel diam auctor facilisis. Nunc ac augue quis ante finibus rutrum. Fusce eget gravida tortor, in ultrices turpis. Mauris at nisi lectus. Aliquam eget finibus ex. Vivamus feugiat dui quis mi feugiat interdum. Maecenas vel turpis dolor. In dapibus convallis condimentum.
 											</p>
 											<p>
 											Proin iaculis dui suscipit mauris dapibus imperdiet eu at velit. Sed efficitur lectus nunc, in ultricies felis rhoncus in. Donec nec leo quis ex ultrices auctor nec at felis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur in eleifend augue. Donec tincidunt eget nisi in posuere. Vivamus fringilla eu enim eget condimentum. Quisque sit amet consequat urna, a imperdiet lorem. Aenean convallis pulvinar dolor eu semper. Pellentesque purus neque, suscipit nec erat id, rhoncus feugiat turpis. In cursus nunc sit amet libero semper porttitor. Aliquam efficitur luctus malesuada.
 											</p>
-										</div>		
+										</div>
 									</div>
 								</li>
 								<li class="answer">
@@ -150,25 +148,25 @@
 											</span>
 											Maecenas id erat sem. Etiam fermentum metus ex, quis efficitur ipsum interdum quis. Phasellus blandit lobortis
 										</div>
-										<div class="describe">	
+										<div class="describe">
 											<p>
 											Maecenas id erat sem. Etiam fermentum metus ex, quis efficitur ipsum interdum quis. Phasellus blandit lobortis quam in posuere. Curabitur fringilla tristique sodales. Etiam et dictum urna. Cras gravida vel diam auctor facilisis. Nunc ac augue quis ante finibus rutrum. Fusce eget gravida tortor, in ultrices turpis. Mauris at nisi lectus. Aliquam eget finibus ex. Vivamus feugiat dui quis mi feugiat interdum. Maecenas vel turpis dolor. In dapibus convallis condimentum.
 											</p>
 											<p>
 											Proin iaculis dui suscipit mauris dapibus imperdiet eu at velit. Sed efficitur lectus nunc, in ultricies felis rhoncus in. Donec nec leo quis ex ultrices auctor nec at felis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur in eleifend augue. Donec tincidunt eget nisi in posuere. Vivamus fringilla eu enim eget condimentum. Quisque sit amet consequat urna, a imperdiet lorem. Aenean convallis pulvinar dolor eu semper. Pellentesque purus neque, suscipit nec erat id, rhoncus feugiat turpis. In cursus nunc sit amet libero semper porttitor. Aliquam efficitur luctus malesuada.
 											</p>
-										</div>		
+										</div>
 									</div>
-								</li>								
+								</li>
 							</ul>
 						</div>
-						<div class="window">			
-							<div class="title-window">								
-								<div class="box">									
+						<div class="window">
+							<div class="title-window">
+								<div class="box">
 									<span>
 										Napisz odpowiedź
-									</span>									
-								</div>								
+									</span>
+								</div>
 							</div>
 							<ul class="answer">
 								<li>
@@ -179,11 +177,11 @@
 								<li>
 									<button class="btn md blue"><i class="fa fa-paper-plane-o"></i> Wyślij</button>
 									<button class="btn md blue"><i class="fa fa-trash-o"></i> Skasuj</button>
-								</li>	
+								</li>
 							</ul>
 						</div>
-						
-						
+
+
 					</div>
 				</div>
 			</div>
@@ -197,7 +195,7 @@
 <script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
 <script type="text/javascript" src="js/jquery.minicolors.min.js"></script>
 <script type="text/javascript" src="js/jquery.elastic.js"></script>
-<script type="text/javascript" src="js/chart.min.js"></script> 
+<script type="text/javascript" src="js/chart.min.js"></script>
 <script type="text/javascript" src="js/jquery.mCustomScrollbar.concat.min.js"></script>
 <script type="text/javascript" src="js/masonry.pkgd.min.js"></script>
 <script type="text/javascript" src="js/script.js"></script>

@@ -4,13 +4,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 	<title>Hevicado 2.0</title>
-	<link href='https://fonts.googleapis.com/css?family=Lato:400,700,900,300,100' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" media="screen" />
-	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" type="text/css" media="screen" />
-	<link rel="stylesheet" href="css/jquery.minicolors.css" type="text/css" media="screen" />
-	<link rel="stylesheet" href="elements.css" type="text/css" media="screen" />
+	<link href='https://fonts.googleapis.com/css?family=Hind+Siliguri:400,300,500,600,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="style.css" type="text/css" media="screen" />
-	<link rel="stylesheet" href="css/jguery.Select.css" type="text/css" media="screen" />	
 </head>
 <body>
 
@@ -19,8 +14,8 @@
 	<label for="trigger">
 		<i class="fa fa-bars"></i>
 	</label>
-	
-	<section id="navigation">	
+
+	<section id="navigation">
 		<div class="user">
 			<span>Jesteś zalogowany jako</span>
 			<div class="images">
@@ -32,18 +27,22 @@
 				</a>
 			</span>
 			<span>Lekarz</span>
+			<div class="switch">
+				<input type="checkbox" name="switch" class="switch-checkbox" id="id5a">
+				<label class="switch-label" for="id5a"></label>
+			</div>
 		</div>
 		<nav>
 			<ul>
 				<li class="active"><a href="search.html"><i class="fa fa-search"></i> Szukaj</a></li>
 				<li><a href="dashboard.html"><i class="fa fa-area-chart"></i>Pulpit</a></li>
 				<li><a href="calendar_30days.html"><i class="fa fa-calendar"></i>Kalnedarz</a></li>
-				<li><a href="card_patient.html"><i class="fa fa-folder-open-o"></i>Karta Pacjenta</a></li>
+				<li><a href="#"><i class="fa fa-folder-open-o"></i>Karta Pacjenta</a></li>
 				<li><a href="visit.html"><i class="fa fa-folder-open-o"></i>Moje wizyty</a></li>
 				<li><a href="cabinet_list.html"><i class="fa fa-hospital-o"></i>Gabinet</a></li>
 				<li><a href="message.html"><i class="fa fa-inbox"></i>Wiadomości</a></li>
 				<li><a href="my_account.html"><i class="fa fa-cogs"></i>Moje konto</a></li>
-				<li><a href="statistic.html"><i class="fa fa-bar-chart"></i>Statystyki</a></li>	
+				<li><a href="statistic.html"><i class="fa fa-bar-chart"></i>Statystyki</a></li>
 				<li><a href="#"><i class="fa fa-sign-out"></i>Wyloguj</a></li>
 			</ul>
 		</nav>
@@ -51,8 +50,8 @@
 			Power by <a href="http://www.herolynx.com" target="_blank">HeroLynx.com</a>
 		</div>
 	</section>
-	
-	<section id="main-content">		
+
+	<section id="main-content">
 		<div id="title">
 			<div class="content">
 				<h2>Gabinet</h2>
@@ -65,34 +64,22 @@
 					</ul>
 				</nav>
 				<div class="action">
-					<a href="#"><i class="fa fa-bell-o"></i><span>20</span></a>
+					<a href="message.html"><i class="fa fa-bell-o"></i><span>20</span></a>
 					<a href="#"><i class="fa fa-power-off"></i></a>
-				</div>		
+				</div>
 			</div>
-		</div>		
-		
-		<section id="cabinet">			
+		</div>
+
+		<section id="cabinet">
 			<div class="row">
-				<div class="col col-5">							
-					<div class="window">						
+				<div class="col col-5">
+					<div class="window">
 						<div class="title-window">
-							<div class="choose">
-								<fieldset>
-									<select>
-										<option value="1">Wybierz gabinet</option>
-										<option value="2">NFZ Róża</option>
-										<option value="3">Remedis</option>
-									</select>
-								</fieldset>
-							</div>
-							<div class="box">							
-								<span>
+							<div class="title">
 									Informacje
-								</span>								
-							</div>							
+							</div>
 						</div>
-						
-						<div class="tabs-wrapper">							
+						<div class="tabs-wrapper">
 							<div id="tab-1" class="tab-content current">
 								<ul class="list">
 									<li>
@@ -100,21 +87,24 @@
 											<span class="title">Kolor gabinetu:</span>
 											<fieldset>
 												<div class="color">
-													<input type="hidden" id="hidden-input" class="colorpicker" value="#B12200">	
+													<input type="hidden" id="hidden-input" class="colorpicker" value="#B12200">
 												</div>
 											</fieldset>
-										</div>										
+										</div>
 										<div class="action block">
-											
+
 										</div>
 									</li>
 									<li>
 										<div class="info one">
 											<span class="title">Nazwa gabinetu:</span>
-											<fieldset>
+											<fieldset class="error">
+												<div class="validation">
+													Wypełnij pole
+												</div>
 												<textarea class="elastic">Niepubliczny Zakład Medycyny Stosowanej</textarea>
 											</fieldset>
-										</div>										
+										</div>
 										<div class="action block">
 											<a href="#" id="edit"><i class="fa fa-pencil"></i></a>
 										</div>
@@ -122,10 +112,10 @@
 									<li>
 										<div class="info one">
 											<span class="title">Skrócona nazwa gabinetu:</span>
-											<fieldset>											
+											<fieldset>
 												<input type="text" value="NZMS Róża">
 											</fieldset>
-										</div>										
+										</div>
 										<div class="action block">
 											<a href="#" id="edit"><i class="fa fa-pencil"></i></a>
 										</div>
@@ -133,11 +123,16 @@
 									<li>
 										<div class="info one">
 											<span class="title">Adres gabinetu:</span>
-											<fieldset>	
+											<fieldset>
 												<input type="text" value="ul. Woronicza 17" placeholder="Ulica" disabled>
+											</fieldset>
+											<fieldset class="error">
+												<div class="validation">
+													Wypełnij pole
+												</div>
 												<input type="text" value="51-223 Warszawa" placeholder="Kod pocztowy">
-											<fieldset>	
-										</div>										
+											<fieldset>
+										</div>
 										<div class="action block">
 											<a href="#" id="edit"><i class="fa fa-pencil"></i></a>
 										</div>
@@ -145,21 +140,21 @@
 									<li>
 										<div class="info two">
 											<span class="title">Dane kontaktowe:</span>
-										
+
 											<div class="field">
 												<fieldset>
 													<select>
 														<option value="1">Telefon</option>
 														<option value="2">Adres E-mail</option>
-														<option value="3">Fax</option>														
-													</select>													
+														<option value="3">Fax</option>
+													</select>
 												</fieldset>
 												<fieldset>
-													<input type="text" value="Numer telefonu" placeholder="Od">	
-													<a href="#" class="delete"><i class="fa fa-trash-o"></i></a>	
+													<input type="text" value="Numer telefonu" placeholder="Od">
+													<a href="#" class="delete"><i class="fa fa-trash-o"></i></a>
 												</fieldset>
 											</div>
-										</div>										
+										</div>
 										<div class="action block">
 											<a href="#"><i class="fa fa-plus-circle"></i></a>
 											<a href="#" id="edit"><i class="fa fa-pencil"></i></a>
@@ -168,7 +163,7 @@
 									<li>
 										<div class="info three">
 											<span class="title">Godziny otwarcia:</span>
-											
+
 											<div class="field">
 												<fieldset>
 													<select>
@@ -179,14 +174,14 @@
 														<option value="5">Piątek</option>
 														<option value="6">Sobota</option>
 														<option value="7">Niedziela</option>
-													</select>													
+													</select>
 												</fieldset>
 												<fieldset>
-													<input type="text" value="8:30" class="hour" placeholder="Od">																										
+													<input type="text" value="8:30" class="hour" placeholder="Od">
 												</fieldset>
 												<fieldset>
 													<input type="text" value="8:30" class="hour" placeholder="Do">
-													<a href="#" class="delete"><i class="fa fa-trash-o"></i></a>												
+													<a href="#" class="delete"><i class="fa fa-trash-o"></i></a>
 												</fieldset>
 											</div>
 											<div class="field">
@@ -199,14 +194,14 @@
 														<option value="5">Piątek</option>
 														<option value="6">Sobota</option>
 														<option value="7">Niedziela</option>
-													</select>													
+													</select>
 												</fieldset>
 												<fieldset>
-													<input type="text" value="8:30" class="hour" placeholder="Od">																										
+													<input type="text" value="8:30" class="hour" placeholder="Od">
 												</fieldset>
 												<fieldset>
 													<input type="text" value="8:30" class="hour" placeholder="Do">
-													<a href="#" class="delete"><i class="fa fa-trash-o"></i></a>												
+													<a href="#" class="delete"><i class="fa fa-trash-o"></i></a>
 												</fieldset>
 											</div>
 											<div class="field">
@@ -219,14 +214,14 @@
 														<option value="5">Piątek</option>
 														<option value="6">Sobota</option>
 														<option value="7">Niedziela</option>
-													</select>													
+													</select>
 												</fieldset>
 												<fieldset>
-													<input type="text" value="8:30" class="hour" placeholder="Od">																										
+													<input type="text" value="8:30" class="hour" placeholder="Od">
 												</fieldset>
 												<fieldset>
 													<input type="text" value="8:30" class="hour" placeholder="Do">
-													<a href="#" class="delete"><i class="fa fa-trash-o"></i></a>												
+													<a href="#" class="delete"><i class="fa fa-trash-o"></i></a>
 												</fieldset>
 											</div>
 											<div class="field">
@@ -239,80 +234,52 @@
 														<option value="5">Piątek</option>
 														<option value="6">Sobota</option>
 														<option value="7">Niedziela</option>
-													</select>													
+													</select>
 												</fieldset>
 												<fieldset>
-													<input type="text" value="8:30" class="hour" placeholder="Od">																										
+													<input type="text" value="8:30" class="hour" placeholder="Od">
 												</fieldset>
 												<fieldset>
 													<input type="text" value="8:30" class="hour" placeholder="Do">
-													<a href="#" class="delete"><i class="fa fa-trash-o"></i></a>												
+													<a href="#" class="delete"><i class="fa fa-trash-o"></i></a>
 												</fieldset>
 											</div>
-										</div>										
+										</div>
 										<div class="action block">
 											<a href="#"><i class="fa fa-plus-circle"></i></a>
 											<a href="#"><i class="fa fa-pencil"></i></a>
 										</div>
 									</li>
-									
-									<li>
-										<div class="info two">
-											<span class="title">Cennik:</span>	
-											<div class="field">
-												<fieldset>	
-													<input type="text" value="Wizyta kontrolna" placeholder="Nazwa zabiegu">						
-												</fieldset>	
-												<fieldset>								
-													<input type="text" value="150 zł" placeholder="Kod pocztowy">
-													<a href="#" class="delete"><i class="fa fa-trash-o"></i></a>	
-												</fieldset>	
-											</div>
-											<div class="field">
-												<fieldset>	
-													<input type="text" value="" placeholder="Nazwa zabiegu">						
-												</fieldset>	
-												<fieldset>								
-													<input type="text" value="" placeholder="Cena">
-													<a href="#" class="delete"><i class="fa fa-trash-o"></i></a>	
-												</fieldset>	
-											</div>
-										</div>										
-										<div class="action block">
-											<a href="#"><i class="fa fa-plus-circle"></i></a>
-											<a href="#" id="edit"><i class="fa fa-pencil"></i></a>
-										</div>
-									</li>									
 									<li>
 										<div class="info two">
 											<span class="title">Płatność:</span>
-										
+
 											<div class="field">
 												<fieldset>
 													<select>
 														<option value="1">Karta płatnicza</option>
 														<option value="2">Gotówka</option>
 														<option value="3">Przelew</option>
-														<option value="3">Czek</option>																
+														<option value="3">Czek</option>
 													</select>
-													<a href="#" class="delete"><i class="fa fa-trash-o"></i></a>														
-												</fieldset>												
+													<a href="#" class="delete"><i class="fa fa-trash-o"></i></a>
+												</fieldset>
 											</div>
-										</div>										
-										<div class="action block">
-											<a href="#"><i class="fa fa-plus-circle"></i></a>									
 										</div>
-									</li>									
-								</ul>		
+										<div class="action block">
+											<a href="#"><i class="fa fa-plus-circle"></i></a>
+										</div>
+									</li>
+								</ul>
 							</div>
-							
+
 							<div id="tab-2" class="tab-content">
 								<div class="add">
-									<a href="#"><i class="fa fa-plus-circle"></i></a>									
+									<a href="#"><i class="fa fa-plus-circle"></i></a>
 								</div>
-								<ul class="list">							
+								<ul class="list">
 									<li class="deactive">
-										<div class="info current">		
+										<div class="info current">
 											<div class="color">
 												<input type="hidden" id="hidden-input" class="colorpicker" value="#00CACC">
 											</div>
@@ -320,11 +287,18 @@
 												<input type="hidden" id="hidden-input" class="color" value="#FFF">
 												<input type="text" value="Ekstrakcja zbęba" placeholder="Nazwa zabiegu">
 											</fieldset>
-											<div class="time">											
+											<div class="option time">
 												<label>Czas zabiegu: </label>
 												<fieldset>
 													<input type="text"  maxlength="3" value="">
-													<label>min</label>													
+													<label>min</label>
+												</fieldset>
+											</div>
+											<div class="option price">
+												<label>Cena: </label>
+												<fieldset>
+													<input type="text" maxlength="4" value="">
+													<label>PLN</label>
 												</fieldset>
 											</div>
 										</div>
@@ -332,24 +306,31 @@
 											<div class="switch">
 												<input type="checkbox" name="switch" class="switch-checkbox" id="id1">
 												<label class="switch-label" for="id1"></label>
-											</div>		
-											<a href="#"><i class="fa fa-pencil"></i></a>			
+											</div>
+											<a href="#"><i class="fa fa-pencil"></i></a>
 											<a href="#"><i class="fa fa-trash-o"></i></a>
 										</div>
 									</li>
 									<li>
-										<div class="info current">	
+										<div class="info current">
 											<div class="color">
 												<input type="hidden" id="hidden-input" class="colorpicker" value="#B12200">
 											</div>
-											<fieldset>											
+											<fieldset>
 												<input type="text" value="Ekstrakcja zbęba" placeholder="Nazwa zabiegu">
 											</fieldset>
-											<div class="time">											
+											<div class="option time">
 												<label>Czas zabiegu: </label>
 												<fieldset>
 													<input type="text"  maxlength="3" value="">
-													<label>min</label>													
+													<label>min</label>
+												</fieldset>
+											</div>
+											<div class="option price">
+												<label>Cena: </label>
+												<fieldset>
+													<input type="text" maxlength="4" value="">
+													<label>PLN</label>
 												</fieldset>
 											</div>
 										</div>
@@ -357,25 +338,32 @@
 											<div class="switch">
 												<input type="checkbox" name="switch" class="switch-checkbox" id="id2" checked>
 												<label class="switch-label" for="id2"></label>
-											</div>		
-											<a href="#"><i class="fa fa-floppy-o"></i></a>			
+											</div>
+											<a href="#"><i class="fa fa-floppy-o"></i></a>
 											<a href="#"><i class="fa fa-trash-o"></i></a>
 										</div>
 									</li>
-									
+
 									<li>
-										<div class="info current">	
+										<div class="info current">
 											<div class="color">
 												<input type="hidden" id="hidden-input" class="colorpicker" value="#0090FF">
 											</div>
 											<fieldset>
 												<input type="text" value="Ekstrakcja zbęba" placeholder="Nazwa zabiegu"  disabled>
 											</fieldset>
-											<div class="time">											
+											<div class="option time">
 												<label>Czas zabiegu: </label>
 												<fieldset>
-													<input type="text"  maxlength="3" value="33"  disabled>
-													<label>min</label>										
+													<input type="text"  maxlength="3" value="">
+													<label>min</label>
+												</fieldset>
+											</div>
+											<div class="option price">
+												<label>Cena: </label>
+												<fieldset>
+													<input type="text" maxlength="4" value="">
+													<label>PLN</label>
 												</fieldset>
 											</div>
 										</div>
@@ -383,115 +371,98 @@
 											<div class="switch">
 												<input type="checkbox" name="switch" class="switch-checkbox" id="id3c" checked>
 												<label class="switch-label" for="id3c"></label>
-											</div>		
-											<a href="#"><i class="fa fa-pencil"></i></a>			
+											</div>
+											<a href="#"><i class="fa fa-pencil"></i></a>
 											<a href="#"><i class="fa fa-trash-o"></i></a>
 										</div>
-									</li>									
-								</ul>	
+									</li>
+								</ul>
 							</div>
-							
+
 							<div id="tab-3" class="tab-content">
 								<div class="add">
-									<a href="#"><i class="fa fa-plus-circle"></i></a>									
+									<a href="#"><i class="fa fa-plus-circle"></i></a>
 								</div>
-															
-								<ul class="doctor">							
+
+								<ul class="doctor">
 									<li class="deactive">
-										<div class="box">		
-											<span class="name">
-												<span class="title">prof. dr. hab</span> Tomasz Terlikowski											
-												<span class="specialization">specjalizacja: chirurgia ogólna</span>
-											</span>		
+										<div class="box">
 											<div class="pic">
 												<div class="images">
-													<a href="#" class="more">
-														<img src="images/sample-men.jpg" alt="Mateusz Kowalski">													
-													</a>
-												</div>											
-											</div>					
-											
-											<span class="address">												
-												<a href="">
-													NIEPUBLICZNY ZAKŁAD OPIEKI ZDROWOTNEJ "MULTI-MEDYK" SP. Z O.O.
-												</a>											
-												ul. Woronicza 17, 55-44 Wrocław 
-											</span>
+														<img src="images/sample-men.jpg" alt="Mateusz Kowalski">
+														<a href="profile_doctor.html" class="more">
+															<i class="fa fa-eye"></i>
+														</a>
+												</div>
+											</div>
+											<div class="name">
+												<span class="title">prof. dr. hab</span> Tomasz Terlikowski
+												<span class="specialization">specjalizacja: chirurgia ogólna</span>
+											</div>
 											<div class="action line">
 												<div class="switch">
 													<input type="checkbox" name="switch" class="switch-checkbox" id="id3a">
 													<label class="switch-label" for="id3a"></label>
-												</div>			
+												</div>
 												<a href="#"><i class="fa fa-trash-o"></i></a>
 											</div>
 										</div>
 									</li>
-									
+
 									<li>
-										<div class="box">		
-											<span class="name">
-												<span class="title">prof. dr. hab</span> Tomasz Terlikowski											
-												<span class="specialization">specjalizacja: chirurgia ogólna</span>
-											</span>		
+										<div class="box">
 											<div class="pic">
 												<div class="images">
-													<a href="#" class="more">
-														<img src="images/sample-men.jpg" alt="Mateusz Kowalski">													
-													</a>	
+														<img src="images/sample-men.jpg" alt="Mateusz Kowalski">
+														<a href="profile_doctor.html" class="more">
+															<i class="fa fa-eye"></i>
+														</a>
 												</div>
-											</div>											
-											<span class="address">												
-												<a href="">
-													NIEPUBLICZNY ZAKŁAD OPIEKI ZDROWOTNEJ "MULTI-MEDYK" SP. Z O.O.
-												</a>											
-												ul. Woronicza 17, 55-44 Wrocław 
-											</span>
+											</div>
+											<div class="name">
+												<span class="title">prof. dr. hab</span> Tomasz Terlikowski
+												<span class="specialization">specjalizacja: chirurgia ogólna</span>
+											</div>
 											<div class="action line">
 												<div class="switch">
 													<input type="checkbox" name="switch" class="switch-checkbox" id="id3b" checked>
 													<label class="switch-label" for="id3b"></label>
-												</div>			
+												</div>
 												<a href="#"><i class="fa fa-trash-o"></i></a>
 											</div>
 										</div>
 									</li>
-									
-									<li>										
-										<div class="box">		
-											<span class="name">
-												<span class="title">prof. dr. hab</span> Tomasz Terlikowski											
-												<span class="specialization">specjalizacja: chirurgia ogólna</span>
-											</span>		
+									<li>
+										<div class="box">
 											<div class="pic">
 												<div class="images">
-													<a href="#" class="more">
-														<img src="images/sample-men.jpg" alt="Mateusz Kowalski">													
-													</a>	
-												</div>								
-											</div>												
-											<span class="address">												
-												<a href="">
-													NIEPUBLICZNY ZAKŁAD OPIEKI ZDROWOTNEJ "MULTI-MEDYK" SP. Z O.O.
-												</a>											
-												ul. Woronicza 17, 55-44 Wrocław 
-											</span>
+														<img src="images/sample-men.jpg" alt="Mateusz Kowalski">
+														<a href="profile_doctor.html" class="more">
+															<i class="fa fa-eye"></i>
+														</a>
+												</div>
+											</div>
+											<div class="name">
+												<span class="title">prof. dr. hab</span> Tomasz Terlikowski
+												<span class="specialization">specjalizacja: chirurgia ogólna</span>
+											</div>
 											<div class="action line">
 												<div class="switch">
 													<input type="checkbox" name="switch" class="switch-checkbox" id="id3" checked>
 													<label class="switch-label" for="id3"></label>
-												</div>			
+												</div>
 												<a href="#"><i class="fa fa-trash-o"></i></a>
 											</div>
 										</div>
 									</li>
-								</ul>	
+								</ul>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>			
+			</div>
 		</section>
-	</section>	
+	</section>
 </div>
 
 
@@ -500,7 +471,7 @@
 <script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
 <script type="text/javascript" src="js/jquery.minicolors.min.js"></script>
 <script type="text/javascript" src="js/jquery.elastic.js"></script>
-<script type="text/javascript" src="js/chart.min.js"></script> 
+<script type="text/javascript" src="js/chart.min.js"></script>
 <script type="text/javascript" src="js/jquery.mCustomScrollbar.concat.min.js"></script>
 <script type="text/javascript" src="js/masonry.pkgd.min.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
