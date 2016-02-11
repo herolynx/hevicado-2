@@ -4,12 +4,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 	<title>Hevicado 2.0</title>
-	<link href='https://fonts.googleapis.com/css?family=Lato:400,700,900,300,100' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" media="screen" />
-	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" type="text/css" media="screen" />
-	<link rel="stylesheet" href="elements.css" type="text/css" media="screen" />
+<link href='https://fonts.googleapis.com/css?family=Hind+Siliguri:400,300,500,600,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="style.css" type="text/css" media="screen" />
-	<link rel="stylesheet" href="css/jguery.Select.css" type="text/css" media="screen" />	
 </head>
 <body>
 
@@ -18,26 +14,31 @@
 	<label for="trigger">
 		<i class="fa fa-bars"></i>
 	</label>
-	
-	<section id="navigation">	
+
+	<section id="navigation">
 		<div class="user">
 			<span>Jesteś zalogowany jako</span>
 			<div class="images">
 				<img src="images/sample-men.jpg" alt="Mateusz Kowalski">
 			</div>
-			<span class="name">
+			<div class="name">
 				<a href="my_account.html">
-				Mateusz<br/>Kowalski
+					<span>Mateusz</span>
+					<span>Kowalski</span>
 				</a>
-			</span>
-			<span>Lekarz</span>
+				<span>Lekarz</span>
+			</div>
+			<div class="switch">
+				<input type="checkbox" name="switch" class="switch-checkbox" id="id5a">
+				<label class="switch-label" for="id5a"></label>
+			</div>
 		</div>
 		<nav>
 			<ul>
 				<li class="active"><a href="search.html"><i class="fa fa-search"></i> Szukaj</a></li>
 				<li><a href="dashboard.html"><i class="fa fa-area-chart"></i>Pulpit</a></li>
 				<li><a href="calendar_30days.html"><i class="fa fa-calendar"></i>Kalnedarz</a></li>
-				<li><a href="card_patient.html"><i class="fa fa-folder-open-o"></i>Karta Pacjenta</a></li>
+				<li><a href="#"><i class="fa fa-folder-open-o"></i>Karta Pacjenta</a></li>
 				<li><a href="visit.html"><i class="fa fa-folder-open-o"></i>Moje wizyty</a></li>
 				<li><a href="cabinet_list.html"><i class="fa fa-hospital-o"></i>Gabinet</a></li>
 				<li><a href="message.html"><i class="fa fa-inbox"></i>Wiadomości</a></li>
@@ -50,244 +51,296 @@
 			Power by <a href="http://www.herolynx.com" target="_blank">HeroLynx.com</a>
 		</div>
 	</section>
-	
-	<section id="main-content">		
+
+	<section id="main-content">
 		<div id="title">
 			<div class="content">
-				<h2>Gabinet</h2>
-				<nav>
-					<ul>
-						<li class="active"><a href="cabinet_list.html"><i class="fa fa-list"></i><span>Lista</span></a></li>
-						<li class="tab-link current" data-tab="tab-1"><a href="#"><i class="fa fa-file-text-o"></i><span>Informacje</span></a></li>
-						<li class="tab-link" data-tab="tab-2"><a href="#"><i class="fa fa-ban"></i><span>Zabiegi</span></a></li>
-						<li class="tab-link" data-tab="tab-3"><a href="#"><i class="fa fa-user-md"></i><span>Lekarze</span></a></li>
-					</ul>
-				</nav>
+				<h2>Profil lekarza</h2>
 				<div class="action">
-					<a href="#"><i class="fa fa-bell-o"></i><span>20</span></a>
+					<a href="message.html"><i class="fa fa-bell-o"></i><span>20</span></a>
 					<a href="#"><i class="fa fa-power-off"></i></a>
-				</div>		
+				</div>
 			</div>
-		</div>		
-		
-		<section id="profile">			
+		</div>
+
+		<section id="profile">
 			<div class="row">
-				<div class="col col-5">							
-					<div class="window">						
-						<div class="row">
-							<div class="col col-5">
-								<div class="name">
-									Michał Bączek
-									<span class="specialization">
-										Fizjoterapeuta
-									</span>
-								</div>
-								
-								<div class="short-describe">
-								Kierownik Centrum Medyczno-Rehabilitacyjnego Marlibo-Medica, mgr fizjoterapii, fizjoterapeuta, certyfikowany terapeuta manualny. Absolwent I i II stopnia fizjoterapii Śląskiego Un... 
-								</div>
-							</div>
-							
-							<div class="col col-2">
-								<div class="images">
-									<img src="images/sample-men.jpg" alt="Mateusz Kowalski">
-								
-								</div>		
-								<div class="ratting">
-								
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<section id="calendar">		
-								<div class="row">
-									<div class="week">		
-										<div class="col col-8">																		
-											<div class="title-window">
-												<div class="choose">
-													<fieldset>
-														<select>
-															<option value="1">Wybierz gabinet</option>
-															<option value="2">NFZ Róża</option>
-															<option value="3">Remedis</option>
-														</select>
-													</fieldset>
-												</div>
+				<div class="col col-6 first">
+					<ul class="navigation">
+						<li><a href="#">Informacje o lekarzu</a></li>
+						<li><a href="#"><a href="#">Gabinet(y)</a></a></li>
+						<li><a href="#">Opinie</a></li>
+					</ul>
+					<div class="row">
+						<div class="col col-8">
+							<div class="window">
+								<div class="col col-1">
+									<div class="profile">
+										<div class="image-profile">
+											<img src="images/sample-men.jpg" alt="Mateusz Kowalski">
+										</div>
+										<div class="info-profile">
+											<span class="specialization">
+												prof. dr
+											</span>
+											<div class="name">
+												<span class="name">Adam</span>
+												<span class="surrname">Mickiewicz</span>
+												<span class="specialization">
+													Fizjoterapeuta
+												</span>
 											</div>
-											<ul class="days">
-												<li class="hour"></li>
-												<li>PN <span>29.03.15</span></li>
-												<li>WT <span>29.03.15</span></li>
-												<li>ŚR <span>29.03.15</span></li>
-												<li>CZW <span>29.03.15</span></li>
-												<li>PT <span>29.03.15</span></li>
-												<li>SOB <span>29.03.15</span></li>
-												<li>ND <span>29.03.15</span></li>
-											</ul>							
-											<ul class="table">
-												<div class="timeline" style="top:35%">9:45</div>
-												<li class="hour">
-													<div class="day">
-														<div class="box">
-															<span>9:00</span>
-														</div>
-													</div>
-													<div class="day">
-														<div class="box">
-															<span>10:00</span>
-														</div>
-													</div>
-													<div class="day">
-														<div class="box">
-															<span>11:00</span>
-														</div>
-													</div>
-													<div class="day">
-														<div class="box">
-															<span>12:00</span>
-														</div>
-													</div>
-													<div class="day">
-														<div class="box">
-															<span>13:00</span>
-														</div>
-													</div>
-												</li>
-												<li>
-													<div class="event" style="top:30%; height:230px; background:green;">
-														<a href="#"></a>
-														<span>K. Kowalski</span>								
-													</div>
-													<div class="day">
-														<div class="box"></div>
-													</div>
-													<div class="day">
-														<div class="box"></div>
-													</div>
-													<div class="day">
-														<div class="box"></div>
-													</div>
-													<div class="day">
-														<div class="box"></div>
-													</div>
-													<div class="day">
-														<div class="box"></div>
-													</div>
-												</li>
-												<li>
-													<div class="day">
-														<div class="box"></div>
-													</div>
-													<div class="day">
-														<div class="box"></div>
-													</div>
-													<div class="day">
-														<div class="box"></div>
-													</div>
-													<div class="day">
-														<div class="box"></div>
-													</div>
-													<div class="day">
-														<div class="box"></div>
-													</div>
-												</li>
-												<li>
-													<div class="day">
-														<div class="box"></div>
-													</div>
-													<div class="day">
-														<div class="box"></div>
-													</div>
-													<div class="day">
-														<div class="box"></div>
-													</div>
-													<div class="day">
-														<div class="box"></div>
-													</div>
-													<div class="day">
-														<div class="box"></div>
-													</div>
-												</li>
-												<li>
-													<div class="day">
-														<div class="box"></div>
-													</div>
-													<div class="day">
-														<div class="box"></div>
-													</div>
-													<div class="day">
-														<div class="box"></div>
-													</div>
-													<div class="day">
-														<div class="box"></div>
-													</div>
-													<div class="day">
-														<div class="box"></div>
-													</div>
-												</li>
-												<li>
-													<div class="day">
-														<div class="box"></div>
-													</div>
-													<div class="day">
-														<div class="box"></div>
-													</div>
-													<div class="day">
-														<div class="box"></div>
-													</div>
-													<div class="day">
-														<div class="box"></div>
-													</div>
-													<div class="day">
-														<div class="box"></div>
-													</div>
-												</li>
-												<li>
-													<div class="day">
-														<div class="box"></div>
-													</div>
-													<div class="day">
-														<div class="box"></div>
-													</div>
-													<div class="day">
-														<div class="box"></div>
-													</div>
-													<div class="day">
-														<div class="box"></div>
-													</div>
-													<div class="day">
-														<div class="box"></div>
-													</div>
-												</li>
-												<li>
-													<div class="day">
-														<div class="box"></div>
-													</div>
-													<div class="day">
-														<div class="box"></div>
-													</div>
-													<div class="day">
-														<div class="box"></div>
-													</div>
-													<div class="day">
-														<div class="box"></div>
-													</div>
-													<div class="day">
-														<div class="box"></div>
-													</div>
-												</li>
-											</ul>							
-										</div>											
+											<div class="ratting">
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star-o"></i>
+													<i class="fa fa-star-o"></i>
+											</div>
+											<span class="specialization">
+												Opinie (120)
+											</span>
+										</div>
 									</div>
-								</div>	
-							</section>
-						
+								</div>
+								<div class="col col-6 line-lt">
+									<div class="title">
+										Informacje o lekarzu
+									</div>
+									<div class="describe">
+										<p>
+										Jestem psychologiem i psychotraumatologiem. Udzielam pomocy osobom, które doznały traumy w następstwie nagłych zdarzeń takich jak katastrofa, działania wojenne, klęska żywiołowa, śmierć bliskiej osoby, wypadek, gwałt, wykorzystanie seksualne, długotrwała przemoc w rodzinie. Pomagam osiągnąć utraconą równowagę psychiczną, odnaleźć wyjście z trudnej sytuacji za pomocą terapii.
+										</p>
+										<p>
+											Jeśli nawet drobne sprawy zaczynają Cię przerastać, unikasz nawet najbliższych Ci osób, jesteś sam ze swoim smutkiem, czy przerażaniem - przyjdź. Razem przyjrzymy się przyczynom obecnej sytuacji i znajdziemy sposób na jej poprawę.
+										</p>
+										<p>
+											Ukończyłam studia w Szkole Wyższej Psychologii Społecznej w Warszawie. Moją specjalizacją jest Diagnoza psychologiczna oraz Psychotraumatologia. Swoje doświadczenie zdobywałam w Mazowieckim Szpitalu Bródnowskim, na oddziale psychiatrii oraz w Szpitalu Specjalistycznym MSW, na Oddziale Leczenia Zaburzeń Nerwicowych. Specjalizuję się we wczesnej interwencji po traumatycznych zdarzeniach oraz w terapii skoncentrowanej na traumie osób dorosłych. Posiadam doświadczenie w terapii PTSD oraz zaburzeń nerwicowych zdobyte m.in. w terapii funkcjonariuszy służb mundurowych.
+										</p>
+									</div>
+									<div class="row">
+										<div class="col col-3">
+											<div class="title">
+												Ukończone szkoły
+											</div>
+											<ul>
+												<li>Szkoła Wyższa Psychologii Społecznej (mgr.psychologii, psychologia klilniczna - Warszawa, 2008)</li>
+												<li>Szkoła Wyższa Psychologii Społecznej (studia podyplomowe - Diagnoza psychologiczna w praktyce klinicznej)</li>
+												<li>Szkoła Wyższa Psychologii Społecznej (studia podyplomowe - Psychotraumatologia)</li>
+											</ul>
+											<div class="title">
+												Języki
+											</div>
+											<ul>
+												<li>Angielski</li>
+												<li>Niemiecki</li>
+											</ul>
+										</div>
+										<div class="col col-3">
+											<div class="title">
+												Specjaliacje
+											</div>
+											<ul>
+												<li>Chirurgia ogolna</li>
+												<li>Psychologia</li>
+											</ul>
+											<div class="title">
+												Certyfikaty
+											</div>
+											<div class="images">
+												<img src="images/sample-men.jpg" alt="Mateusz Kowalski">
+											</div>
+											<div class="images">
+												<img src="images/sample-men.jpg" alt="Mateusz Kowalski">
+											</div>
+											<div class="images">
+												<img src="images/sample-men.jpg" alt="Mateusz Kowalski">
+											</div>
+											<div class="images">
+												<img src="images/sample-men.jpg" alt="Mateusz Kowalski">
+											</div>
+										</div>
+									</div>
+							</div>
 						</div>
 					</div>
+
+					<div class="row">
+						<div class="col col-8">
+							<div class="window cabinet">
+								<div class="col col-6 line-rt ">
+									<div class="title">
+										Gabinet
+									</div>
+									<div class="info-cabinet">
+										<div class="maps">
+											<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d320513.1439457554!2d16.711685830748372!3d51.12674318241336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470fe9c2d4b58abf%3A0xb70956aec205e0f5!2zV3JvY8WCYXc!5e0!3m2!1spl!2spl!4v1454005553113" width="100%" height="150" frameborder="0" style="border:0" allowfullscreen></iframe>
+										</div>
+										<div class="info">
+											<div class="address">
+												<a href="#">Niepubliczny Zakład Chorob i Zdrowia</a><br/>
+												ul. Feliksa Konarskiego 22<br/>
+												05-500 Piaseczno, mazowieckie<br/>
+												+48 22 276 70 80
+											</div>
+											<div class="visit">
+												<a href="calendar_7days.html" class="btn lg blue">
+														Umow się na wizytę
+												</a>
+											</div>
+										</div>
+										<div class="service">
+											<ul>
+												<li>Nastawianie kolana bez znieczulenia<span>1000 zł</span></li>
+												<li>Popatrzenie w ucho<span>50 zł</span></li>
+												<li>Dotknięcie czoła<span>100 zł</span></li>
+												<li>Bycie miłym<span>20 zł</span></li>
+											</ul>
+											<ul>
+												<li>Nastawianie kolana bez znieczulenia<span>1000 zł</span></li>
+												<li>Popatrzenie w ucho<span>50 zł</span></li>
+												<li>Dotknięcie czoła<span>100 zł</span></li>
+											</ul>
+										</div>
+										<div class="cabinet-images">
+											<div class="title">
+												Zdjęcia gabinetu
+											</div>
+											<div class="images">
+												<img src="images/sample-men.jpg" alt="Mateusz Kowalski">
+											</div>
+											<div class="images">
+												<img src="images/sample-men.jpg" alt="Mateusz Kowalski">
+											</div>
+											<div class="images">
+												<img src="images/sample-men.jpg" alt="Mateusz Kowalski">
+											</div>
+											<div class="images">
+												<img src="images/sample-men.jpg" alt="Mateusz Kowalski">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col col-1">
+									<div class="title">
+										Godziny otwarcia
+									</div>
+									<div class="hour">
+										<ul>
+											<li>Poniedziałek <span>9:00 - 20:00</span></li>
+											<li>Worek <span>9:00 - 20:00</span></li>
+											<li>Środa <span>9:00 - 20:00</span></li>
+											<li>Czwartek <span>9:00 - 20:00</span></li>
+											<li>Piątek <span>9:00 - 20:00</span></li>
+											<li>Sobota <span>Nieczynne</span></li>
+											<li>Niedziela <span>Nieczynne</span></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col col-8">
+							<div class="window">
+								<div class="opinion">
+									<div class="title">
+										Opinie pacjentow
+										<div class="ratting">
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star-o"></i>
+												<i class="fa fa-star-o"></i>
+										</div>
+									</div>
+									<div class="choose">
+										<fieldset>
+											<select>
+												<option value="1">Pozytywne</option>
+												<option value="2">Negatywne</option>
+												<option value="2">Neutralne</option>
+											</select>
+										</fieldset>
+									</div>
+									<div class="chart">
+										<div class="box">
+											<div class="chart-css"></div>
+											<span>Pozytywne</span>
+										</div>
+										<div class="box">
+												<div class="chart-css"></div>
+											<span>Negatywne</span>
+										</div>
+										<div class="box">
+											<div class="chart-css"></div>
+											<span>Neutralne</span>
+										</div>
+									</div>
+									<ul class="opinion">
+										<li>
+											<div class="title">
+												Najnowsze opinie
+											</div>
+											<a href="calendar_7days.html" class="btn lg blue">
+													Dodaj opinie
+											</a>
+										</li>
+										<li>
+											<div class="describe">
+												<div class="user">
+													<div class="images">
+															<img src="images/sample-men.jpg" alt="Mateusz Kowalski">
+													</div>
+													<span class="name">Michał</span>
+													<span class="surname">Kochanowski</span>
+												</div>
+												<span class="date">20 sierpień 2015</span>
+												<p>
+													Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam condimentum nec dolor vitae pulvinar. Suspendisse efficitur elit sed mauris facilisis dictum. Proin sed ipsum at dui auctor aliquet ac eget sem. Integer finibus felis id quam cursus mattis. Sed dapibus blandit pretium. Nulla facilisi. Aenean ac consectetur ante. Sed pellentesque arcu felis, at ultricies erat scelerisque eu. Aliquam enim ex, interdum ac mollis ut, porttitor et mauris. Proin luctus posuere libero at tincidunt. Nunc consequat orci mi, sed scelerisque dolor euismod id. Donec in purus aliquam, varius lorem non,
+												</p>
+												<div class="answer">
+													<div class="images">
+															<img src="images/sample-men.jpg" alt="Mateusz Kowalski">
+													</div>
+													<span class="date">20 sierpień 2015</span>
+													<span class="answer-doctor">Odpowiedź leakrza:</span>
+													<p>
+														Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam condimentum nec dolor vitae pulvinar. Suspendisse efficitur elit sed mauris facilisis dictum. Proin sed ipsum at dui auctor aliquet ac eget sem.
+													</p>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="describe">
+												<div class="user">
+													<div class="images">
+															<img src="images/sample-men.jpg" alt="Mateusz Kowalski">
+													</div>
+													<span class="name">Michał</span>
+													<span class="surname">Kochanowski</span>
+												</div>
+												<span class="date">20 sierpień 2015</span>
+												<p>
+													Proin sed ipsum at dui auctor aliquet ac eget sem. Integer finibus felis id quam cursus mattis. Sed dapibus blandit pretium. Nulla facilisi. Aenean ac consectetur ante. Sed pellentesque arcu felis, at ultricies erat scelerisque eu. Aliquam enim ex, interdum ac mollis ut, porttitor et mauris. Proin luctus posuere libero at tincidunt. Nunc consequat orci mi, sed scelerisque dolor euismod id. Donec in purus aliquam, varius lorem non,
+												</p>
+											</div>
+										</li>
+									<ul>
+
+
+
+								</div>
+							</div>
+						</div>
+					</div>
+
+
 				</div>
-			</div>			
+			</div>
 		</section>
-	</section>	
+	</section>
 </div>
 
 
@@ -296,7 +349,7 @@
 <script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
 <script type="text/javascript" src="js/jquery.minicolors.min.js"></script>
 <script type="text/javascript" src="js/jquery.elastic.js"></script>
-<script type="text/javascript" src="js/chart.min.js"></script> 
+<script type="text/javascript" src="js/chart.min.js"></script>
 <script type="text/javascript" src="js/jquery.mCustomScrollbar.concat.min.js"></script>
 <script type="text/javascript" src="js/masonry.pkgd.min.js"></script>
 <script type="text/javascript" src="js/script.js"></script>

@@ -4,12 +4,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 	<title>Hevicado 2.0</title>
-	<link href='https://fonts.googleapis.com/css?family=Lato:400,700,900,300,100' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" media="screen" />
-	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" type="text/css" media="screen" />
-	<link rel="stylesheet" href="elements.css" type="text/css" media="screen" />
+	<link href='https://fonts.googleapis.com/css?family=Hind+Siliguri:400,300,500,600,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="style.css" type="text/css" media="screen" />
-	<link rel="stylesheet" href="css/jguery.Select.css" type="text/css" media="screen" />	
 </head>
 <body>
 
@@ -18,8 +14,8 @@
 	<label for="trigger">
 		<i class="fa fa-bars"></i>
 	</label>
-	
-	<section id="navigation">	
+
+	<section id="navigation">
 		<div class="user">
 			<span>Jesteś zalogowany jako</span>
 			<div class="images">
@@ -31,13 +27,17 @@
 				</a>
 			</span>
 			<span>Lekarz</span>
+			<div class="switch">
+				<input type="checkbox" name="switch" class="switch-checkbox" id="id5a">
+				<label class="switch-label" for="id5a"></label>
+			</div>
 		</div>
 		<nav>
 			<ul>
 				<li class="active"><a href="search.html"><i class="fa fa-search"></i> Szukaj</a></li>
 				<li><a href="dashboard.html"><i class="fa fa-area-chart"></i>Pulpit</a></li>
 				<li><a href="calendar_30days.html"><i class="fa fa-calendar"></i>Kalnedarz</a></li>
-				<li><a href="card_patient.html"><i class="fa fa-folder-open-o"></i>Karta Pacjenta</a></li>
+				<li><a href="#"><i class="fa fa-folder-open-o"></i>Karta Pacjenta</a></li>
 				<li><a href="visit.html"><i class="fa fa-folder-open-o"></i>Moje wizyty</a></li>
 				<li><a href="cabinet_list.html"><i class="fa fa-hospital-o"></i>Gabinet</a></li>
 				<li><a href="message.html"><i class="fa fa-inbox"></i>Wiadomości</a></li>
@@ -50,7 +50,8 @@
 			Power by <a href="http://www.herolynx.com" target="_blank">HeroLynx.com</a>
 		</div>
 	</section>
-	<section id="main-content">		
+
+	<section id="main-content">
 		<div id="title">
 			<div class="content">
 				<h2>Gabinet</h2>
@@ -62,78 +63,114 @@
 					</ul>
 				</nav>
 				<div class="action">
-					<a href="#"><i class="fa fa-bell-o"></i><span>20</span></a>
+					<a href="message.html"><i class="fa fa-bell-o"></i><span>20</span></a>
 					<a href="#"><i class="fa fa-power-off"></i></a>
-				</div>				
+				</div>
 			</div>
-		</div>		
-		
-		<section id="account">			
+		</div>
+
+		<section id="account">
 			<div class="row">
-				<div class="col col-5">							
+				<div class="col col-5">
 					<div class="window">
-						<div class="title-window">							
-							<div class="box">								
-								<span>
+						<div class="title-window">
+							<div class="title">
 									Moje konto
-								</span>								
-							</div>							
+							</div>
 						</div>
-						<div class="tabs-wrapper">							
+						<div class="tabs-wrapper">
 							<div id="tab-1" class="tab-content current">
-								<ul class="list">								
+								<ul class="list">
 									<li>
 										<div class="info one">
-											<span class="title">Login:</span>	
+											<span class="title">Login:</span>
 											<div class="field one">
-												<fieldset>	
-													<input type="text" value="Twój login" disabled>							
-												</fieldset>	
-											</div>											
-										</div>											
-									</li>									
+												<fieldset>
+													<input type="text" value="Twój login" disabled>
+												</fieldset>
+											</div>
+										</div>
+									</li>
 									<li>
 										<div class="info two">
 											<span class="title">Zmiana hasła:</span>
 											<div class="field">
 												<fieldset>
-													<input type="text" value="" placeholder="Hasło">												
-												</fieldset>												
-											</div>
-											<div class="field">
-												<fieldset>
-													<input type="text" value="" placeholder="Powtórz hasło">	
+													<input type="text" value="" placeholder="Hasło">
 												</fieldset>
 											</div>
 											<div class="field">
 												<fieldset>
-													<input type="text" value="" placeholder="Nowe Hasło">											
-												</fieldset>	
+													<input type="text" value="" placeholder="Powtórz hasło">
+												</fieldset>
+											</div>
+											<div class="field">
+												<fieldset>
+													<input type="text" value="" placeholder="Nowe Hasło">
+												</fieldset>
 												<fieldset>
 													<button class="btn md blue"><i class="fa fa-unlock-alt"></i> Zmień hasło</button>
-												</fieldset>												
+												</fieldset>
+											</div>
+										</div>
+
+									</li>
+									<li>
+										<div class="info one">
+											<span class="title">Kolor serwisu:</span>
+											<div class="field">
+												<a href="" class="color blue check">
+
+												</a>
+												<a href="" class="color blue">
+
+												</a>
+												<a href="" class="color blue">
+
+												</a>
+												<a href="" class="color blue">
+
+												</a>
+												<a href="" class="color blue">
+
+												</a>
+											</div>
+										</div>
+
+									</li>
+									<li>
+										<div class="info one">
+											<span class="title">Zdjęcie profilowe:</span>
+											<div class="field">
+												<div class="images">
+													<img src="images/sample-men.jpg" alt="Mateusz Kowalski">
+													<a href="#"><i class="fa fa-trash-o"></i></a>
+												</div>
 											</div>
 										</div>
 										<div class="action block">
-											
-										</div>										
+											<input type="file" name="file" id="file" class="input-file" />
+											<label class="upload"  for="file"><i class="fa fa-upload"></i></label>
+										</div>
 									</li>
-									
 									<li>
 										<div class="info two">
 											<span class="title">Dane personalne:</span>
 											<div class="field">
-												<fieldset>
-													<input type="text" value="" placeholder="Imię">												
+												<fieldset class="error">
+													<div class="validation">
+														Wypełnij pole
+													</div>
+													<input type="text" value="" placeholder="Imię">
 												</fieldset>
 												<fieldset>
-													<input type="text" value="" placeholder="Drugie imię">																									
+													<input type="text" value="" placeholder="Drugie imię">
 												</fieldset>
 											</div>
 											<div class="field">
 												<fieldset>
-													<input type="text" value="" placeholder="Nazwisko">												
-												</fieldset>												
+													<input type="text" value="" placeholder="Nazwisko">
+												</fieldset>
 											</div>
 										</div>
 										<div class="action block">
@@ -145,18 +182,18 @@
 											<span class="title">Dane adresowe:</span>
 											<div class="field">
 												<fieldset>
-													<input type="text" value="" placeholder="Ulica">												
+													<input type="text" value="" placeholder="Ulica">
 												</fieldset>
 												<fieldset>
-													<input type="text" value="" placeholder="Numer domu / mieszkania">																									
+													<input type="text" value="" placeholder="Numer domu / mieszkania">
 												</fieldset>
 											</div>
 											<div class="field">
 												<fieldset>
-													<input type="text" value="" placeholder="Kod pocztowy">												
+													<input type="text" value="" placeholder="Kod pocztowy">
 												</fieldset>
 												<fieldset>
-													<input type="text" value="" placeholder="Miasto">																									
+													<input type="text" value="" placeholder="Miasto">
 												</fieldset>
 											</div>
 											<div class="field">
@@ -169,43 +206,43 @@
 														<option value="5">Piątek</option>
 														<option value="6">Sobota</option>
 														<option value="7">Niedziela</option>
-													</select>											
+													</select>
 												</fieldset>
 												<fieldset>
-																																			
+
 												</fieldset>
-											</div>												
-										</div>	
+											</div>
+										</div>
 										<div class="action block">
 											<a href="#" id="edit"><i class="fa fa-pencil"></i></a>
 										</div>
 									</li>
-									
+
 									<li>
 										<div class="info two">
 											<span class="title">Dane Firmy:</span>
 											<div class="field">
 												<fieldset>
-													<input type="text" value="" placeholder="Nazwa firmy">												
+													<input type="text" value="" placeholder="Nazwa firmy">
 												</fieldset>
 												<fieldset>
-													<input type="text" value="" placeholder="NIP">																									
-												</fieldset>
-											</div>
-											<div class="field">
-												<fieldset>
-													<input type="text" value="" placeholder="Ulica">												
-												</fieldset>
-												<fieldset>
-													<input type="text" value="" placeholder="Numer domu / mieszkania">																									
+													<input type="text" value="" placeholder="NIP">
 												</fieldset>
 											</div>
 											<div class="field">
 												<fieldset>
-													<input type="text" value="" placeholder="Kod pocztowy">												
+													<input type="text" value="" placeholder="Ulica">
 												</fieldset>
 												<fieldset>
-													<input type="text" value="" placeholder="Miasto">																									
+													<input type="text" value="" placeholder="Numer domu / mieszkania">
+												</fieldset>
+											</div>
+											<div class="field">
+												<fieldset>
+													<input type="text" value="" placeholder="Kod pocztowy">
+												</fieldset>
+												<fieldset>
+													<input type="text" value="" placeholder="Miasto">
 												</fieldset>
 											</div>
 											<div class="field">
@@ -218,23 +255,23 @@
 														<option value="5">Piątek</option>
 														<option value="6">Sobota</option>
 														<option value="7">Niedziela</option>
-													</select>											
+													</select>
 												</fieldset>
 												<fieldset>
-																																			
+
 												</fieldset>
-											</div>			
-										</div>	
+											</div>
+										</div>
 										<div class="action block">
 											<a href="#" id="edit"><i class="fa fa-pencil"></i></a>
 										</div>
 									</li>
-								</ul>	
+								</ul>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>			
+			</div>
 		</section>
 	</section>
 </div>
@@ -244,7 +281,7 @@
 <script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
 <script type="text/javascript" src="js/jquery.minicolors.min.js"></script>
 <script type="text/javascript" src="js/jquery.elastic.js"></script>
-<script type="text/javascript" src="js/chart.min.js"></script> 
+<script type="text/javascript" src="js/chart.min.js"></script>
 <script type="text/javascript" src="js/jquery.mCustomScrollbar.concat.min.js"></script>
 <script type="text/javascript" src="js/masonry.pkgd.min.js"></script>
 <script type="text/javascript" src="js/script.js"></script>

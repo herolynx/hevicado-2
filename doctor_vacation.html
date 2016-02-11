@@ -4,12 +4,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 	<title>Hevicado 2.0</title>
-	<link href='https://fonts.googleapis.com/css?family=Lato:400,700,900,300,100' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" media="screen" />
-	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" type="text/css" media="screen" />
-	<link rel="stylesheet" href="elements.css" type="text/css" media="screen" />
+	<link href='https://fonts.googleapis.com/css?family=Hind+Siliguri:400,300,500,600,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="style.css" type="text/css" media="screen" />
-	<link rel="stylesheet" href="css/jguery.Select.css" type="text/css" media="screen" />
 </head>
 <body>
 
@@ -31,6 +27,10 @@
 				</a>
 			</span>
 			<span>Lekarz</span>
+			<div class="switch">
+				<input type="checkbox" name="switch" class="switch-checkbox" id="id5a">
+				<label class="switch-label" for="id5a"></label>
+			</div>
 		</div>
 		<nav>
 			<ul>
@@ -41,7 +41,7 @@
 				<li><a href="visit.html"><i class="fa fa-folder-open-o"></i>Moje wizyty</a></li>
 				<li><a href="cabinet_list.html"><i class="fa fa-hospital-o"></i>Gabinet</a></li>
 				<li><a href="message.html"><i class="fa fa-inbox"></i>Wiadomości</a></li>
-				<li><a href="my_accout.html"><i class="fa fa-cogs"></i>Moje konto</a></li>
+				<li><a href="my_account.html"><i class="fa fa-cogs"></i>Moje konto</a></li>
 				<li><a href="statistic.html"><i class="fa fa-bar-chart"></i>Statystyki</a></li>
 				<li><a href="#"><i class="fa fa-sign-out"></i>Wyloguj</a></li>
 			</ul>
@@ -50,6 +50,7 @@
 			Power by <a href="http://www.herolynx.com" target="_blank">HeroLynx.com</a>
 		</div>
 	</section>
+
 	<section id="main-content">
 		<div id="title">
 			<div class="content">
@@ -62,7 +63,7 @@
 					</ul>
 				</nav>
 				<div class="action">
-					<a href="#"><i class="fa fa-bell-o"></i><span>20</span></a>
+					<a href="message.html"><i class="fa fa-bell-o"></i><span>20</span></a>
 					<a href="#"><i class="fa fa-power-off"></i></a>
 				</div>
 			</div>
@@ -73,10 +74,8 @@
 				<div class="col col-5">
 					<div class="window">
 						<div class="title-window">
-							<div class="box">
-								<span>
+							<div class="title">
 									Urlop
-								</span>
 							</div>
 						</div>
 						<ul class="list">

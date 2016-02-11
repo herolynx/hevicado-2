@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<title>Hevicado 2.0</title>
+	<link href='https://fonts.googleapis.com/css?family=Hind+Siliguri:400,300,500,600,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+</head>
+<body>
+
+<div id="page" class="blue">
+	<input type="checkbox" id="trigger" class="trigger">
+	<label for="trigger">
+		<i class="fa fa-bars"></i>
+	</label>
+
+	<section id="navigation">
+		<div class="user">
+			<span>Jesteś zalogowany jako</span>
+			<div class="images">
+				<img src="images/sample-men.jpg" alt="Mateusz Kowalski">
+			</div>
+			<span class="name">
+				<a href="my_account.html">
+				Mateusz<br/>Kowalski
+				</a>
+			</span>
+			<span>Lekarz</span>
+			<div class="switch">
+				<input type="checkbox" name="switch" class="switch-checkbox" id="id5a">
+				<label class="switch-label" for="id5a"></label>
+			</div>
+		</div>
+		<nav>
+			<ul>
+				<li class="active"><a href="search.html"><i class="fa fa-search"></i> Szukaj</a></li>
+				<li><a href="dashboard.html"><i class="fa fa-area-chart"></i>Pulpit</a></li>
+				<li><a href="calendar_30days.html"><i class="fa fa-calendar"></i>Kalnedarz</a></li>
+				<li><a href="#"><i class="fa fa-folder-open-o"></i>Karta Pacjenta</a></li>
+				<li><a href="visit.html"><i class="fa fa-folder-open-o"></i>Moje wizyty</a></li>
+				<li><a href="cabinet_list.html"><i class="fa fa-hospital-o"></i>Gabinet</a></li>
+				<li><a href="message.html"><i class="fa fa-inbox"></i>Wiadomości</a></li>
+				<li><a href="my_account.html"><i class="fa fa-cogs"></i>Moje konto</a></li>
+				<li><a href="statistic.html"><i class="fa fa-bar-chart"></i>Statystyki</a></li>
+				<li><a href="#"><i class="fa fa-sign-out"></i>Wyloguj</a></li>
+			</ul>
+		</nav>
+		<div class="footer">
+			Power by <a href="http://www.herolynx.com" target="_blank">HeroLynx.com</a>
+		</div>
+	</section>
+
+	<section id="main-content">
+		<div id="title">
+			<div class="content">
+				<h2>Umów się</h2>
+				<div class="action">
+					<a href="messages.html"><i class="fa fa-bell-o"></i><span>20</span></a>
+					<a href="#"><i class="fa fa-power-off"></i></a>
+				</div>
+			</div>
+		</div>
+
+		<section id="reservation">
+			<div class="row">
+				<div class="col col-8">
+					<div class="row">
+						<div class="col col-4">
+							<div class="window">
+								<div class="title-window">
+									<div class="title">
+											Szczegóły wizyty
+									</div>
+								</div>
+								<ul class="list">
+									<li>
+										<div class="info two">
+											<div class="field">
+												<fieldset>
+													<div class="info_doctor">
+														<div class="info">
+															<div class="images">
+																<img src="images/sample-men.jpg" alt="Mateusz Kowalski">
+																<a href="#" class="more">
+																	<i class="fa fa-eye"></i>
+																</a>
+															</div>
+															<span class="titles">dr. hab. lek.</span>
+															<span class="name">Leszek Balcerowicz</span>
+															<span class="specialization">dermatolog, urolog</span>
+															<span class="address">
+																ul. Łużycka 22<br/>
+																65-001, Zielona Góra
+															</span>
+														</div>
+														<div class="info_cabinet row">
+															<div class="col col-3">
+																<span class="title">Godziny otwarcia:</span>
+																<ul>
+																	<li><span>Poniedziałek:</span> 9:00 - 14:00</li>
+																	<li><span>Wtorek:</span> 9:00 - 14:00</li>
+																	<li><span>Środa:</span> 9:00 - 14:00</li>
+																	<li><span>Czwartek:</span> 9:00 - 14:00</li>
+																	<li><span>Piątek:</span> 9:00 - 14:00</li>
+																</ul>
+															</div>
+															<div class="col col-3">
+																<span class="title">Sposob płatności:</span>
+																<ul>
+																	<li>Karta płatnicza</li>
+																	<li>Gotowka</li>
+																</ul>
+															</div>
+														</div>
+													</div>
+												</fieldset>
+												<fieldset>
+													<div class="maps">
+														<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40083.72268061528!2d16.998703653013983!3d51.10416726128003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470fe9c2d4b58abf%3A0xb70956aec205e0f5!2zV3JvY8WCYXc!5e0!3m2!1spl!2spl!4v1453926514012" width="100%" height="300px" frameborder="0" style="border:0" allowfullscreen></iframe>
+													</div>
+												</fieldset>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="info one">
+											<span class="title">1) Typ wizyty</span>
+											<div class="field">
+												<fieldset>
+													<select>
+														<option value="0">Wybierz</option>
+														<option value="1">Wizyta kontrolna (30 min)</option>
+														<option value="2">Badanie węzłów chłonnych (20 min)</option>
+													</select>
+												</fieldset>
+											</div>
+										</div>
+									</li>
+
+									<li>
+										<div class="info two">
+											<span class="title">2) Termin wizyty (najbliższe terminy):</span>
+											<div class="field">
+												<fieldset>
+													<select>
+														<option value="1">21 listopad 2015 r. (wybrany)</option>
+														<option value="2">22 listopad 2015 r.</option>
+														<option value="3">30 listopad 2015 r.</option>
+													</select>
+												</fieldset>
+												<fieldset>
+													<select>
+														<option value="1">9:00</option>
+														<option value="2">10:00</option>
+														<option value="3">11:00</option>
+													</select>
+												</fieldset>
+											</div>
+										</div>
+										<a href="calendar_7days.html" class="calendar btn lg">
+											Pokaż kalendarz lekarza	<i class="fa fa-calendar"></i>
+										</a>
+									</li>
+									<li>
+										<div class="info one">
+											<span class="title">3) Powód wizyty (opisz swój problem):</span>
+											<div class="field">
+												<fieldset>
+													<textarea class="elastic"></textarea>
+												</fieldset>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+
+							<div class="window">
+								<div class="title-window">
+									<div class="title">
+											Twoje dane
+									</div>
+								</div>
+								<ul class="list">
+									<li>
+										<div class="info two">
+											<span class="title">Dane personalne:</span>
+											<div class="field">
+												<fieldset>
+													<input type="text" value="" placeholder="Imię">
+												</fieldset>
+												<fieldset>
+													<input type="text" value="" placeholder="Nazwisko">
+												</fieldset>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="info one">
+											<span class="title">Dane adresowe:</span>
+											<div class="field">
+												<fieldset>
+													<input type="text" value="" placeholder="Ulica, numer domu mieszkania">
+												</fieldset>
+											</div>
+											<div class="field">
+												<fieldset>
+													<input type="text" value="" placeholder="Kod pocztowy, miasto">
+												</fieldset>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="info two">
+											<span class="title">Dane kontaktowe:</span>
+											<div class="field">
+												<fieldset>
+													<input type="text" value="" placeholder="Telefon">
+												</fieldset>
+												<fieldset>
+													<span class="text">Na podany numer tel. otrzymasz powiadomenia o wizycie</span>
+												</fieldset>
+											</div>
+											<div class="field">
+												<fieldset>
+													<input type="text" value="" placeholder="Adres E-mail">
+												</fieldset>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="info one">
+											<span class="title">Informacje dodatkowe:</span>
+											<div class="field">
+												<fieldset>
+													<select>
+														<option value="1">Jestem ubezpieczony w NFZ</option>
+														<option value="2">Nie jestem ubezpieczony</option>
+													</select>
+												</fieldset>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="info one">
+											<div class="field check">
+												<fieldset>
+													<div class="checkbox">
+														<input type="checkbox" id="id1a" name="check">
+														<label class="check" for="id1a"></label>
+													</div>
+													<span>Oświadczam że zapaznałem/łam się z Regulaminem serwisu.</span>
+												</fieldset>
+											</div>
+											<div class="field check">
+												<fieldset>
+													<div class="checkbox">
+														<input type="checkbox" id="id2a" name="check">
+														<label class="check" for="id2a"></label>
+													</div>
+													<span class="text">Oświadczam że podane przeze mnie dane sa prawdziwe.</span>
+												</fieldset>
+											</div>
+										</div>
+									</li>
+
+									<li>
+										<div class="info one">
+											<div class="field">
+												<fieldset>
+													<button class="btn lg blue cn">
+														Umów się
+													</button>
+												</fieldset>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</section>
+</div>
+
+
+<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="js/jquery.nice-select.min.js"></script>
+<script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+<script type="text/javascript" src="js/jquery.minicolors.min.js"></script>
+<script type="text/javascript" src="js/jquery.elastic.js"></script>
+<script type="text/javascript" src="js/chart.min.js"></script>
+<script type="text/javascript" src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script type="text/javascript" src="js/masonry.pkgd.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

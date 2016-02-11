@@ -4,12 +4,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 	<title>Hevicado 2.0</title>
-	<link href='https://fonts.googleapis.com/css?family=Lato:400,700,900,300,100' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" media="screen" />
-	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" type="text/css" media="screen" />
-	<link rel="stylesheet" href="elements.css" type="text/css" media="screen" />
+	<link href='https://fonts.googleapis.com/css?family=Hind+Siliguri:400,300,500,600,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="style.css" type="text/css" media="screen" />
-	<link rel="stylesheet" href="css/jguery.Select.css" type="text/css" media="screen" />	
 </head>
 <body>
 
@@ -18,65 +14,67 @@
 	<label for="trigger">
 		<i class="fa fa-bars"></i>
 	</label>
-	
-	<section id="navigation">	
-		<div id="wrapper" class="content">
-			<div class="user">
-				<span>Jesteś zalogowany jako</span>
-				<div class="images">
-					<img src="images/sample-men.jpg" alt="Mateusz Kowalski">
-				</div>
-				<span class="name">
-					<a href="my_account.html">
-					Mateusz<br/>Kowalski
-					</a>
-				</span>
-				<span>Lekarz</span>
+
+	<section id="navigation">
+		<div class="user">
+			<span>Jesteś zalogowany jako</span>
+			<div class="images">
+				<img src="images/sample-men.jpg" alt="Mateusz Kowalski">
 			</div>
-			<nav>
-				<ul>
-					<li class="active"><a href="search.html"><i class="fa fa-search"></i> Szukaj</a></li>
-					<li><a href="dashboard.html"><i class="fa fa-area-chart"></i>Pulpit</a></li>
-					<li><a href="calendar_30days.html"><i class="fa fa-calendar"></i>Kalnedarz</a></li>
-					<li><a href="card_patient.html"><i class="fa fa-folder-open-o"></i>Karta Pacjenta</a></li>
-					<li><a href="visit.html"><i class="fa fa-folder-open-o"></i>Moje wizyty</a></li>
-					<li><a href="cabinet_list.html"><i class="fa fa-hospital-o"></i>Gabinet</a></li>
-					<li><a href="message.html"><i class="fa fa-inbox"></i>Wiadomości</a></li>
-					<li><a href="my_account.html"><i class="fa fa-cogs"></i>Moje konto</a></li>
-					<li><a href="statistic.html"><i class="fa fa-bar-chart"></i>Statystyki</a></li>
-					<li><a href="#"><i class="fa fa-sign-out"></i>Wyloguj</a></li>
-				</ul>
-			</nav>			
-		</div>		
+			<span class="name">
+				<a href="my_account.html">
+				Mateusz<br/>Kowalski
+				</a>
+			</span>
+			<span>Lekarz</span>
+			<div class="switch">
+				<input type="checkbox" name="switch" class="switch-checkbox" id="id5a">
+				<label class="switch-label" for="id5a"></label>
+			</div>
+		</div>
+		<nav>
+			<ul>
+				<li class="active"><a href="search.html"><i class="fa fa-search"></i> Szukaj</a></li>
+				<li><a href="dashboard.html"><i class="fa fa-area-chart"></i>Pulpit</a></li>
+				<li><a href="calendar_30days.html"><i class="fa fa-calendar"></i>Kalnedarz</a></li>
+				<li><a href="#"><i class="fa fa-folder-open-o"></i>Karta Pacjenta</a></li>
+				<li><a href="visit.html"><i class="fa fa-folder-open-o"></i>Moje wizyty</a></li>
+				<li><a href="cabinet_list.html"><i class="fa fa-hospital-o"></i>Gabinet</a></li>
+				<li><a href="message.html"><i class="fa fa-inbox"></i>Wiadomości</a></li>
+				<li><a href="my_account.html"><i class="fa fa-cogs"></i>Moje konto</a></li>
+				<li><a href="statistic.html"><i class="fa fa-bar-chart"></i>Statystyki</a></li>
+				<li><a href="#"><i class="fa fa-sign-out"></i>Wyloguj</a></li>
+			</ul>
+		</nav>
 		<div class="footer">
 			Power by <a href="http://www.herolynx.com" target="_blank">HeroLynx.com</a>
 		</div>
 	</section>
-	
-	<section id="main-content">		
+
+	<section id="main-content">
 		<div id="title">
 			<div class="content">
 				<h2>Tablica</h2>
-				
+
 				<div class="action">
-					<a href="#"><i class="fa fa-bell-o"></i><span>20</span></a>
+					<a href="message.html"><i class="fa fa-bell-o"></i><span>20</span></a>
 					<a href="#"><i class="fa fa-power-off"></i></a>
-				</div>				
+				</div>
 			</div>
 		</div>
-		<section id="dashboard">			
+		<section id="dashboard">
 			<div class="row">
 				<div id="grid">
-																
+
 					<div class="window">
-						<div class="title-window">							
-							<div class="box">								
+						<div class="title-window">
+							<div class="box">
 								<span>
 									Kalendarz
-								</span>								
-							</div>							
+								</span>
+							</div>
 						</div>
-						<section id="calendar">			
+						<section id="calendar">
 							<div class="row">
 								<div class="month">
 									<ul class="days">
@@ -87,24 +85,24 @@
 										<li>PT</li>
 										<li>SOB</li>
 										<li>ND</li>
-									</ul>							
+									</ul>
 									<ul class="table">
 										<li>
 											<div class="day">
 												<div class="box">
-													<a href="#" class="add"></a>	
+													<a href="#" class="add"></a>
 													<div class="content">
 														<div class="number">
 															1
-														</div>	
+														</div>
 														<div class="events">
 															<div class="event" style="background:green; border-top:2px solid blue">
 																<a href="#"></a>
-																<span>K. Kowalski</span>								
+																<span>K. Kowalski</span>
 															</div>
 															<div class="event" style="background:red; border-top:2px solid pink">
 																<a href="#"></a>
-																<span>M. Kowalczyk</span>								
+																<span>M. Kowalczyk</span>
 															</div>
 														</div>
 													</div>
@@ -112,211 +110,211 @@
 											</div>
 											<div class="day">
 												<div class="box">
-													<a href="#" class="add"></a>	
+													<a href="#" class="add"></a>
 													<div class="content">
 														<div class="number">
 															2
-														</div>	
-													</div>
-												</div>
-											</div>
-											<div class="day">
-												<div class="box">
-													<a href="#" class="add"></a>	
-													<div class="content">
-														<div class="number">
-															3
-														</div>	
-													</div>
-												</div>
-											</div>
-											<div class="day">
-												<div class="box">
-													<a href="#" class="add"></a>	
-													<div class="content">
-														<div class="number">
-															4
-														</div>	
-													</div>
-												</div>
-											</div>
-											<div class="day">
-												<div class="box">
-													<a href="#" class="add"></a>	
-													<div class="content">
-														<div class="number">
-															5
-														</div>	
-													</div>
-												</div>
-											</div>
-											<div class="day">
-												<div class="box">
-													<a href="#" class="add"></a>	
-													<div class="content">
-														<div class="number">
-															6
-														</div>	
-													</div>
-												</div>
-											</div>
-											<div class="day">
-												<div class="box">
-													<a href="#" class="add"></a>	
-													<div class="content">
-														<div class="number">
-															7
-														</div>	
-													</div>
-												</div>
-											</div>
-										</li>
-										<li>
-											<div class="day">
-												<div class="box">
-													<a href="#" class="add"></a>	
-													<div class="content">
-														<div class="number">
-															8
-														</div>													
-													</div>
-												</div>
-											</div>
-											<div class="day">
-												<div class="box">
-													<a href="#" class="add"></a>	
-													<div class="content">
-														<div class="number">
-															9
-														</div>	
-													</div>
-												</div>
-											</div>
-											<div class="day">
-												<div class="box">
-													<a href="#" class="add"></a>	
-													<div class="content">
-														<div class="number">
-															10
-														</div>	
-													</div>
-												</div>
-											</div>
-											<div class="day">
-												<div class="box">
-													<a href="#" class="add"></a>	
-													<div class="content">
-														<div class="number">
-															11
-														</div>	
-													</div>
-												</div>
-											</div>
-											<div class="day">
-												<div class="box">
-													<a href="#" class="add"></a>	
-													<div class="content">
-														<div class="number">
-															12
-														</div>	
-													</div>
-												</div>
-											</div>
-											<div class="day">
-												<div class="box">
-													<a href="#" class="add"></a>	
-													<div class="content">
-														<div class="number">
-															13
-														</div>	
-													</div>
-												</div>
-											</div>
-											<div class="day">
-												<div class="box">
-													<a href="#" class="add"></a>	
-													<div class="content">
-														<div class="number">
-															14
-														</div>	
-													</div>
-												</div>
-											</div>
-										</li>
-										<li>
-											<div class="day">
-												<div class="box">
-													<a href="#" class="add"></a>	
-													<div class="content">
-														<div class="number">
-															16
-														</div>											
-													</div>
-												</div>
-											</div>
-											<div class="day">
-												<div class="box">
-													<a href="#" class="add"></a>	
-													<div class="content">
-														<div class="number">
-															16
-														</div>	
-													</div>
-												</div>
-											</div>
-											<div class="day">
-												<div class="box">
-													<a href="#" class="add"></a>	
-													<div class="content">
-														<div class="number">
-															17
-														</div>	
-													</div>
-												</div>
-											</div>
-											<div class="day">
-												<div class="box">
-													<a href="#" class="add"></a>	
-													<div class="content">
-														<div class="number">
-															18
-														</div>	
-														<div class="events">
-															<div class="event" style="background:orange; border-top:2px solid blue">
-																<a href="#"></a>
-																<span>R. Bocheński</span>								
-															</div>												
 														</div>
 													</div>
 												</div>
 											</div>
 											<div class="day">
 												<div class="box">
-													<a href="#" class="add"></a>	
+													<a href="#" class="add"></a>
+													<div class="content">
+														<div class="number">
+															3
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="day">
+												<div class="box">
+													<a href="#" class="add"></a>
+													<div class="content">
+														<div class="number">
+															4
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="day">
+												<div class="box">
+													<a href="#" class="add"></a>
+													<div class="content">
+														<div class="number">
+															5
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="day">
+												<div class="box">
+													<a href="#" class="add"></a>
+													<div class="content">
+														<div class="number">
+															6
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="day">
+												<div class="box">
+													<a href="#" class="add"></a>
+													<div class="content">
+														<div class="number">
+															7
+														</div>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="day">
+												<div class="box">
+													<a href="#" class="add"></a>
+													<div class="content">
+														<div class="number">
+															8
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="day">
+												<div class="box">
+													<a href="#" class="add"></a>
+													<div class="content">
+														<div class="number">
+															9
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="day">
+												<div class="box">
+													<a href="#" class="add"></a>
+													<div class="content">
+														<div class="number">
+															10
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="day">
+												<div class="box">
+													<a href="#" class="add"></a>
+													<div class="content">
+														<div class="number">
+															11
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="day">
+												<div class="box">
+													<a href="#" class="add"></a>
+													<div class="content">
+														<div class="number">
+															12
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="day">
+												<div class="box">
+													<a href="#" class="add"></a>
+													<div class="content">
+														<div class="number">
+															13
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="day">
+												<div class="box">
+													<a href="#" class="add"></a>
+													<div class="content">
+														<div class="number">
+															14
+														</div>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="day">
+												<div class="box">
+													<a href="#" class="add"></a>
+													<div class="content">
+														<div class="number">
+															16
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="day">
+												<div class="box">
+													<a href="#" class="add"></a>
+													<div class="content">
+														<div class="number">
+															16
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="day">
+												<div class="box">
+													<a href="#" class="add"></a>
+													<div class="content">
+														<div class="number">
+															17
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="day">
+												<div class="box">
+													<a href="#" class="add"></a>
+													<div class="content">
+														<div class="number">
+															18
+														</div>
+														<div class="events">
+															<div class="event" style="background:orange; border-top:2px solid blue">
+																<a href="#"></a>
+																<span>R. Bocheński</span>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="day">
+												<div class="box">
+													<a href="#" class="add"></a>
 													<div class="content">
 														<div class="number">
 															19
-														</div>	
+														</div>
 													</div>
 												</div>
 											</div>
 											<div class="day">
 												<div class="box">
-													<a href="#" class="add"></a>	
+													<a href="#" class="add"></a>
 													<div class="content">
 														<div class="number">
 															20
-														</div>	
+														</div>
 													</div>
 												</div>
 											</div>
 											<div class="day">
 												<div class="box">
-													<a href="#" class="add"></a>	
+													<a href="#" class="add"></a>
 													<div class="content">
 														<div class="number">
 															21
-														</div>	
+														</div>
 													</div>
 												</div>
 											</div>
@@ -324,71 +322,71 @@
 										<li>
 											<div class="day">
 												<div class="box">
-													<a href="#" class="add"></a>	
+													<a href="#" class="add"></a>
 													<div class="content">
 														<div class="number">
 															22
-														</div>													
+														</div>
 													</div>
 												</div>
 											</div>
 											<div class="day">
 												<div class="box">
-													<a href="#" class="add"></a>	
+													<a href="#" class="add"></a>
 													<div class="content">
 														<div class="number">
 															23
-														</div>	
+														</div>
 													</div>
 												</div>
 											</div>
 											<div class="day">
 												<div class="box">
-													<a href="#" class="add"></a>	
+													<a href="#" class="add"></a>
 													<div class="content">
 														<div class="number">
 															24
-														</div>	
+														</div>
 													</div>
 												</div>
 											</div>
 											<div class="day">
 												<div class="box">
-													<a href="#" class="add"></a>	
+													<a href="#" class="add"></a>
 													<div class="content">
 														<div class="number">
 															25
-														</div>	
+														</div>
 													</div>
 												</div>
 											</div>
 											<div class="day">
 												<div class="box">
-													<a href="#" class="add"></a>	
+													<a href="#" class="add"></a>
 													<div class="content">
 														<div class="number">
 															26
-														</div>	
+														</div>
 													</div>
 												</div>
 											</div>
 											<div class="day">
 												<div class="box">
-													<a href="#" class="add"></a>	
+													<a href="#" class="add"></a>
 													<div class="content">
 														<div class="number">
 															27
-														</div>	
+														</div>
 													</div>
 												</div>
 											</div>
 											<div class="day">
 												<div class="box">
-													<a href="#" class="add"></a>	
+													<a href="#" class="add"></a>
 													<div class="content">
 														<div class="number">
 															28
-														</div>	
+														</div>
 													</div>
 												</div>
 											</div>
@@ -396,91 +394,91 @@
 										<li>
 											<div class="day">
 												<div class="box">
-													<a href="#" class="add"></a>	
+													<a href="#" class="add"></a>
 													<div class="content">
 														<div class="number">
 															29
 														</div>
-														
+
 													</div>
 												</div>
 											</div>
 											<div class="day">
 												<div class="box">
-													<a href="#" class="add"></a>	
+													<a href="#" class="add"></a>
 													<div class="content">
 														<div class="number">
 															30
-														</div>	
+														</div>
 													</div>
 												</div>
 											</div>
 											<div class="day">
 												<div class="box">
-													<a href="#" class="add"></a>	
+													<a href="#" class="add"></a>
 													<div class="content">
 														<div class="number">
 															31
-														</div>	
+														</div>
 													</div>
 												</div>
 											</div>
 											<div class="day">
 												<div class="box hidden">
-													<a href="#" class="add"></a>	
+													<a href="#" class="add"></a>
 													<div class="content">
 														<div class="number">
 															1
-														</div>	
+														</div>
 													</div>
 												</div>
 											</div>
 											<div class="day">
 												<div class="box hidden">
-													<a href="#" class="add"></a>	
+													<a href="#" class="add"></a>
 													<div class="content">
 														<div class="number">
 															2
-														</div>	
+														</div>
 													</div>
 												</div>
 											</div>
 											<div class="day">
 												<div class="box hidden">
-													<a href="#" class="add"></a>	
+													<a href="#" class="add"></a>
 													<div class="content">
 														<div class="number">
 															3
-														</div>	
+														</div>
 													</div>
 												</div>
 											</div>
 											<div class="day">
 												<div class="box hidden">
-													<a href="#" class="add"></a>	
+													<a href="#" class="add"></a>
 													<div class="content">
 														<div class="number">
 															4
-														</div>	
+														</div>
 													</div>
 												</div>
 											</div>
-										</li>								
-									</ul>										
+										</li>
+									</ul>
 								</div>
-							</div>			
-						</section>						
+							</div>
+						</section>
 					</div>
-							
-					<div class="window">						
-						<section id="message">						
-							<div class="title-window">								
-								<div class="box">									
+
+					<div class="window">
+						<section id="message">
+							<div class="title-window">
+								<div class="box">
 									<span>
 										Ostatnie wiadomości
-									</span>									
-								</div>								
-							</div>							
+									</span>
+								</div>
+							</div>
 							<ul class="list">
 								<li>
 									<div class="describe">
@@ -498,12 +496,12 @@
 									</div>
 									<div class="date">
 										22.01.2016
-									</div>											
+									</div>
 								</li>
 								<li>
 									<div class="describe">
 										<a href="message_mail.html"></a>
-										<div class="author">										
+										<div class="author">
 											<span>
 											Michał Buraczek
 											</span>
@@ -516,7 +514,7 @@
 									</div>
 									<div class="date">
 										22.01.2016
-									</div>											
+									</div>
 								</li>
 								<li>
 									<div class="describe">
@@ -534,12 +532,12 @@
 									</div>
 									<div class="date">
 										22.01.2016
-									</div>											
+									</div>
 								</li>
 								<li>
 									<div class="describe">
 										<a href="message_mail.html"></a>
-										<div class="author">										
+										<div class="author">
 											<span>
 											Michał Buraczek
 											</span>
@@ -552,125 +550,125 @@
 									</div>
 									<div class="date">
 										22.01.2016
-									</div>											
+									</div>
 								</li>
-							</ul>									
+							</ul>
 						</section>
 					</div>
-					
+
 					<div class="window">
-						<section id="cabinet">			
-							
-							<div class="title-window">							
-								<div class="box">								
+						<section id="cabinet">
+
+							<div class="title-window">
+								<div class="box">
 									<span>
 										Lista Gabinetów
-									</span>								
-								</div>							
+									</span>
+								</div>
 							</div>
-							<ul class="list">							
+							<ul class="list">
 								<li class="deactive">
-									<div class="info list">								
+									<div class="info list">
 										<a href="#"><i class="fa fa-eye-slash"></i> Niepubliczny Zakład Medycyny Stosowanej</a>
 									</div>
 									<div class="action line">
 										<div class="switch">
 											<input type="checkbox" name="switch" class="switch-checkbox" id="id1">
 											<label class="switch-label" for="id1"></label>
-										</div>												
+										</div>
 									</div>
 								</li>
 								<li>
-									<div class="info list">									
+									<div class="info list">
 										<a href="cabinet_info.html">Niepubliczny Zakład Medycyny Stosowanej</a>
 									</div>
 									<div class="action line">
 										<div class="switch">
 											<input type="checkbox" name="switch" class="switch-checkbox" id="id2" checked>
 											<label class="switch-label" for="id2"></label>
-										</div>												
+										</div>
 									</div>
 								</li>
-							</ul>							
+							</ul>
 						</section>
 					</div>
-							
-					<div class="window">							
-						<section id="visit">						
-							<div class="title-window">											
-								<div class="box">									
+
+					<div class="window">
+						<section id="visit">
+							<div class="title-window">
+								<div class="box">
 									<span>
 										Umówione wizyty
-									</span>									
-								</div>								
+									</span>
+								</div>
 							</div>
 							<ul class="list">
 								<li>
 									<div class="date-visit plane">
 										9:00
 									</div>
-									<div class="box first">		
+									<div class="box first">
 										<span class="name">
-											<span class="title">prof. dr. hab</span> Tomasz Terlikowski											
+											<span class="title">prof. dr. hab</span> Tomasz Terlikowski
 											<span class="specialization">specjalizacja: chirurgia ogólna</span>
-										</span>		
+										</span>
 										<div class="pic">
 											<div class="images">
-												<img src="images/sample-men.jpg" alt="Mateusz Kowalski">	
-											</div>											
-										</div>											
-									</div>	
+												<img src="images/sample-men.jpg" alt="Mateusz Kowalski">
+											</div>
+										</div>
+									</div>
 								</li>
 								<li>
 									<div class="date-visit plane">
 										9:00
 									</div>
-									<div class="box first">		
+									<div class="box first">
 										<span class="name">
-											<span class="title">prof. dr. hab</span> Tomasz Terlikowski											
+											<span class="title">prof. dr. hab</span> Tomasz Terlikowski
 											<span class="specialization">specjalizacja: chirurgia ogólna</span>
-										</span>		
+										</span>
 										<div class="pic">
 											<div class="images">
 												<img src="images/sample-men.jpg" alt="Mateusz Kowalski">
-											</div>											
-										</div>											
+											</div>
+										</div>
 									</div>
-								</li>		
+								</li>
 								<li>
 									<div class="date-visit plane">
 										19:00
 									</div>
-									<div class="box first">		
+									<div class="box first">
 										<span class="name">
-											<span class="title">prof. dr. hab</span> Tomasz Terlikowski											
+											<span class="title">prof. dr. hab</span> Tomasz Terlikowski
 											<span class="specialization">specjalizacja: chirurgia ogólna</span>
-										</span>		
+										</span>
 										<div class="pic">
 											<div class="images">
 												<img src="images/sample-men.jpg" alt="Mateusz Kowalski">
-											</div>											
-										</div>											
+											</div>
+										</div>
 									</div>
-								</li>		
-							</ul>									
+								</li>
+							</ul>
 						</section>
 					</div>
-												
+
 					<div class="window">
 						<section id="statistic">
-							<div class="title-window">											
-								<div class="box">									
+							<div class="title-window">
+								<div class="box">
 									<span>
 										Statystyki odwiedzin
-									</span>									
-								</div>								
+									</span>
+								</div>
 							</div>
-							<canvas id="canvas"></canvas>	
+							<canvas id="canvas"></canvas>
 						</section>
 					</div>
 				</div>
-			</div>			
+			</div>
 		</section>
 	</section>
 </div>
@@ -679,7 +677,7 @@
 <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="js/jquery.nice-select.min.js"></script>
 <script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
- <script type="text/javascript" src="js/chart.min.js"></script> 
+ <script type="text/javascript" src="js/chart.min.js"></script>
 <script type="text/javascript" src="js/jquery.mCustomScrollbar.concat.min.js"></script>
 <script type="text/javascript" src="js/masonry.pkgd.min.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
